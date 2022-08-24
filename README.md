@@ -24,6 +24,3 @@ DuckDuckGo Tracker Blocklists are licensed under the [Creative Commons Attributi
 
 - **How can I contribute to this repository?** The blocklists in this repository are not intended to be manually modified, and as such we are not accepting external pull requests at this time. If you suspect any website usability issues or breakage, or have concerns about what is/isn't blocked, please open an issue in the [Privacy Configuration](https://github.com/duckduckgo/privacy-configuration) repository.
 
-- **Where can I find the code that generates the blocklists?** The code to generate blocklists from the [Tracker Radar data set](https://github.com/duckduckgo/tracker-radar) is not yet open source, but coming soon.
-
-- **Why are there two web blocklists (`web/tds.json` and `web/apple-tds.json`)?** Due to performance limitations, our iOS and Mac apps are currently using a modified version of the blocklist (`web/apple-tds.json`) that contains a subset of the main blocklist’s CNAME entries (`web/tds.json`). This only affects [CNAME Cloaking Protection](https://help.duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cname-cloaking-protection), and we are working on resolving that limitation.
