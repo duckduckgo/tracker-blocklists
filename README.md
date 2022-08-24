@@ -1,6 +1,8 @@
-# DuckDuckGo Tracker Blocklists
+# DuckDuckGo's Tracker Blocklists
 
-Web tracker blocklists used by DuckDuckGo apps and extensions. Blocklists are based on [Tracker Radar](https://spreadprivacy.com/duckduckgo-tracker-radar/) data and updated monthly.
+Tracker blocklists used by DuckDuckGo apps and extensions.
+
+- [Web tracker blocklist](/web)
 
 ## Related Resources
 - Apps and extensions using blocklists:
