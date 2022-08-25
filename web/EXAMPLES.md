@@ -20,18 +20,19 @@ For each third party asset request on the site, take the hostname of a request, 
     - Rules are ordered from most specific to least specific, and only one rule can match per request.
    
     - Loop through the rule list and apply regular expression, ignoring case and start/end position, with the full request URL using each rule.
+    
         - If a rule match is found, then for the first matching rule:
           
-              1. If the rule has `action: ignore`, do not block[^2]
+            a. If the rule has `action: ignore`, do not block[^2]
                 
-              2. If there are rule `exceptions`, do any of the domains and request types match this request?[^1]
-              
-	          - Yes: Don't block[^2]
-              - No: Block
+            b. If there are rule `exceptions`, do any of the domains and request types match this request?[^1]
             
-	          3. If the rule has a `surrogate`, serve the corresponding replacement code instead of blocking
+	      - Yes: Don't block[^2]
+	      - No: Block
+            
+	      c. If the rule has a `surrogate`, serve the corresponding replacement code instead of blocking
 	   
-	          4. If the rule does not have an `action`, matching `exceptions`, or `surrogate`, then block the request 
+	      d. If the rule does not have an `action`, matching `exceptions`, or `surrogate`, then block the request 
 	    
         - If no rule match was found go to 3b.
 
