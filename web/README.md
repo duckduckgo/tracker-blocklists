@@ -113,6 +113,6 @@ The domains object is a mapping of all entity properties to entity name. This is
 
 ## CNAMEs
 
-Used for [CNAME cloadking protection](https://help.duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cname-cloaking-protection). The cnames object maps a first-party subdomain that has a DNS CNAME redirecting to a third-party tracker.
+Used for [CNAME cloaking protection](https://help.duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cname-cloaking-protection). The cnames object maps a first-party subdomain that has a DNS CNAME redirecting to a third-party tracker.
 
 [^1]: Other [privacy protections](https://help.duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/) apply to non-blocked trackers 
