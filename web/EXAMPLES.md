@@ -93,7 +93,7 @@ example, blocking cookies.
 
 ### Tracker with rules and `default: block`
 
-We have `default: block`, so we block all third party requests that don't match one of the rules. The first rule doesn't have any `exceptions` so we block all matching requests. It also has a surrogate[^2] listed which, if supported by the client, can be substituted in place of the request.
+We have `default: block`, so we block all third party requests that don't match one of the rules. The first rule doesn't have any `exceptions` so we block all matching requests. It also has a surrogate[^3] listed which, if supported by the client, can be substituted in place of the request.
 The second rule is limited to blocking all matching requests except for those whose type is `image`.
 
 [^3]: Certain tracking scripts are implemented in a way that attaches function calls to page elements. When these scripts are blocked, they can cause usability issues. In order to block these requests while still maintaining site functionality, we redirect the requests to surrogate code that replaces all of their functions with no-ops.
