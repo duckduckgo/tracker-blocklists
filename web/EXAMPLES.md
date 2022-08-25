@@ -36,8 +36,9 @@ For each third party asset request on the site, take the hostname of a request, 
         - If no rule match was found go to 3b.
 
 - 3b. If the entry does not have rules or no rules matched this request
-      - If the entry has `default: ignore`, then don't block[^2]
-      - If the entry has `default: block`, then block the request
+
+    - If the entry has `default: ignore`, then don't block[^2]
+    - If the entry has `default: block`, then block the request
 	
 [^1]: Rule exceptions can have both a list of domains and a list of request types. The domains in the `domains` list should match on all subdomains. For example, if `a.site.com` is in your domains list, then it should match for `b.a.site.com` but not on `site.com`.
 
@@ -95,7 +96,7 @@ example, blocking cookies.
 We have `default: block`, so we block all third party requests that don't match one of the rules. The first rule doesn't have any `exceptions` so we block all matching requests. It also has a surrogate[^2] listed which, if supported by the client, can be substituted in place of the request.
 The second rule is limited to blocking all matching requests except for those whose type is `image`.
 
-[^2]: Certain tracking scripts are implemented in a way that attaches function calls to page elements. When these scripts are blocked, they can cause usability issues. In order to block these requests while still maintaining site functionality, we redirect the requests to surrogate code that replaces all of their functions with no-ops.
+[^3]: Certain tracking scripts are implemented in a way that attaches function calls to page elements. When these scripts are blocked, they can cause usability issues. In order to block these requests while still maintaining site functionality, we redirect the requests to surrogate code that replaces all of their functions with no-ops.
 
 ```json
 {
@@ -123,7 +124,7 @@ The second rule is limited to blocking all matching requests except for those wh
 
 |  Site | Request URL  | Request type | Block | Reason |
 |---|---|---|---|---|
-| example.com | test-tracker.net/instream/1234/ad_status.js |  script |  true | matches rule |
+| example.com | test-tracker.net/instream/1234/ad_status.js |  script |  true (surrogate) | matches rule |
 | example.com | test-tracker.net/ddm/ | script  |  true | matches rule |
 | example.com | test-tracker.net/ddm/ | image  |  false | matches rule and matches rule exception |
 | example.com | test-tracker.net/adimage.png | image  |  true | no matching rule, default is set to 'block' |
@@ -163,4 +164,4 @@ We have `default: ignore`, so we only block requests that match a rule. The firs
 | test-site.com | connect.example.net/signals/ |  script |  true | matches rule |
 | test-site.com | example.net/tracker.js |  script |  false | default set to 'ignore' |
 | test-site-2.com | example.net/123/AudienceNetworkVPAID.png | image  |  false | matches exception type and domain |
-| test-site-2.com | example.net/123/AudienceNetworkVPAID.png | script  |  true | matches exception domain, but not type |
+| test-site-2.com | example.net/123/AudienceNetworkVPAID.js | script  |  true | matches exception domain, but not type |
