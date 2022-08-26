@@ -74,10 +74,10 @@ The default behavior used when no matching rules are found.
 
 |Default|rules?|Action|
 |-|-|-|
-|block|no|All third-party requests from this tracker are blocked|
-|block|yes|If a rule was matched then follow the rule action, otherwise blocked|
-|ignore|yes|If a rule was matched then follow the rule action. If no action exists then block the request. Allow all other requests to load[^1]|
-|ignore|no|Do not block[^1]|
+|__block__|__no__|__All third-party requests from this tracker are blocked__|
+|__block__|__yes__|__If a rule was matched then follow the rule action, otherwise blocked__|
+|__ignore__|__yes__|__If a rule was matched then follow the rule action. If no action exists then block the request. Allow all other requests to load[^1]__|
+|__ignore__|__no__|__Do not block[^1]__|
 
 ### rules
 
@@ -88,8 +88,8 @@ An optional array of objects containing regexes to match against the full URL of
 |__fingerprinting__|__see [fingerprinting](#fingerprinting-0-3)__|
 |__cookies__|__see [cookies](#cookies-0-1)__|
 |__surrogate__|__Certain tracking scripts are implemented in a way that attaches function calls to page elements. When these scripts are blocked, they break sites. In order to block these trackers while still maintaining site functionality, we redirect the requests to surrogate code that replaces all of their functions with no-ops. This field contains the file name of the [replacement code](https://github.com/duckduckgo/tracker-surrogates) to serve instead of blocking__|
-|exceptions|Optional object listing types and domains to not block on|
-|action|Optional action to apply other than blocking|
+|__exceptions__|__Optional object listing types and domains to not block on__|
+|__action__|__Optional action to apply other than blocking__|
 
 **exceptions**
 
