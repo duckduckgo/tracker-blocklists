@@ -4,12 +4,12 @@ The following description explains, at the high-level, how web blocklists are us
 
 For each third party asset request on the site, take the hostname of a request, including subdomains:
 
-1. Check for a [cloaked CNAME](https://help.duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cname-cloaking-protection) by looking for a corresponding key in the [cnames](https://github.com/duckduckgo/tracker-blocklists/web/README.md#cnames) object. Continue removing subdomains until a match is found or you no longer have a valid hostname. 
+1. Check for a [cloaked CNAME](https://help.duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cname-cloaking-protection) by looking for a corresponding key in the [cnames](README.md#cnames) object. Continue removing subdomains until a match is found or you no longer have a valid hostname.
 
     - If a match is found replace the request hostname with the matched `cnames` value. Continue to step 2 with the updated request.
     - If no match is found continue to step 2 with the unaltered request.
 
-2. With the third party request from 1, check for a corresponding key in the [trackers](https://github.com/duckduckgo/tracker-blocklists/web/README.md#trackers) object. Continue removing subdomains until a match is found or you no longer have a valid hostname. 
+2. With the third party request from 1, check for a corresponding key in the [trackers](README.md#trackers) object. Continue removing subdomains until a match is found or you no longer have a valid hostname.
 
     - If no match is found, don't block the request
     - If a match is found, continue to step 3

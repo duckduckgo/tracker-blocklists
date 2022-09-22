@@ -6,11 +6,11 @@ The trackers included in the blocklist are identified by looking for common thir
 ## Questions
 
 - **Where are the blocklists?**
-  - [tds.json](https://github.com/duckduckgo/tracker-blocklists/blob/main/web/tds.json) is the blocklist used by the DuckDuckGo [extensions](https://github.com/duckduckgo/duckduckgo-privacy-extension), [Safari](https://github.com/duckduckgo/privacy-essentials-safari) and [Android](https://github.com/duckduckgo/Android) app. 
-  - [apple-tds.json](https://github.com/duckduckgo/tracker-blocklists/blob/main/web/apple-tds.json) is the blocklist used by the DuckDuckGo [iOS](https://github.com/duckduckgo/iOS) and Mac apps.
+  - [tds.json](tds.json) is the blocklist used by the DuckDuckGo [extensions](https://github.com/duckduckgo/duckduckgo-privacy-extension), [Safari](https://github.com/duckduckgo/privacy-essentials-safari) and [Android](https://github.com/duckduckgo/Android) app.
+  - [apple-tds.json](apple-tds.json) is the blocklist used by the DuckDuckGo [iOS](https://github.com/duckduckgo/iOS) and Mac apps.
 - **Why are there two blocklists?** (`web/tds.json` and `web/apple-tds.json`)? Due to performance limitations, our iOS and Mac apps are currently using a modified version of the blocklist (`web/apple-tds.json`) that contains a subset of the main blocklist’s CNAME entries (`web/tds.json`). This only affects [CNAME Cloaking Protection](https://help.duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cname-cloaking-protection), and we are working on resolving that limitation.
 - **Where can I find the code that generates the blocklists?** The code to generate blocklists from the [Tracker Radar data set](https://github.com/duckduckgo/tracker-radar) is not yet open source, but coming soon.
-- **How do I use the blocklist?** See [examples](https://github.com/duckduckgo/tracker-blocklists/main/web/examples.md) file that gives an overview of the blocking algorithm and lists couple of examples.
+- **How do I use the blocklist?** See [examples](EXAMPLES.md) file that gives an overview of the blocking algorithm and lists couple of examples.
 
 # Format
 
