@@ -66,7 +66,7 @@ The likelihood this tracker is using browser APIs to uniquely identify users.
 |:---|:---|
 | __1__ | __Some use of browser APIs, but not obviously for tracking purposes__ |
 | __2__ | __Use of many browser APIs, possibly for tracking purposes__ |
-| __3__ | __Excessing use of browser APIs, almost certainly for tracking purposes__ |
+| __3__ | __Excessive use of browser APIs, almost certainly for tracking purposes__ |
 
 ### default [block, ignore]
 
@@ -101,7 +101,7 @@ An optional object that can contain `domains` or `types` arrays. Do not block th
 
 **action**
 
-An optional field listing an action to take when matching on the the rule other than blocking. The `action` field can also be used to swtich a matched rule to a non-blocking rule by setting `action: ignore`[^1].
+An optional field listing an action to take when matching on the rule other than blocking. The `action` field can also be used to switch a matched rule to a non-blocking rule by setting `action: ignore`[^1].
 
 ## Entities
 
