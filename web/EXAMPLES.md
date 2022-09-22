@@ -18,34 +18,34 @@ For each third party asset request on the site, take the hostname of a request, 
 
 - 3a. If the entry has rules
     - Rules are ordered from most specific to least specific, and only one rule can match per request.
-   
+
     - Loop through the rule list and apply regular expression, ignoring case and start/end position, with the full request URL using each rule.
-    
+
         - If a rule match is found, then for the first matching rule:
-          
+
             a. If the rule has `action: ignore`, do not block[^2]
-                
+
             b. If there are rule `exceptions`, do any of the domains and request types match this request?[^1]
-            
+
 	      - Yes: Don't block[^2]
 	      - No: Block
-            
+
 	      c. If the rule has a `surrogate`, serve the corresponding replacement code instead of blocking
-	   
-	      d. If the rule does not have an `action`, matching `exceptions`, or `surrogate`, then block the request 
-	    
+
+	      d. If the rule does not have an `action`, matching `exceptions`, or `surrogate`, then block the request
+
         - If no rule match was found go to 3b.
 
 - 3b. If the entry does not have rules or no rules matched this request
 
     - If the entry has `default: ignore`, then don't block[^2]
     - If the entry has `default: block`, then block the request
-	
+
 [^1]: Rule exceptions can have both a list of domains and a list of request types. The domains in the `domains` list should match on all subdomains. For example, if `a.site.com` is in your domains list, then it should match for `b.a.site.com` but not on `site.com`.
 
 [^2]: Other [privacy protections](https://help.duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/) apply to non-blocked trackers.
 
-See https://github.com/duckduckgo/privacy-grade/blob/master/src/classes/trackers.js for an example implementation. 
+See https://github.com/duckduckgo/privacy-grade/blob/master/src/classes/trackers.js for an example implementation.
 
 ---
 
@@ -73,9 +73,9 @@ This tracker doesn't have any rules and has `default: block`. We will block all 
 
 ### Tracker with no rules and `default: ignore`
 
-This tracker doesn't have any rules and has `default: ignore`. There are some trackers that can not be blocked due to breakage. In 
+This tracker doesn't have any rules and has `default: ignore`. There are some trackers that can not be blocked due to breakage. In
 these cases we can still identify the third-party domain as a tracker so that other privacy protections other than blocking can be used, for
-example, blocking cookies. 
+example, blocking cookies.
 
 ```json
 {
@@ -146,8 +146,8 @@ We have `default: ignore`, so we only block requests that match a rule. The firs
 	    "exceptions": {
 	    	"types": [
 		    "image"
-		], 
-		"domains": [ 
+		],
+		"domains": [
 		    "test-site-2.com"
 		]
 	    }

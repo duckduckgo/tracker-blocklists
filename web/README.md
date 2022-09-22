@@ -1,7 +1,7 @@
 # DuckDuckGo's Web Tracker Blocklist
 
 The web tracker blocklist is built using data from our [Tracker Radar](https://github.com/duckduckgo/tracker-radar). Questions or issues with tracker blocking in DuckDuckGo apps and extensions should be reported in the [Privacy Configuration](https://github.com/duckduckgo/privacy-configuration).
-The trackers included in the blocklist are identified by looking for common third-party requests from [Tracker Radar](https://github.com/duckduckgo/tracker-radar) that are setting cookies or using browser APIs in a way that suggests fingerprinting. 
+The trackers included in the blocklist are identified by looking for common third-party requests from [Tracker Radar](https://github.com/duckduckgo/tracker-radar) that are setting cookies or using browser APIs in a way that suggests fingerprinting.
 
 ## Questions
 
@@ -43,7 +43,7 @@ The domain that should be matched against third-party requests to identify the r
 
 ### owner
 
-[Entity](#entities) (usually a company) that controls each tracker. Each entity has a corresponding [entity file](https://github.com/duckduckgo/tracker-radar/tree/main/entities) in Tracker Radar. 
+[Entity](#entities) (usually a company) that controls each tracker. Each entity has a corresponding [entity file](https://github.com/duckduckgo/tracker-radar/tree/main/entities) in Tracker Radar.
 Entities have the following fields defined:
 
 |name|The name of the entity|
@@ -70,7 +70,7 @@ The likelihood this tracker is using browser APIs to uniquely identify users.
 
 ### default [block, ignore]
 
-The default behavior used when no matching rules are found. 
+The default behavior used when no matching rules are found.
 
 |Default|rules?|Action|
 |-|-|-|
@@ -81,7 +81,7 @@ The default behavior used when no matching rules are found.
 
 ### rules
 
-An optional array of objects containing regexes to match against the full URL of third-party requests made to this domain. A matching rule takes priority over the tracker default action. 
+An optional array of objects containing regexes to match against the full URL of third-party requests made to this domain. A matching rule takes priority over the tracker default action.
 
 |rule|Regex to match against the full tracker URL
 |:-|:-|
@@ -93,7 +93,7 @@ An optional array of objects containing regexes to match against the full URL of
 
 **exceptions**
 
-An optional object that can contain `domains` or `types` arrays. Do not block the tracker request if there is a `domains` or `types` match. In cases where the exceptions object contains both `domains` and `types` both must match. 
+An optional object that can contain `domains` or `types` arrays. Do not block the tracker request if there is a `domains` or `types` match. In cases where the exceptions object contains both `domains` and `types` both must match.
 
 |domains|An array of domains to match against the site requesting the tracker. Do not block in cases where the site domain matches an entry in the `domains` array|
 |:-|:-|
@@ -105,14 +105,14 @@ An optional field listing an action to take when matching on the the rule other 
 
 ## Entities
 
-The entities object contains an entry for each of the trackers contained in the blocklist and comes directly from the [entity data](https://github.com/duckduckgo/tracker-radar/tree/main/entities) in Tracker Radar. 
+The entities object contains an entry for each of the trackers contained in the blocklist and comes directly from the [entity data](https://github.com/duckduckgo/tracker-radar/tree/main/entities) in Tracker Radar.
 
 ## Domains
 
-The domains object is a mapping of all entity properties to entity name. This is used for quick lookup of the site owner for determining if a request is first or third-party. 
+The domains object is a mapping of all entity properties to entity name. This is used for quick lookup of the site owner for determining if a request is first or third-party.
 
 ## CNAMEs
 
 Used for [CNAME cloaking protection](https://help.duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cname-cloaking-protection). The cnames object maps a first-party subdomain that has a DNS CNAME redirecting to a third-party tracker.
 
-[^1]: Other [privacy protections](https://help.duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/) apply to non-blocked trackers 
+[^1]: Other [privacy protections](https://help.duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/) apply to non-blocked trackers
