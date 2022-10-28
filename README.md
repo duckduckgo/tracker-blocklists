@@ -3,11 +3,13 @@
 Tracker blocklists used by DuckDuckGo apps and extensions.
 
 - [Web tracker blocklist](/web)
+- [App tracker blocklist](/app)
 
 ## Related Resources
 - Apps and extensions using blocklists:
   - [iOS app](https://github.com/duckduckgo/iOS) - uses web/apple-tds.json
   - [Android app](https://github.com/duckduckgo/Android) - uses web/tds.json
+    - For blocking app trackers - uses app/android-tds.json
   - [WebExtension](https://github.com/duckduckgo/duckduckgo-privacy-extension) (for Chrome, Firefox, Edge, and Opera) - uses web/tds.json
   - [Safari extension](https://github.com/duckduckgo/privacy-essentials-safari) - uses web/tds.json
   - Mac app (in beta, code not yet open source) - uses web/apple-tds.json
