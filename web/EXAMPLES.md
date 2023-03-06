@@ -24,15 +24,20 @@ For each third party asset request on the site, take the hostname of a request, 
         - If a rule match is found, then for the first matching rule:
 
             a. If the rule has `action: ignore`, do not block[^2]
+	    
+	      b. If there are rule `options`, do any of the domains and request types match this request?[^1]
 
-            b. If there are rule `exceptions`, do any of the domains and request types match this request?[^1]
+	      - No: Don't block[^2]
+	      - Yes: Continue to next step
+
+          c. If there are rule `exceptions`, do any of the domains and request types match this request?[^1]
 
 	      - Yes: Don't block[^2]
 	      - No: Block
 
-	      c. If the rule has a `surrogate`, serve the corresponding replacement code instead of blocking
+	      d. If the rule has a `surrogate`, serve the corresponding replacement code instead of blocking
 
-	      d. If the rule does not have an `action`, matching `exceptions`, or `surrogate`, then block the request
+	      e. If the rule does not have an `action`, matching `exceptions`, or `surrogate`, then block the request
 
         - If no rule match was found go to 3b.
 
@@ -130,9 +135,12 @@ The second rule is limited to blocking all matching requests except for those wh
 | example.com | test-tracker.net/ddm/ | image  |  false | matches rule and matches rule exception |
 | example.com | test-tracker.net/adimage.png | image  |  true | no matching rule, default is set to 'block' |
 
-### Rule with `exceptions`
+### Rule with `exceptions` and `options`
 
-We have `default: ignore`, so we only block requests that match a rule. The first rule doesn't have any `exceptions`, so we block any matching request. The second rule has a blocking exception. We will not block matching `image` requests that come from `test-site-2.com` or its subdomains.
+We have `default: ignore`, so we only block requests that match a rule. 
+- The first rule doesn't have any `exceptions`, so we block any matching request.
+- The second rule (`example\\.net\\/.*\\/AudienceNetworkVPAID\\."`) has a both `exceptions` and `options`. For this rule we only block the request when it matches one of the `options` domains, and only if it doesn't also match an `exceptions` domain. 
+- The third rule
 
 ```json
 {
@@ -143,6 +151,12 @@ We have `default: ignore`, so we only block requests that match a rule. The firs
         },
         {
             "rule": "example\\.net\\/.*\\/AudienceNetworkVPAID\\.",
+	    "options": {
+	    	"domains": [
+		    "videos.test-site-2.com",
+		    "videos.test-site-3.com"
+		]
+	    },
 	    "exceptions": {
 	    	"types": [
 		    "image"
@@ -164,5 +178,6 @@ We have `default: ignore`, so we only block requests that match a rule. The firs
 |---|---|---|---|---|
 | test-site.com | connect.example.net/signals/ |  script |  true | matches rule |
 | test-site.com | example.net/tracker.js |  script |  false | default set to 'ignore' |
-| test-site-2.com | example.net/123/AudienceNetworkVPAID.png | image  |  false | matches exception type and domain |
-| test-site-2.com | example.net/123/AudienceNetworkVPAID.js | script  |  true | matches exception domain, but not type |
+| test-site-2.com | example.net/123/AudienceNetworkVPAID.png | image  |  false | matches option, but also matches exception type and domain |
+| test-site-2.com | example.net/123/AudienceNetworkVPAID.js | script  |  true | matches option, does not match excepton type|
+| test-site-3.com | example.net/123/AudienceNetworkVPAID.png | image  |  true | matches option |
