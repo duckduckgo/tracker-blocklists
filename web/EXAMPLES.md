@@ -139,7 +139,7 @@ The second rule is limited to blocking all matching requests except for those wh
 
 We have `default: ignore`, so we only block requests that match a rule. 
 - The first rule doesn't have any `options` or `exceptions`, so we block any matching request.
-- The second rule has 'options', we will only block requests that match the rule and come from a site matching the domains list.
+- The second rule has `options`, we will only block requests that match the rule and come from a site matching the domains list.
 - The third rule has a both `exceptions` and `options`. For this rule we only block the request when it matches one of the `options` domains, and only if it doesn't also match an `exceptions` domain. 
 ```json
 {
