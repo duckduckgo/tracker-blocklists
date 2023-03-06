@@ -138,10 +138,9 @@ The second rule is limited to blocking all matching requests except for those wh
 ### Rule with `exceptions` and `options`
 
 We have `default: ignore`, so we only block requests that match a rule. 
-- The first rule doesn't have any `exceptions`, so we block any matching request.
-- The second rule (`example\\.net\\/.*\\/AudienceNetworkVPAID\\."`) has a both `exceptions` and `options`. For this rule we only block the request when it matches one of the `options` domains, and only if it doesn't also match an `exceptions` domain. 
-- The third rule
-
+- The first rule doesn't have any `options` or `exceptions`, so we block any matching request.
+- The second rule has 'options', we will only block requests that match the rule and come from a site matching the domains list.
+- The third rule has a both `exceptions` and `options`. For this rule we only block the request when it matches one of the `options` domains, and only if it doesn't also match an `exceptions` domain. 
 ```json
 {
     "domain": "example.net",
@@ -186,6 +185,8 @@ We have `default: ignore`, so we only block requests that match a rule.
 |---|---|---|---|---|
 | test-site.com | connect.example.net/signals/ |  script |  true | matches rule |
 | test-site.com | example.net/tracker.js |  script |  false | default set to 'ignore' |
+| test-site-3.com | sometimes-tracking.example.net/track.js | script  |  true | matches option domain |
+| test-site-2.com | sometimes-tracking.example.net/track.js | script  |  false | does not match option domain |
 | test-site-2.com | example.net/123/AudienceNetworkVPAID.png | image  |  false | matches option, but also matches exception type and domain |
 | test-site-2.com | example.net/123/AudienceNetworkVPAID.js | script  |  true | matches option, does not match excepton type|
-| test-site-3.com | example.net/123/AudienceNetworkVPAID.png | image  |  true | matches option |
+| test-site-3.com | example.net/123/AudienceNetworkVPAID.png | image  |  true | matches option, does not match exception rule |
