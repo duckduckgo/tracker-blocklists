@@ -149,6 +149,14 @@ We have `default: ignore`, so we only block requests that match a rule.
         {
             "rule": "connect\\.example\\.net\\/signals\\/"
         },
+	{
+	    "rule": "sometimes-tracking\\.example\\.net",
+	    "options": {
+	    	"domains": [
+		    "videos.test-site-3.com"
+		]
+	    }
+	},
         {
             "rule": "example\\.net\\/.*\\/AudienceNetworkVPAID\\.",
 	    "options": {
