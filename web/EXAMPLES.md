@@ -46,7 +46,7 @@ For each third party asset request on the site, take the hostname of a request, 
     - If the entry has `default: ignore`, then don't block[^2]
     - If the entry has `default: block`, then block the request
 
-[^1]: Rule exceptions can have both a list of domains and a list of request types. The domains in the `domains` list should match on all subdomains. For example, if `a.site.com` is in your domains list, then it should match for `b.a.site.com` but not on `site.com`.
+[^1]: Rule options and exceptions can have both a list of domains and a list of request types. The domains in the `domains` list should match on all subdomains. For example, if `a.site.com` is in your domains list, then it should match for `b.a.site.com` but not on `site.com`.
 
 [^2]: Other [privacy protections](https://help.duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/) apply to non-blocked trackers.
 
