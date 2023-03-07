@@ -189,4 +189,4 @@ We have `default: ignore`, so we only block requests that match a rule.
 | test-site-2.com | sometimes-tracking.example.net/track.js | script  |  false | does not match option domain |
 | test-site-2.com | example.net/123/AudienceNetworkVPAID.png | image  |  false | matches option, but also matches exception type and domain |
 | test-site-2.com | example.net/123/AudienceNetworkVPAID.js | script  |  true | matches option, does not match excepton type|
-| test-site-3.com | example.net/123/AudienceNetworkVPAID.png | image  |  true | matches option, does not match exception rule |
+| test-site-3.com | example.net/123/AudienceNetworkVPAID.png | image  |  true | matches option, does not match exception domain |
