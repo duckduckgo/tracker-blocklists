@@ -165,7 +165,7 @@ We have `default: ignore`, so we only block requests that match a rule.
 		    "test-site-3.com"
 		], 
 		"types": [
-	            "script
+	            "script"
 		]
 	    },
 	    "exceptions": {
