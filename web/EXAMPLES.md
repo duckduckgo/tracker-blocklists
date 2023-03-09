@@ -170,7 +170,7 @@ We have `default: ignore`, so we only block requests that match a rule.
 	    },
 	    "exceptions": {
 	    	"types": [
-		    "image"
+		    "script"
 		],
 		"domains": [
 		    "test-site-2.com"
@@ -192,5 +192,4 @@ We have `default: ignore`, so we only block requests that match a rule.
 | test-site-2.com | sometimes-tracking.example.net/track.js | script  |  false | does not match option domain |
 | test-site-2.com | example.net/123/AudienceNetworkVPAID.png | script  |  false | matches option, but also matches exception type and domain |
 | test-site-3.com | example.net/123/AudienceNetworkVPAID.png | image  |  false | matches option domain but not type |
-| test-site-2.com | example.net/123/AudienceNetworkVPAID.js | script  |  true | matches option, does not match excepton type|
-| test-site-3.com | example.net/123/AudienceNetworkVPAID.png | image  |  true | matches option, does not match exception domain |
+| test-site-3.com | example.net/123/AudienceNetworkVPAID.png | script  |  true | matches option, does not match exception domain |
