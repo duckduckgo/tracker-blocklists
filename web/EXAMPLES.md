@@ -27,8 +27,8 @@ For each third party asset request on the site, take the hostname of a request, 
 	    
 	      b. If there are rule `options`, do any of the domains and request types match this request?[^1]
 
-	      - No: Don't block[^2]
-	      - Yes: Continue to next step
+	      - No: Continue to next rule
+	      - Yes: Continue to next step (C below)
 
           c. If there are rule `exceptions`, do any of the domains and request types match this request?[^1]
 
@@ -107,6 +107,7 @@ The second rule is limited to blocking all matching requests except for those wh
 ```json
 {
     "domain": "test-tracker.net",
+    "default": "block",
     "rules": [
         {
             "rule": "test-tracker\\.net\\/instream\\/.*\\/ad_status\\.js",
@@ -121,7 +122,6 @@ The second rule is limited to blocking all matching requests except for those wh
             }
         }
     ],
-    "default": "block",
     "owner": {
         "name": "Tracking Company"
     }
@@ -144,6 +144,7 @@ We have `default: ignore`, so we only block requests that match a rule.
 ```json
 {
     "domain": "example.net",
+    "default": "ignore",
     "rules": [
         {
             "rule": "connect\\.example\\.net\\/signals\\/"
@@ -152,7 +153,7 @@ We have `default: ignore`, so we only block requests that match a rule.
 	    "rule": "sometimes-tracking\\.example\\.net",
 	    "options": {
 	    	"domains": [
-		    "videos.test-site-3.com"
+		    "test-site-3.com"
 		]
 	    }
 	},
@@ -160,8 +161,11 @@ We have `default: ignore`, so we only block requests that match a rule.
             "rule": "example\\.net\\/.*\\/AudienceNetworkVPAID\\.",
 	    "options": {
 	    	"domains": [
-		    "videos.test-site-2.com",
-		    "videos.test-site-3.com"
+		    "test-site-2.com",
+		    "test-site-3.com"
+		], 
+		"types": [
+	            "script
 		]
 	    },
 	    "exceptions": {
@@ -174,7 +178,6 @@ We have `default: ignore`, so we only block requests that match a rule.
 	    }
         }
     ],
-    "default": "ignore",
     "owner": {
         "name": "Example Tracker"
     }
@@ -187,6 +190,7 @@ We have `default: ignore`, so we only block requests that match a rule.
 | test-site.com | example.net/tracker.js |  script |  false | default set to 'ignore' |
 | test-site-3.com | sometimes-tracking.example.net/track.js | script  |  true | matches option domain |
 | test-site-2.com | sometimes-tracking.example.net/track.js | script  |  false | does not match option domain |
-| test-site-2.com | example.net/123/AudienceNetworkVPAID.png | image  |  false | matches option, but also matches exception type and domain |
+| test-site-2.com | example.net/123/AudienceNetworkVPAID.png | script  |  false | matches option, but also matches exception type and domain |
+| test-site-3.com | example.net/123/AudienceNetworkVPAID.png | image  |  false | matches option domain but not type |
 | test-site-2.com | example.net/123/AudienceNetworkVPAID.js | script  |  true | matches option, does not match excepton type|
 | test-site-3.com | example.net/123/AudienceNetworkVPAID.png | image  |  true | matches option, does not match exception domain |
