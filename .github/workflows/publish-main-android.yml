@@ -19,9 +19,10 @@ jobs:
       - name: Push to CDN
         uses: jakejarvis/s3-sync-action@master
         with:
-          args: --acl public-read --follow-symlinks --exclude '*' --include '/app/android-tds.json'
+          args: --acl public-read --follow-symlinks --exclude '*' --include '/android-tds.json'
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          SOURCE_DIR: "app"
           DEST_DIR: "trackerblocking/appTP/2.0"
