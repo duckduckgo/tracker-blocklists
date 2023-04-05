@@ -17,7 +17,7 @@ jobs:
           node-version: "14"
 
       - name: Push to CDN
-        uses: jakejarvis/s3-sync-action@v0
+        uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks
         env:
