@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 
+      - name: Checkout
         uses: actions/checkout@v2
       
       - name: Upload file to CDN
@@ -24,4 +24,4 @@ jobs:
           AWS_REGION: 'eu-central-1'
           FILE: ./app/android-tds.json
           DEST_DIR: "trackerblocking/appTP/2.0"
-        
+          
