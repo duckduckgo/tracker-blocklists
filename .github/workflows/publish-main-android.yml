@@ -1,6 +1,6 @@
 name: Update production android apptp blocklist
 
-on: 
+on:
   push:
     branches:
       - main
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout 
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
       
       - name: Upload file to CDN
-      - uses: a-sync/s3-uploader@v2
+        uses: a-sync/s3-uploader@v2
         with:
           args: --acl public-read
         env:
