@@ -79,6 +79,13 @@
             },
             "default": "block"
         },
+        "adrta.com": {
+            "owner": {
+                "name": "Pixalate, Inc.",
+                "displayName": "Pixalate"
+            },
+            "default": "ignore"
+        },
         "ads-bidder-api.twitter.com": {
             "owner": {
                 "name": "Twitter, Inc.",
@@ -162,6 +169,13 @@
                 "displayName": "Google"
             },
             "default": "block"
+        },
+        "adsximg.com": {
+            "owner": {
+                "name": "Human Security, Inc.",
+                "displayName": "Human Security"
+            },
+            "default": "ignore"
         },
         "ag.innovid.com": {
             "owner": {
@@ -730,6 +744,13 @@
             },
             "default": "block"
         },
+        "firebaseremoteconfig.googleapis.com": {
+            "owner": {
+                "name": "Google LLC",
+                "displayName": "Google"
+            },
+            "default": "ignore"
+        },
         "fls.doubleclick.net": {
             "owner": {
                 "name": "Google LLC",
@@ -793,12 +814,26 @@
             },
             "default": "block"
         },
+        "gql.reddit.com": {
+            "owner": {
+                "name": "Reddit Inc.",
+                "displayName": "Reddit"
+            },
+            "default": "ignore"
+        },
         "graph.accountkit.com": {
             "owner": {
                 "name": "Facebook, Inc.",
                 "displayName": "Facebook"
             },
             "default": "block"
+        },
+        "graph.facebook.com": {
+            "owner": {
+                "name": "Facebook, Inc.",
+                "displayName": "Facebook"
+            },
+            "default": "ignore"
         },
         "graph.instagram.com": {
             "owner": {
@@ -834,6 +869,13 @@
                 "displayName": "PubMatic"
             },
             "default": "block"
+        },
+        "hcaptcha.com": {
+            "owner": {
+                "name": "Intuition Machines, Inc.",
+                "displayName": "Intuition Machines"
+            },
+            "default": "ignore"
         },
         "hexagon-analytics.com": {
             "owner": {
@@ -1276,6 +1318,13 @@
             },
             "default": "block"
         },
+        "platform.twitter.com": {
+            "owner": {
+                "name": "Twitter, Inc.",
+                "displayName": "Twitter"
+            },
+            "default": "ignore"
+        },
         "pm.w55c.net": {
             "owner": {
                 "name": "DataXu",
@@ -1338,6 +1387,13 @@
                 "displayName": "AppsFlyer"
             },
             "default": "block"
+        },
+        "riskified.com": {
+            "owner": {
+                "name": "Riskified Ltd.",
+                "displayName": "Riskified"
+            },
+            "default": "ignore"
         },
         "rtb-csync.smartadserver.com": {
             "owner": {
@@ -1492,6 +1548,13 @@
                 "displayName": "Bugsnag"
             },
             "default": "block"
+        },
+        "siftscience.com": {
+            "owner": {
+                "name": "Sift Science, Inc.",
+                "displayName": "Sift Science"
+            },
+            "default": "ignore"
         },
         "simage2.pubmatic.com": {
             "owner": {
@@ -1667,6 +1730,13 @@
                 "displayName": "AppsFlyer"
             },
             "default": "block"
+        },
+        "t.co": {
+            "owner": {
+                "name": "Twitter, Inc.",
+                "displayName": "Twitter"
+            },
+            "default": "ignore"
         },
         "t.myvisualiq.net": {
             "owner": {
