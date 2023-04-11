@@ -110,6 +110,11 @@
             "default": "block",
             "rules": [
                 {
+                    "rule": "2mdn\\.net\\/instream\\/html5\\/ima3\\.js",
+                    "action": "ignore",
+                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                },
+                {
                     "rule": "2mdn\\.net\\/instream\\/video\\/client\\.js",
                     "exceptions": {
                         "domains": [
@@ -117,11 +122,6 @@
                             "surfline.com"
                         ]
                     }
-                },
-                {
-                    "rule": "2mdn\\.net\\/instream\\/html5\\/ima3\\.js",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
                 }
             ]
         },
@@ -148,13 +148,13 @@
                 {
                     "rule": "2o7\\.net",
                     "exceptions": {
+                        "types": [
+                            "image"
+                        ],
                         "domains": [
                             "dunesvillage.com",
                             "kiplinger.com",
                             "tennislink.usta.com"
-                        ],
-                        "types": [
-                            "image"
                         ]
                     }
                 }
@@ -1279,11 +1279,11 @@
                 {
                     "rule": "acdn\\.adnxs\\.com\\/video",
                     "exceptions": {
-                        "domains": [
-                            "thechive.com"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "thechive.com"
                         ]
                     }
                 },
@@ -1299,11 +1299,11 @@
                 {
                     "rule": "adnxs\\.com\\/jpt",
                     "exceptions": {
-                        "domains": [
-                            "thechive.com"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "thechive.com"
                         ]
                     }
                 }
@@ -2381,6 +2381,52 @@
             ],
             "default": "block"
         },
+        "alicdn.com": {
+            "domain": "alicdn.com",
+            "owner": {
+                "name": "Alibaba Group",
+                "displayName": "Alibaba"
+            },
+            "prevalence": 0.000657,
+            "fingerprinting": 3,
+            "cookies": 0.000115,
+            "categories": [
+                "Content Delivery"
+            ],
+            "default": "ignore",
+            "rules": [
+                {
+                    "rule": "alicdn\\.com\\/g\\/secdev\\/sufei_data\\/3\\.9\\.10\\/index\\.js",
+                    "fingerprinting": 3,
+                    "cookies": 0.0000203
+                },
+                {
+                    "rule": "alicdn\\.com\\/g",
+                    "fingerprinting": 3,
+                    "cookies": 0.0000271
+                },
+                {
+                    "rule": "alicdn\\.com\\/AWSC\\/uab\\/1\\.140\\.0\\/collina\\.js",
+                    "fingerprinting": 3,
+                    "cookies": 0
+                },
+                {
+                    "rule": "alicdn\\.com\\/AWSC\\/WebUMID\\/1\\.88\\.4\\/um\\.js",
+                    "fingerprinting": 3,
+                    "cookies": 0
+                },
+                {
+                    "rule": "alicdn\\.com\\/secdev\\/sufei_data\\/3\\.9\\.10\\/index\\.js",
+                    "fingerprinting": 3,
+                    "cookies": 0.0000271
+                },
+                {
+                    "rule": "alicdn\\.com\\/AWSC\\/WebUMID\\/1\\.93\\.0\\/um\\.js",
+                    "fingerprinting": 3,
+                    "cookies": 0
+                }
+            ]
+        },
         "alicdn.com.edgekey.net": {
             "domain": "alicdn.com.edgekey.net",
             "owner": {
@@ -2427,52 +2473,6 @@
                 },
                 {
                     "rule": "alicdn\\.com\\.edgekey\\.net\\/AWSC\\/WebUMID\\/1\\.73\\.2\\/um\\.js",
-                    "fingerprinting": 3,
-                    "cookies": 0
-                }
-            ]
-        },
-        "alicdn.com": {
-            "domain": "alicdn.com",
-            "owner": {
-                "name": "Alibaba Group",
-                "displayName": "Alibaba"
-            },
-            "prevalence": 0.000657,
-            "fingerprinting": 3,
-            "cookies": 0.000115,
-            "categories": [
-                "Content Delivery"
-            ],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "alicdn\\.com\\/g\\/secdev\\/sufei_data\\/3\\.9\\.10\\/index\\.js",
-                    "fingerprinting": 3,
-                    "cookies": 0.0000203
-                },
-                {
-                    "rule": "alicdn\\.com\\/g",
-                    "fingerprinting": 3,
-                    "cookies": 0.0000271
-                },
-                {
-                    "rule": "alicdn\\.com\\/AWSC\\/uab\\/1\\.140\\.0\\/collina\\.js",
-                    "fingerprinting": 3,
-                    "cookies": 0
-                },
-                {
-                    "rule": "alicdn\\.com\\/AWSC\\/WebUMID\\/1\\.88\\.4\\/um\\.js",
-                    "fingerprinting": 3,
-                    "cookies": 0
-                },
-                {
-                    "rule": "alicdn\\.com\\/secdev\\/sufei_data\\/3\\.9\\.10\\/index\\.js",
-                    "fingerprinting": 3,
-                    "cookies": 0.0000271
-                },
-                {
-                    "rule": "alicdn\\.com\\/AWSC\\/WebUMID\\/1\\.93\\.0\\/um\\.js",
                     "fingerprinting": 3,
                     "cookies": 0
                 }
@@ -4268,11 +4268,11 @@
                 {
                     "rule": "cdn\\.blueconic\\.net\\/salemmediagroup\\.js",
                     "exceptions": {
-                        "domains": [
-                            "biblestudytools.com"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "biblestudytools.com"
                         ]
                     }
                 }
@@ -7317,11 +7317,11 @@
                 {
                     "rule": "ad\\.crwdcntrl\\.net\\/.*\\/callback=jsonp_callback",
                     "exceptions": {
-                        "domains": [
-                            "weather.com"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "weather.com"
                         ]
                     }
                 }
@@ -9120,6 +9120,21 @@
                 }
             ]
         },
+        "dailymotion.com": {
+            "domain": "dailymotion.com",
+            "owner": {
+                "name": "Dailymotion SA",
+                "displayName": "Dailymotion"
+            },
+            "prevalence": 0.00167,
+            "fingerprinting": 2,
+            "cookies": 0.00156,
+            "categories": [
+                "Content Delivery",
+                "Embedded Content"
+            ],
+            "default": "ignore"
+        },
         "damdoor.com": {
             "domain": "damdoor.com",
             "owner": {
@@ -9856,24 +9871,24 @@
                 {
                     "rule": "pubads\\.g\\.doubleclick\\.net\\/gampad\\/ads",
                     "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ],
                         "domains": [
                             "dailywire.com",
                             "mlb.com",
                             "surfline.com"
-                        ],
-                        "types": [
-                            "xmlhttprequest"
                         ]
                     }
                 },
                 {
                     "rule": "pubads\\.g\\.doubleclick\\.net\\/ssai\\/event",
                     "exceptions": {
-                        "domains": [
-                            "cbsnews.com"
-                        ],
                         "types": [
                             "xmlhttprequest"
+                        ],
+                        "domains": [
+                            "cbsnews.com"
                         ]
                     }
                 },
@@ -12183,6 +12198,23 @@
                 }
             ]
         },
+        "fonts.net": {
+            "domain": "fonts.net",
+            "owner": {
+                "name": "Monotype Imaging Inc.",
+                "displayName": "Monotype Imaging",
+                "privacyPolicy": "https://www.monotype.com/legal/privacy-policy/",
+                "url": "http://monotype.com"
+            },
+            "prevalence": 0.00787,
+            "fingerprinting": 1,
+            "cookies": 0.00783,
+            "categories": [
+                "Action Pixels",
+                "Content Delivery"
+            ],
+            "default": "ignore"
+        },
         "foresee.com": {
             "domain": "foresee.com",
             "owner": {
@@ -12274,34 +12306,6 @@
             "categories": [],
             "default": "block"
         },
-        "fox.com.edgesuite.net": {
-            "domain": "fox.com.edgesuite.net",
-            "owner": {
-                "name": "Akamai Technologies",
-                "displayName": "Akamai",
-                "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
-                "url": "http://akamai.com"
-            },
-            "prevalence": 0.00023,
-            "fingerprinting": 2,
-            "cookies": 0.00023,
-            "categories": [
-                "Content Delivery"
-            ],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "fox\\.com\\.edgesuite\\.net\\/static\\/fts\\/display\\/ver\\/app\\.v101\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.000108
-                },
-                {
-                    "rule": "fox\\.com\\.edgesuite\\.net\\/static\\/fts\\/display\\/libs\\/prebid\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.000108
-                }
-            ]
-        },
         "fox.com": {
             "domain": "fox.com",
             "owner": {
@@ -12335,6 +12339,34 @@
                     "rule": "fox\\.com\\/static\\/outkick\\/display\\/libs\\/prebid\\.js",
                     "fingerprinting": 2,
                     "cookies": 0.0000135
+                }
+            ]
+        },
+        "fox.com.edgesuite.net": {
+            "domain": "fox.com.edgesuite.net",
+            "owner": {
+                "name": "Akamai Technologies",
+                "displayName": "Akamai",
+                "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+                "url": "http://akamai.com"
+            },
+            "prevalence": 0.00023,
+            "fingerprinting": 2,
+            "cookies": 0.00023,
+            "categories": [
+                "Content Delivery"
+            ],
+            "default": "ignore",
+            "rules": [
+                {
+                    "rule": "fox\\.com\\.edgesuite\\.net\\/static\\/fts\\/display\\/ver\\/app\\.v101\\.js",
+                    "fingerprinting": 2,
+                    "cookies": 0.000108
+                },
+                {
+                    "rule": "fox\\.com\\.edgesuite\\.net\\/static\\/fts\\/display\\/libs\\/prebid\\.js",
+                    "fingerprinting": 1,
+                    "cookies": 0.000108
                 }
             ]
         },
@@ -13084,38 +13116,6 @@
             "categories": [],
             "default": "ignore"
         },
-        "google.com.au": {
-            "domain": "google.com.au",
-            "owner": {
-                "name": "Google LLC",
-                "displayName": "Google",
-                "privacyPolicy": "https://policies.google.com/privacy?hl=en&gl=us",
-                "url": "http://google.com"
-            },
-            "prevalence": 0.0000542,
-            "fingerprinting": 1,
-            "cookies": 0.00000677,
-            "categories": [],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "google\\.com\\.au\\/adsense\\/search\\/ads\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.00000677
-                },
-                {
-                    "rule": "google\\.com\\.au\\/maps\\/api\\/js",
-                    "fingerprinting": 2,
-                    "cookies": 0
-                },
-                {
-                    "rule": "google\\.com\\.au\\/afs\\/gen_204",
-                    "fingerprinting": 0,
-                    "cookies": 0.0000135,
-                    "comment": "pixel"
-                }
-            ]
-        },
         "google.com": {
             "domain": "google.com",
             "owner": {
@@ -13356,6 +13356,38 @@
                     "rule": "google\\.com\\/114526753849739041348",
                     "fingerprinting": 0,
                     "cookies": 0,
+                    "comment": "pixel"
+                }
+            ]
+        },
+        "google.com.au": {
+            "domain": "google.com.au",
+            "owner": {
+                "name": "Google LLC",
+                "displayName": "Google",
+                "privacyPolicy": "https://policies.google.com/privacy?hl=en&gl=us",
+                "url": "http://google.com"
+            },
+            "prevalence": 0.0000542,
+            "fingerprinting": 1,
+            "cookies": 0.00000677,
+            "categories": [],
+            "default": "ignore",
+            "rules": [
+                {
+                    "rule": "google\\.com\\.au\\/adsense\\/search\\/ads\\.js",
+                    "fingerprinting": 2,
+                    "cookies": 0.00000677
+                },
+                {
+                    "rule": "google\\.com\\.au\\/maps\\/api\\/js",
+                    "fingerprinting": 2,
+                    "cookies": 0
+                },
+                {
+                    "rule": "google\\.com\\.au\\/afs\\/gen_204",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000135,
                     "comment": "pixel"
                 }
             ]
@@ -14226,6 +14258,23 @@
                     "comment": "pixel"
                 }
             ]
+        },
+        "highwebmedia.com": {
+            "domain": "highwebmedia.com",
+            "owner": {
+                "name": "Chaturbate, LLC",
+                "displayName": "Chaturbate",
+                "privacyPolicy": "https://chaturbate.com/privacy/",
+                "url": "http://chaturbate.com"
+            },
+            "prevalence": 0.000826,
+            "fingerprinting": 1,
+            "cookies": 0.000813,
+            "categories": [
+                "Content Delivery",
+                "Embedded Content"
+            ],
+            "default": "ignore"
         },
         "histats.com": {
             "domain": "histats.com",
@@ -15258,11 +15307,11 @@
                 {
                     "rule": "imrworldwide\\.com\\/v60\\.js",
                     "exceptions": {
-                        "domains": [
-                            "threenow.co.nz"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "threenow.co.nz"
                         ]
                     }
                 }
@@ -22966,6 +23015,25 @@
             ],
             "default": "block"
         },
+        "pinimg.com": {
+            "domain": "pinimg.com",
+            "owner": {
+                "name": "Pinterest, Inc.",
+                "displayName": "Pinterest",
+                "privacyPolicy": "https://policy.pinterest.com/en/privacy-policy",
+                "url": "http://pinterest.com"
+            },
+            "prevalence": 0.0446,
+            "fingerprinting": 2,
+            "cookies": 0.0406,
+            "categories": [
+                "Social - Share",
+                "Content Delivery",
+                "Embedded Content",
+                "Social Network"
+            ],
+            "default": "ignore"
+        },
         "pippio.com": {
             "domain": "pippio.com",
             "owner": {
@@ -24544,25 +24612,25 @@
                 {
                     "rule": "palacesquare\\.rambler\\.ru",
                     "exceptions": {
-                        "domains": [
-                            "championat.com",
-                            "lenta.ru"
-                        ],
                         "types": [
                             "image",
                             "stylesheet"
+                        ],
+                        "domains": [
+                            "championat.com",
+                            "lenta.ru"
                         ]
                     }
                 },
                 {
                     "rule": "comments\\.rambler\\.ru",
                     "exceptions": {
+                        "types": [
+                            "script"
+                        ],
                         "domains": [
                             "championat.com",
                             "lenta.ru"
-                        ],
-                        "types": [
-                            "script"
                         ]
                     }
                 },
@@ -25580,11 +25648,11 @@
                 {
                     "rule": "ak\\.sail-horizon\\.com\\/spm\\/spm",
                     "exceptions": {
-                        "domains": [
-                            "watch.wwe.com"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "watch.wwe.com"
                         ]
                     }
                 }
@@ -25868,27 +25936,6 @@
             "cookies": 0.01,
             "default": "block"
         },
-        "scene7.com.edgekey.net": {
-            "domain": "scene7.com.edgekey.net",
-            "owner": {
-                "name": "Akamai Technologies",
-                "displayName": "Akamai",
-                "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
-                "url": "http://akamai.com"
-            },
-            "prevalence": 0.00137,
-            "fingerprinting": 1,
-            "cookies": 0.0000271,
-            "categories": [],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "scene7\\.com\\.edgekey\\.net\\/s7viewersdk\\/3\\.12\\/MixedMediaViewer\\/js\\/s7sdk\\/utils\\/Utils\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0
-                }
-            ]
-        },
         "scene7.com": {
             "domain": "scene7.com",
             "owner": {
@@ -25957,6 +26004,27 @@
                     "fingerprinting": 0,
                     "cookies": 0,
                     "comment": "pixel"
+                }
+            ]
+        },
+        "scene7.com.edgekey.net": {
+            "domain": "scene7.com.edgekey.net",
+            "owner": {
+                "name": "Akamai Technologies",
+                "displayName": "Akamai",
+                "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+                "url": "http://akamai.com"
+            },
+            "prevalence": 0.00137,
+            "fingerprinting": 1,
+            "cookies": 0.0000271,
+            "categories": [],
+            "default": "ignore",
+            "rules": [
+                {
+                    "rule": "scene7\\.com\\.edgekey\\.net\\/s7viewersdk\\/3\\.12\\/MixedMediaViewer\\/js\\/s7sdk\\/utils\\/Utils\\.js",
+                    "fingerprinting": 2,
+                    "cookies": 0
                 }
             ]
         },
@@ -31637,11 +31705,11 @@
                 {
                     "rule": "dev\\.visualwebsiteoptimizer\\.com",
                     "exceptions": {
-                        "domains": [
-                            "adoramapix.com"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "adoramapix.com"
                         ]
                     }
                 }
@@ -31797,6 +31865,25 @@
                 }
             ]
         },
+        "vocento.com": {
+            "domain": "vocento.com",
+            "owner": {
+                "name": "vocento",
+                "displayName": "vocento"
+            },
+            "prevalence": 0.0000813,
+            "fingerprinting": 2,
+            "cookies": 0.0000677,
+            "categories": [],
+            "default": "ignore",
+            "rules": [
+                {
+                    "rule": "vocento\\.com\\/js\\/commento\\.js",
+                    "fingerprinting": 1,
+                    "cookies": 0.0000339
+                }
+            ]
+        },
         "vocento.com.akamaized.net": {
             "domain": "vocento.com.akamaized.net",
             "owner": {
@@ -31817,25 +31904,6 @@
                     "rule": "vocento\\.com\\.akamaized\\.net\\/vocuser\\/v4\\/resources\\/js\\/ppll\\/loader\\/vocento-vocuser-preloader\\.js",
                     "fingerprinting": 3,
                     "cookies": 0.0000135
-                }
-            ]
-        },
-        "vocento.com": {
-            "domain": "vocento.com",
-            "owner": {
-                "name": "vocento",
-                "displayName": "vocento"
-            },
-            "prevalence": 0.0000813,
-            "fingerprinting": 2,
-            "cookies": 0.0000677,
-            "categories": [],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "vocento\\.com\\/js\\/commento\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000339
                 }
             ]
         },
@@ -33117,6 +33185,24 @@
                 }
             ]
         },
+        "yandex.net": {
+            "domain": "yandex.net",
+            "owner": {
+                "name": "Yandex LLC",
+                "displayName": "Yandex",
+                "privacyPolicy": "https://yandex.com/legal/privacy/",
+                "url": "http://yandex.com"
+            },
+            "prevalence": 0.00345,
+            "fingerprinting": 1,
+            "cookies": 0.000183,
+            "categories": [
+                "Content Delivery",
+                "Embedded Content",
+                "Session Replay"
+            ],
+            "default": "ignore"
+        },
         "yandex.ru": {
             "domain": "yandex.ru",
             "owner": {
@@ -33162,21 +33248,6 @@
                     "comment": "Allow to load, but all other protections apply, including cookie protection"
                 },
                 {
-                    "rule": "yandex\\.ru\\/system\\/video-ads-sdk\\/adsdk\\.js",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "yandex\\.ru\\/vod\\/vh-special-converted\\/vod-content",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "yandex\\.ru\\/log",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
                     "rule": "api-maps\\.yandex\\.ru",
                     "exceptions": {
                         "types": [
@@ -33200,8 +33271,43 @@
                             "image"
                         ]
                     }
+                },
+                {
+                    "rule": "yandex\\.ru\\/system\\/video-ads-sdk\\/adsdk\\.js",
+                    "action": "ignore",
+                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                },
+                {
+                    "rule": "yandex\\.ru\\/vod\\/vh-special-converted\\/vod-content",
+                    "action": "ignore",
+                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                },
+                {
+                    "rule": "yandex\\.ru\\/log",
+                    "action": "ignore",
+                    "comment": "Allow to load, but all other protections apply, including cookie protection"
                 }
             ]
+        },
+        "yastatic.net": {
+            "domain": "yastatic.net",
+            "owner": {
+                "name": "Yandex LLC",
+                "displayName": "Yandex",
+                "privacyPolicy": "https://yandex.com/legal/privacy/",
+                "url": "http://yandex.com"
+            },
+            "prevalence": 0.00592,
+            "fingerprinting": 3,
+            "cookies": 0.00445,
+            "categories": [
+                "Ad Motivated Tracking",
+                "Advertising",
+                "Social - Share",
+                "Content Delivery",
+                "Embedded Content"
+            ],
+            "default": "ignore"
         },
         "yellowblue.io": {
             "domain": "yellowblue.io",
