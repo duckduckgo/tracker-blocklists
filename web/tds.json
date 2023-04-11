@@ -110,6 +110,11 @@
             "default": "block",
             "rules": [
                 {
+                    "rule": "2mdn\\.net\\/instream\\/html5\\/ima3\\.js",
+                    "action": "ignore",
+                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                },
+                {
                     "rule": "2mdn\\.net\\/instream\\/video\\/client\\.js",
                     "exceptions": {
                         "domains": [
@@ -117,11 +122,6 @@
                             "surfline.com"
                         ]
                     }
-                },
-                {
-                    "rule": "2mdn\\.net\\/instream\\/html5\\/ima3\\.js",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
                 }
             ]
         },
@@ -148,13 +148,13 @@
                 {
                     "rule": "2o7\\.net",
                     "exceptions": {
+                        "types": [
+                            "image"
+                        ],
                         "domains": [
                             "dunesvillage.com",
                             "kiplinger.com",
                             "tennislink.usta.com"
-                        ],
-                        "types": [
-                            "image"
                         ]
                     }
                 }
@@ -1279,11 +1279,11 @@
                 {
                     "rule": "acdn\\.adnxs\\.com\\/video",
                     "exceptions": {
-                        "domains": [
-                            "thechive.com"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "thechive.com"
                         ]
                     }
                 },
@@ -1299,11 +1299,11 @@
                 {
                     "rule": "adnxs\\.com\\/jpt",
                     "exceptions": {
-                        "domains": [
-                            "thechive.com"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "thechive.com"
                         ]
                     }
                 }
@@ -2381,6 +2381,52 @@
             ],
             "default": "block"
         },
+        "alicdn.com": {
+            "domain": "alicdn.com",
+            "owner": {
+                "name": "Alibaba Group",
+                "displayName": "Alibaba"
+            },
+            "prevalence": 0.000657,
+            "fingerprinting": 3,
+            "cookies": 0.000115,
+            "categories": [
+                "Content Delivery"
+            ],
+            "default": "ignore",
+            "rules": [
+                {
+                    "rule": "alicdn\\.com\\/g\\/secdev\\/sufei_data\\/3\\.9\\.10\\/index\\.js",
+                    "fingerprinting": 3,
+                    "cookies": 0.0000203
+                },
+                {
+                    "rule": "alicdn\\.com\\/g",
+                    "fingerprinting": 3,
+                    "cookies": 0.0000271
+                },
+                {
+                    "rule": "alicdn\\.com\\/AWSC\\/uab\\/1\\.140\\.0\\/collina\\.js",
+                    "fingerprinting": 3,
+                    "cookies": 0
+                },
+                {
+                    "rule": "alicdn\\.com\\/AWSC\\/WebUMID\\/1\\.88\\.4\\/um\\.js",
+                    "fingerprinting": 3,
+                    "cookies": 0
+                },
+                {
+                    "rule": "alicdn\\.com\\/secdev\\/sufei_data\\/3\\.9\\.10\\/index\\.js",
+                    "fingerprinting": 3,
+                    "cookies": 0.0000271
+                },
+                {
+                    "rule": "alicdn\\.com\\/AWSC\\/WebUMID\\/1\\.93\\.0\\/um\\.js",
+                    "fingerprinting": 3,
+                    "cookies": 0
+                }
+            ]
+        },
         "alicdn.com.edgekey.net": {
             "domain": "alicdn.com.edgekey.net",
             "owner": {
@@ -2427,52 +2473,6 @@
                 },
                 {
                     "rule": "alicdn\\.com\\.edgekey\\.net\\/AWSC\\/WebUMID\\/1\\.73\\.2\\/um\\.js",
-                    "fingerprinting": 3,
-                    "cookies": 0
-                }
-            ]
-        },
-        "alicdn.com": {
-            "domain": "alicdn.com",
-            "owner": {
-                "name": "Alibaba Group",
-                "displayName": "Alibaba"
-            },
-            "prevalence": 0.000657,
-            "fingerprinting": 3,
-            "cookies": 0.000115,
-            "categories": [
-                "Content Delivery"
-            ],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "alicdn\\.com\\/g\\/secdev\\/sufei_data\\/3\\.9\\.10\\/index\\.js",
-                    "fingerprinting": 3,
-                    "cookies": 0.0000203
-                },
-                {
-                    "rule": "alicdn\\.com\\/g",
-                    "fingerprinting": 3,
-                    "cookies": 0.0000271
-                },
-                {
-                    "rule": "alicdn\\.com\\/AWSC\\/uab\\/1\\.140\\.0\\/collina\\.js",
-                    "fingerprinting": 3,
-                    "cookies": 0
-                },
-                {
-                    "rule": "alicdn\\.com\\/AWSC\\/WebUMID\\/1\\.88\\.4\\/um\\.js",
-                    "fingerprinting": 3,
-                    "cookies": 0
-                },
-                {
-                    "rule": "alicdn\\.com\\/secdev\\/sufei_data\\/3\\.9\\.10\\/index\\.js",
-                    "fingerprinting": 3,
-                    "cookies": 0.0000271
-                },
-                {
-                    "rule": "alicdn\\.com\\/AWSC\\/WebUMID\\/1\\.93\\.0\\/um\\.js",
                     "fingerprinting": 3,
                     "cookies": 0
                 }
@@ -4268,11 +4268,11 @@
                 {
                     "rule": "cdn\\.blueconic\\.net\\/salemmediagroup\\.js",
                     "exceptions": {
-                        "domains": [
-                            "biblestudytools.com"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "biblestudytools.com"
                         ]
                     }
                 }
@@ -7317,11 +7317,11 @@
                 {
                     "rule": "ad\\.crwdcntrl\\.net\\/.*\\/callback=jsonp_callback",
                     "exceptions": {
-                        "domains": [
-                            "weather.com"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "weather.com"
                         ]
                     }
                 }
@@ -9120,6 +9120,21 @@
                 }
             ]
         },
+        "dailymotion.com": {
+            "domain": "dailymotion.com",
+            "owner": {
+                "name": "Dailymotion SA",
+                "displayName": "Dailymotion"
+            },
+            "prevalence": 0.00167,
+            "fingerprinting": 2,
+            "cookies": 0.00156,
+            "categories": [
+                "Content Delivery",
+                "Embedded Content"
+            ],
+            "default": "ignore"
+        },
         "damdoor.com": {
             "domain": "damdoor.com",
             "owner": {
@@ -9856,24 +9871,24 @@
                 {
                     "rule": "pubads\\.g\\.doubleclick\\.net\\/gampad\\/ads",
                     "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ],
                         "domains": [
                             "dailywire.com",
                             "mlb.com",
                             "surfline.com"
-                        ],
-                        "types": [
-                            "xmlhttprequest"
                         ]
                     }
                 },
                 {
                     "rule": "pubads\\.g\\.doubleclick\\.net\\/ssai\\/event",
                     "exceptions": {
-                        "domains": [
-                            "cbsnews.com"
-                        ],
                         "types": [
                             "xmlhttprequest"
+                        ],
+                        "domains": [
+                            "cbsnews.com"
                         ]
                     }
                 },
@@ -12183,6 +12198,23 @@
                 }
             ]
         },
+        "fonts.net": {
+            "domain": "fonts.net",
+            "owner": {
+                "name": "Monotype Imaging Inc.",
+                "displayName": "Monotype Imaging",
+                "privacyPolicy": "https://www.monotype.com/legal/privacy-policy/",
+                "url": "http://monotype.com"
+            },
+            "prevalence": 0.00787,
+            "fingerprinting": 1,
+            "cookies": 0.00783,
+            "categories": [
+                "Action Pixels",
+                "Content Delivery"
+            ],
+            "default": "ignore"
+        },
         "foresee.com": {
             "domain": "foresee.com",
             "owner": {
@@ -12274,34 +12306,6 @@
             "categories": [],
             "default": "block"
         },
-        "fox.com.edgesuite.net": {
-            "domain": "fox.com.edgesuite.net",
-            "owner": {
-                "name": "Akamai Technologies",
-                "displayName": "Akamai",
-                "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
-                "url": "http://akamai.com"
-            },
-            "prevalence": 0.00023,
-            "fingerprinting": 2,
-            "cookies": 0.00023,
-            "categories": [
-                "Content Delivery"
-            ],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "fox\\.com\\.edgesuite\\.net\\/static\\/fts\\/display\\/ver\\/app\\.v101\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.000108
-                },
-                {
-                    "rule": "fox\\.com\\.edgesuite\\.net\\/static\\/fts\\/display\\/libs\\/prebid\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.000108
-                }
-            ]
-        },
         "fox.com": {
             "domain": "fox.com",
             "owner": {
@@ -12335,6 +12339,34 @@
                     "rule": "fox\\.com\\/static\\/outkick\\/display\\/libs\\/prebid\\.js",
                     "fingerprinting": 2,
                     "cookies": 0.0000135
+                }
+            ]
+        },
+        "fox.com.edgesuite.net": {
+            "domain": "fox.com.edgesuite.net",
+            "owner": {
+                "name": "Akamai Technologies",
+                "displayName": "Akamai",
+                "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+                "url": "http://akamai.com"
+            },
+            "prevalence": 0.00023,
+            "fingerprinting": 2,
+            "cookies": 0.00023,
+            "categories": [
+                "Content Delivery"
+            ],
+            "default": "ignore",
+            "rules": [
+                {
+                    "rule": "fox\\.com\\.edgesuite\\.net\\/static\\/fts\\/display\\/ver\\/app\\.v101\\.js",
+                    "fingerprinting": 2,
+                    "cookies": 0.000108
+                },
+                {
+                    "rule": "fox\\.com\\.edgesuite\\.net\\/static\\/fts\\/display\\/libs\\/prebid\\.js",
+                    "fingerprinting": 1,
+                    "cookies": 0.000108
                 }
             ]
         },
@@ -13084,38 +13116,6 @@
             "categories": [],
             "default": "ignore"
         },
-        "google.com.au": {
-            "domain": "google.com.au",
-            "owner": {
-                "name": "Google LLC",
-                "displayName": "Google",
-                "privacyPolicy": "https://policies.google.com/privacy?hl=en&gl=us",
-                "url": "http://google.com"
-            },
-            "prevalence": 0.0000542,
-            "fingerprinting": 1,
-            "cookies": 0.00000677,
-            "categories": [],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "google\\.com\\.au\\/adsense\\/search\\/ads\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.00000677
-                },
-                {
-                    "rule": "google\\.com\\.au\\/maps\\/api\\/js",
-                    "fingerprinting": 2,
-                    "cookies": 0
-                },
-                {
-                    "rule": "google\\.com\\.au\\/afs\\/gen_204",
-                    "fingerprinting": 0,
-                    "cookies": 0.0000135,
-                    "comment": "pixel"
-                }
-            ]
-        },
         "google.com": {
             "domain": "google.com",
             "owner": {
@@ -13356,6 +13356,38 @@
                     "rule": "google\\.com\\/114526753849739041348",
                     "fingerprinting": 0,
                     "cookies": 0,
+                    "comment": "pixel"
+                }
+            ]
+        },
+        "google.com.au": {
+            "domain": "google.com.au",
+            "owner": {
+                "name": "Google LLC",
+                "displayName": "Google",
+                "privacyPolicy": "https://policies.google.com/privacy?hl=en&gl=us",
+                "url": "http://google.com"
+            },
+            "prevalence": 0.0000542,
+            "fingerprinting": 1,
+            "cookies": 0.00000677,
+            "categories": [],
+            "default": "ignore",
+            "rules": [
+                {
+                    "rule": "google\\.com\\.au\\/adsense\\/search\\/ads\\.js",
+                    "fingerprinting": 2,
+                    "cookies": 0.00000677
+                },
+                {
+                    "rule": "google\\.com\\.au\\/maps\\/api\\/js",
+                    "fingerprinting": 2,
+                    "cookies": 0
+                },
+                {
+                    "rule": "google\\.com\\.au\\/afs\\/gen_204",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000135,
                     "comment": "pixel"
                 }
             ]
@@ -14226,6 +14258,23 @@
                     "comment": "pixel"
                 }
             ]
+        },
+        "highwebmedia.com": {
+            "domain": "highwebmedia.com",
+            "owner": {
+                "name": "Chaturbate, LLC",
+                "displayName": "Chaturbate",
+                "privacyPolicy": "https://chaturbate.com/privacy/",
+                "url": "http://chaturbate.com"
+            },
+            "prevalence": 0.000826,
+            "fingerprinting": 1,
+            "cookies": 0.000813,
+            "categories": [
+                "Content Delivery",
+                "Embedded Content"
+            ],
+            "default": "ignore"
         },
         "histats.com": {
             "domain": "histats.com",
@@ -15258,11 +15307,11 @@
                 {
                     "rule": "imrworldwide\\.com\\/v60\\.js",
                     "exceptions": {
-                        "domains": [
-                            "threenow.co.nz"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "threenow.co.nz"
                         ]
                     }
                 }
@@ -22966,6 +23015,25 @@
             ],
             "default": "block"
         },
+        "pinimg.com": {
+            "domain": "pinimg.com",
+            "owner": {
+                "name": "Pinterest, Inc.",
+                "displayName": "Pinterest",
+                "privacyPolicy": "https://policy.pinterest.com/en/privacy-policy",
+                "url": "http://pinterest.com"
+            },
+            "prevalence": 0.0446,
+            "fingerprinting": 2,
+            "cookies": 0.0406,
+            "categories": [
+                "Social - Share",
+                "Content Delivery",
+                "Embedded Content",
+                "Social Network"
+            ],
+            "default": "ignore"
+        },
         "pippio.com": {
             "domain": "pippio.com",
             "owner": {
@@ -24544,25 +24612,25 @@
                 {
                     "rule": "palacesquare\\.rambler\\.ru",
                     "exceptions": {
-                        "domains": [
-                            "championat.com",
-                            "lenta.ru"
-                        ],
                         "types": [
                             "image",
                             "stylesheet"
+                        ],
+                        "domains": [
+                            "championat.com",
+                            "lenta.ru"
                         ]
                     }
                 },
                 {
                     "rule": "comments\\.rambler\\.ru",
                     "exceptions": {
+                        "types": [
+                            "script"
+                        ],
                         "domains": [
                             "championat.com",
                             "lenta.ru"
-                        ],
-                        "types": [
-                            "script"
                         ]
                     }
                 },
@@ -25580,11 +25648,11 @@
                 {
                     "rule": "ak\\.sail-horizon\\.com\\/spm\\/spm",
                     "exceptions": {
-                        "domains": [
-                            "watch.wwe.com"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "watch.wwe.com"
                         ]
                     }
                 }
@@ -25868,27 +25936,6 @@
             "cookies": 0.01,
             "default": "block"
         },
-        "scene7.com.edgekey.net": {
-            "domain": "scene7.com.edgekey.net",
-            "owner": {
-                "name": "Akamai Technologies",
-                "displayName": "Akamai",
-                "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
-                "url": "http://akamai.com"
-            },
-            "prevalence": 0.00137,
-            "fingerprinting": 1,
-            "cookies": 0.0000271,
-            "categories": [],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "scene7\\.com\\.edgekey\\.net\\/s7viewersdk\\/3\\.12\\/MixedMediaViewer\\/js\\/s7sdk\\/utils\\/Utils\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0
-                }
-            ]
-        },
         "scene7.com": {
             "domain": "scene7.com",
             "owner": {
@@ -25957,6 +26004,27 @@
                     "fingerprinting": 0,
                     "cookies": 0,
                     "comment": "pixel"
+                }
+            ]
+        },
+        "scene7.com.edgekey.net": {
+            "domain": "scene7.com.edgekey.net",
+            "owner": {
+                "name": "Akamai Technologies",
+                "displayName": "Akamai",
+                "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+                "url": "http://akamai.com"
+            },
+            "prevalence": 0.00137,
+            "fingerprinting": 1,
+            "cookies": 0.0000271,
+            "categories": [],
+            "default": "ignore",
+            "rules": [
+                {
+                    "rule": "scene7\\.com\\.edgekey\\.net\\/s7viewersdk\\/3\\.12\\/MixedMediaViewer\\/js\\/s7sdk\\/utils\\/Utils\\.js",
+                    "fingerprinting": 2,
+                    "cookies": 0
                 }
             ]
         },
@@ -31637,11 +31705,11 @@
                 {
                     "rule": "dev\\.visualwebsiteoptimizer\\.com",
                     "exceptions": {
-                        "domains": [
-                            "adoramapix.com"
-                        ],
                         "types": [
                             "script"
+                        ],
+                        "domains": [
+                            "adoramapix.com"
                         ]
                     }
                 }
@@ -31797,6 +31865,25 @@
                 }
             ]
         },
+        "vocento.com": {
+            "domain": "vocento.com",
+            "owner": {
+                "name": "vocento",
+                "displayName": "vocento"
+            },
+            "prevalence": 0.0000813,
+            "fingerprinting": 2,
+            "cookies": 0.0000677,
+            "categories": [],
+            "default": "ignore",
+            "rules": [
+                {
+                    "rule": "vocento\\.com\\/js\\/commento\\.js",
+                    "fingerprinting": 1,
+                    "cookies": 0.0000339
+                }
+            ]
+        },
         "vocento.com.akamaized.net": {
             "domain": "vocento.com.akamaized.net",
             "owner": {
@@ -31817,25 +31904,6 @@
                     "rule": "vocento\\.com\\.akamaized\\.net\\/vocuser\\/v4\\/resources\\/js\\/ppll\\/loader\\/vocento-vocuser-preloader\\.js",
                     "fingerprinting": 3,
                     "cookies": 0.0000135
-                }
-            ]
-        },
-        "vocento.com": {
-            "domain": "vocento.com",
-            "owner": {
-                "name": "vocento",
-                "displayName": "vocento"
-            },
-            "prevalence": 0.0000813,
-            "fingerprinting": 2,
-            "cookies": 0.0000677,
-            "categories": [],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "vocento\\.com\\/js\\/commento\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000339
                 }
             ]
         },
@@ -33117,6 +33185,24 @@
                 }
             ]
         },
+        "yandex.net": {
+            "domain": "yandex.net",
+            "owner": {
+                "name": "Yandex LLC",
+                "displayName": "Yandex",
+                "privacyPolicy": "https://yandex.com/legal/privacy/",
+                "url": "http://yandex.com"
+            },
+            "prevalence": 0.00345,
+            "fingerprinting": 1,
+            "cookies": 0.000183,
+            "categories": [
+                "Content Delivery",
+                "Embedded Content",
+                "Session Replay"
+            ],
+            "default": "ignore"
+        },
         "yandex.ru": {
             "domain": "yandex.ru",
             "owner": {
@@ -33162,21 +33248,6 @@
                     "comment": "Allow to load, but all other protections apply, including cookie protection"
                 },
                 {
-                    "rule": "yandex\\.ru\\/system\\/video-ads-sdk\\/adsdk\\.js",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "yandex\\.ru\\/vod\\/vh-special-converted\\/vod-content",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "yandex\\.ru\\/log",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
                     "rule": "api-maps\\.yandex\\.ru",
                     "exceptions": {
                         "types": [
@@ -33200,8 +33271,43 @@
                             "image"
                         ]
                     }
+                },
+                {
+                    "rule": "yandex\\.ru\\/system\\/video-ads-sdk\\/adsdk\\.js",
+                    "action": "ignore",
+                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                },
+                {
+                    "rule": "yandex\\.ru\\/vod\\/vh-special-converted\\/vod-content",
+                    "action": "ignore",
+                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                },
+                {
+                    "rule": "yandex\\.ru\\/log",
+                    "action": "ignore",
+                    "comment": "Allow to load, but all other protections apply, including cookie protection"
                 }
             ]
+        },
+        "yastatic.net": {
+            "domain": "yastatic.net",
+            "owner": {
+                "name": "Yandex LLC",
+                "displayName": "Yandex",
+                "privacyPolicy": "https://yandex.com/legal/privacy/",
+                "url": "http://yandex.com"
+            },
+            "prevalence": 0.00592,
+            "fingerprinting": 3,
+            "cookies": 0.00445,
+            "categories": [
+                "Ad Motivated Tracking",
+                "Advertising",
+                "Social - Share",
+                "Content Delivery",
+                "Embedded Content"
+            ],
+            "default": "ignore"
         },
         "yellowblue.io": {
             "domain": "yellowblue.io",
@@ -58111,9 +58217,6 @@
         "sweb.ulta.com": "ulta.com.102.122.2o7.net",
         "swebstats.imf.org": "imf.org.102.112.2o7.net",
         "www15.jtv.com": "jtv.com.102.112.2o7.net",
-        "e-ticket.aegeanair.com": "3exvfbh.x.incapdns.net",
-        "recursos.axesor.org": "5t48cjc.x.incapdns.net",
-        "api.transat.com": "7xjpy4d.x.incapdns.net",
         "aa.athome.com": "athome.com.data.adobedc.net",
         "aas.mclaren.com": "mclaren.com.data.adobedc.net",
         "adobeedge.my.gov.au": "my.gov.au.data.adobedc.net",
@@ -58240,16 +58343,6 @@
         "adserver.clasificadosonline.com": "g.adspeed.net",
         "advcloudfiles.advantech.com": "adv-cloudfilse.azureedge.net",
         "static.afw.com": "afw-static.azureedge.net",
-        "assets.babycenter.com": "akamai-111035.edgekey.net",
-        "content.whattoexpect.com": "akamai-111035.edgekey.net",
-        "geo.whattoexpect.com": "akamai-111035.edgekey.net",
-        "imageserve.babycenter.com": "akamai-111035.edgekey.net",
-        "aeis.alicdn.com": "dsc.wildcard.alicdn.com.edgekey.net",
-        "aeproductsourcesite.alicdn.com": "sa1111.alicdn.com.edgekey.net",
-        "assets.alicdn.com": "wildcard.alicdn.com.edgekey.net",
-        "is.alicdn.com": "wildcard.alicdn.com.edgekey.net",
-        "login.aliexpress.com": "eu1111.alicdn.com.edgekey.net",
-        "login.aliexpress.us": "eu1111.alicdn.com.edgekey.net",
         "event.csdn.net": "csdn.log-global.aliyuncs.com",
         "login.smallrig.com": "alb-dqyvai2klqlh3bvacf.us-east-1.alb.aliyuncs.com",
         "scus-api.tineco.com": "alb-eepc6zu13a83w5voeo.us-west-1.alb.aliyuncs.com",
@@ -58263,54 +58356,9 @@
         "unagi.amazon.eg": "unagi-eu.amazon.com",
         "unagi.amazon.pl": "unagi-eu.amazon.com",
         "unagi.amazon.se": "unagi-eu.amazon.com",
-        "cover.mondadori.it": "ov-ds.ame.edgekey.net",
-        "dafne.sirio.stbm.it": "ov-ds.ame.edgekey.net",
-        "ptp.stbm.it": "ov-ds.ame.edgekey.net",
-        "static.stbm.it": "ov-ds.ame.edgekey.net",
         "fix.telstra.com": "hlb-public-main-nlb-612f255f65d4dfdf.elb.ap-southeast-2.amazonaws.com",
         "loc.api.nine.com.au": "82nqbo4ztg.execute-api.ap-southeast-2.amazonaws.com",
         "web-api.hungryjacks.com.au": "d-maiw32tky3.execute-api.ap-southeast-2.amazonaws.com",
-        "accounts.woolworthsrewards.com.au": "woolworthsrewards.com.au.edgekey.net",
-        "analytics.realestate.com.au": "analytics.realestate.com.au.edgekey.net",
-        "api.bigw.com.au": "bigw.com.au.edgekey.net",
-        "api.realcommercial.com.au": "www.realestate.com.au.edgekey.net",
-        "api.stan.com.au": "api.stan.com.au.edgekey.net",
-        "api.target.com.au": "api.target.com.au.edgekey.net",
-        "apiv2.cricket.com.au": "apiv2.cricket.com.au.edgekey.net",
-        "apps.nrma.com.au": "apps.nrma.com.au.edgekey.net",
-        "assets.autotrader.com.au": "autotrader.com.au.edgekey.net",
-        "chatwidget.woolworths.com.au": "chatbot.woolworths.com.au.edgekey.net",
-        "customer.energyaustralia.com.au": "customer.energyaustralia.com.au.edgekey.net",
-        "imageresizer.static9.net.au": "imageresizer.static9.net.au.edgekey.net",
-        "images.domain.com.au": "new-san.domain.com.au.edgekey.net",
-        "img.bestrecipes.com.au": "wildcardsan.news.com.au.edgekey.net",
-        "img.taste.com.au": "wildcardsan.news.com.au.edgekey.net",
-        "live-production.wcms.abc-cdn.net.au": "live-production.wcms.abc-cdn.net.au.edgekey.net",
-        "loc.nine.com.au": "loc.nine.com.au.edgekey.net",
-        "media.truelocal.com.au": "truelocal.com.au.edgekey.net",
-        "mon.lovehoney.com.au": "mon.lovehoney.com.au.edgekey.net",
-        "res.abc.net.au": "res.abc.net.au.edgekey.net",
-        "resources.carsguide.com.au": "carsguide.com.au.edgekey.net",
-        "resourcesssl.newscdn.com.au": "resourcesssl.newscdn.com.au.edgekey.net",
-        "s.domainstatic.com.au": "s.domainstatic.com.au.edgekey.net",
-        "secure.agl.com.au": "agl.com.au.edgekey.net",
-        "static.domain.com.au": "new-san.domain.com.au.edgekey.net",
-        "subscriptions.adelaidenow.com.au": "pci.news.com.au.edgekey.net",
-        "subscriptions.couriermail.com.au": "pci.news.com.au.edgekey.net",
-        "subscriptions.dailytelegraph.com.au": "pci.news.com.au.edgekey.net",
-        "subscriptions.geelongadvertiser.com.au": "pci.news.com.au.edgekey.net",
-        "subscriptions.goldcoastbulletin.com.au": "pci.news.com.au.edgekey.net",
-        "subscriptions.heraldsun.com.au": "pci.news.com.au.edgekey.net",
-        "subscriptions.ntnews.com.au": "pci.news.com.au.edgekey.net",
-        "subscriptions.theaustralian.com.au": "pci.news.com.au.edgekey.net",
-        "subscriptions.thechronicle.com.au": "pci.news.com.au.edgekey.net",
-        "subscriptions.themercury.com.au": "pci.news.com.au.edgekey.net",
-        "tags.news.com.au": "tags.news.com.au.edgekey.net",
-        "track.opentable.com.au": "track.opentable.com.au.edgekey.net",
-        "tv-api.9now.com.au": "tv-api.9now.com.au.edgekey.net",
-        "wwos-services.nine.com.au": "wwos-services.nine.com.au.edgekey.net",
-        "wwos.nine.com.au": "wwos.nine.com.au.edgekey.net",
-        "x.nab.com.au": "x.nab.com.au.edgekey.net",
         "analytics.finanzen.ch": "finnet-matomo.westeurope.cloudapp.azure.com",
         "api.benefits.gov": "benefitsgov-production-v2.eastus.cloudapp.azure.com",
         "api.juridischloket.nl": "agw-hjl-weu-p-01.westeurope.cloudapp.azure.com",
@@ -58375,65 +58423,6 @@
         "www2.richmond.gov.uk": "fd-test-hzgaftfdhyd0ghdb.z01.azurefd.net",
         "host1.wwwimages.southalabama.edu": "marvel-b3-cdn.bc0a.com",
         "images.primaryarms.com": "marvel-b4-cdn.bc0a.com",
-        "acesso.estadao.com.br": "sni-estado.com.br.edgekey.net",
-        "api-destaque-descoberta.casasbahia.com.br": "ion-ovwildsan-casasbahia.com.br.edgekey.net",
-        "assine.estadao.com.br": "sni-estado.com.br.edgekey.net",
-        "carrinho.casasbahia.com.br": "ion-ovwildsan-casasbahia.com.br.edgekey.net",
-        "cdn.xpi.com.br": "wildsan.xpi.com.br.edgekey.net",
-        "imgs.casasbahia.com.br": "ion-ovwildsan-casasbahia.com.br.edgekey.net",
-        "npreco.casasbahia.com.br": "ion-ovwildsan-casasbahia.com.br.edgekey.net",
-        "public.ebc.com.br": "www.ebc.com.br.edgekey.net",
-        "static.voegol.com.br": "sandsa.voegol.com.br.edgekey.net",
-        "statics.estadao.com.br": "sni-estado.com.br.edgekey.net",
-        "analytics.ml.homedepot.ca": "analytics.ml.homedepot.ca.edgekey.net",
-        "api-no-cache.qub.ca": "api-no-cache.qub.ca.edgekey.net",
-        "api.atmosphere.ca": "api.atmosphere.ca.edgekey.net",
-        "api.homedepot.ca": "api.homedepot.ca.edgekey.net",
-        "api.honda.ca": "api.honda.ca.edgekey.net",
-        "api.shoppersdrugmart.ca": "api.shoppersdrugmart.ca.edgekey.net",
-        "api.sportchek.ca": "api.sportchek.ca.edgekey.net",
-        "api.tangerine.ca": "api.tangerine.ca.edgekey.net",
-        "apim.canadiantire.ca": "apim.canadiantire.ca.edgekey.net",
-        "app.pcfinancial.ca": "app.pcfinancial.ca.edgekey.net",
-        "asset.ctv.ca": "asset.ctv.ca.edgekey.net",
-        "asset.entpay.9c9media.ca": "asset.entpay.9c9media.ca.edgekey.net",
-        "asset.noovo.ca": "asset.noovo.ca.edgekey.net",
-        "assets-platform.loblaws.ca": "assets-platform.loblaws.ca.edgekey.net",
-        "assets.beauty.shoppersdrugmart.ca": "assets.beauty.shoppersdrugmart.ca.edgekey.net",
-        "assets.groupetva.ca": "assets.groupetva.ca.edgekey.net",
-        "assets.shoppersdrugmart.ca": "assets.shoppersdrugmart.ca.edgekey.net",
-        "beta.ctvnews.ca": "news.bellmedia.ca.edgekey.net",
-        "cdn.ctg.intuit.ca": "cdn.ctg.intuit.ca.edgekey.net",
-        "chat.fido.ca": "digital-chat.fido.ca.edgekey.net",
-        "election.ctvnews.ca": "news.bellmedia.ca.edgekey.net",
-        "i.cbc.ca": "san.cbc.ca.edgekey.net",
-        "i.walmartimages.ca": "i.walmartimages.ca.edgekey.net",
-        "images.costcobusinesscentre.ca": "images.costcobusinesscentre.ca.edgekey.net",
-        "images.homedepot.ca": "images.homedepot.ca.edgekey.net",
-        "mdt.crateandbarrel.ca": "mdt.crateandbarrel.ca.edgekey.net",
-        "media-triangle.canadiantire.ca": "media-triangle.canadiantire.ca.edgekey.net",
-        "media-www.canadiantire.ca": "media-www.canadiantire.ca.edgekey.net",
-        "metrics.bnc.ca": "metrics.bnc.ca.edgekey.net",
-        "metrics.nbc.ca": "metrics.nbc.ca.edgekey.net",
-        "san.shaw.ca": "san.shaw.ca.edgekey.net",
-        "services.radio-canada.ca": "services-v2.radio-canada.ca.edgekey.net",
-        "signin.shaw.ca": "signin.shaw.ca.edgekey.net",
-        "sp.loblaws.ca": "sp.loblaws.ca.edgekey.net",
-        "sp.nofrills.ca": "sp.nofrills.ca.edgekey.net",
-        "sp.pcoptimum.ca": "sp.pcoptimum.ca.edgekey.net",
-        "sp.realcanadiansuperstore.ca": "sp.realcanadiansuperstore.ca.edgekey.net",
-        "sp.shoppersdrugmart.ca": "sp.shoppersdrugmart.ca.edgekey.net",
-        "sports.bellmedia.ca": "sports.bellmedia.ca.edgekey.net",
-        "static.ctvnews.ca": "news.bellmedia.ca.edgekey.net",
-        "static.kbb.ca": "static.kbb.ca.edgekey.net",
-        "stats.ctvnews.ca": "news.bellmedia.ca.edgekey.net",
-        "tags.creditkarma.ca": "tags.creditkarma.ca.edgekey.net",
-        "theme.tvanouvelles.ca": "tvan.ca.edgekey.net",
-        "thumbnails.cbc.ca": "thumbnails.cbc.ca.edgekey.net",
-        "track.opentable.ca": "track.opentable.ca.edgekey.net",
-        "tsnimages.tsn.ca": "tsnimages.tsn.ca.edgekey.net",
-        "webapps.9c9media.com": "v.bellmedia.ca.edgekey.net",
-        "www.loyalty.shoppersdrugmart.ca": "www.loyalty.shoppersdrugmart.ca.edgekey.net",
         "static-evo-prd.husqvarna.com": "cdne-nxtevo-prd01-ms.azureedge.net",
         "all.accor.com": "2-01-2770-003b.cdx.cedexis.net",
         "api-asktoseller.hepsiburada.com": "2-01-5a96-0052.cdx.cedexis.net",
@@ -58516,48 +58505,6 @@
         "cdn.bgasc.com": "4jwydrs18ziw.cloudmaestro.com",
         "cdn.providentmetals.com": "mmqtunasnn3g.cloudmaestro.com",
         "analytics.poferries.com": "collect-prd-alb-539115803.eu-west-2.elb.amazonaws.com",
-        "aka-apiservices.boostmobile.com": "aka-apiservices.boostmobile.com-v1.edgekey.net",
-        "api-dep.keurig.com": "api-dep.keurig.com-v1.edgekey.net",
-        "api.nowtv.com": "api.nowtv.com-v1.edgekey.net",
-        "api.wdprapps.disney.com": "api.wdprapps.disney.com-v1.edgekey.net",
-        "ase.clmbtech.com": "ase.clmbtech.com-v1.edgekey.net",
-        "cdn.idealo.com": "cdn.idealo.com-v1.edgekey.net",
-        "cms-www.chewy.com": "cms-www.chewy.com-v1.edgekey.net",
-        "dapi.atlutd.com": "www.mlssoccer.com-v1.edgekey.net",
-        "dapi.soundersfc.com": "www.mlssoccer.com-v1.edgekey.net",
-        "dapi.sportingkc.com": "www.mlssoccer.com-v1.edgekey.net",
-        "gbxgateway.dell.com": "gbxgateway.dell.com-v1.edgekey.net",
-        "images.bizbuysell.com": "www.bizbuysell.com-v1.edgekey.net",
-        "images.mlssoccer.com": "www.mlssoccer.com-v1.edgekey.net",
-        "images.onlymyhealth.com": "images.onlymyhealth.com-v1.edgekey.net",
-        "img.konami.com": "img.konami.com-v1.edgekey.net",
-        "img.medscape.com": "img.medscape.com-v1.edgekey.net",
-        "jsso.indiatimes.com": "jsso.indiatimes.com-v1.edgekey.net",
-        "media-stg-be.chewy.com": "media-stg-be.chewy.com-v1.edgekey.net",
-        "media.king5.com": "media.king5.com-v1.edgekey.net",
-        "my.foxnews.com": "my.foxnews.com-v1.edgekey.net",
-        "photogallery.navbharattimes.indiatimes.com": "photogallery.navbharattimes.indiatimes.com-v1.edgekey.net",
-        "prd-api.mckinsey.com": "prd-api.mckinsey.com-v1.edgekey.net",
-        "psapi.voot.com": "psapi.voot.com-v1.edgekey.net",
-        "sportapi.atlutd.com": "www.mlssoccer.com-v1.edgekey.net",
-        "sportapi.austinfc.com": "www.mlssoccer.com-v1.edgekey.net",
-        "sportapi.fccincinnati.com": "www.mlssoccer.com-v1.edgekey.net",
-        "sportapi.fcdallas.com": "www.mlssoccer.com-v1.edgekey.net",
-        "sportapi.lafc.com": "www.mlssoccer.com-v1.edgekey.net",
-        "sportapi.mlssoccer.com": "www.mlssoccer.com-v1.edgekey.net",
-        "sportapi.nashvillesc.com": "www.mlssoccer.com-v1.edgekey.net",
-        "sportapi.soundersfc.com": "www.mlssoccer.com-v1.edgekey.net",
-        "sportapi.timbers.com": "www.mlssoccer.com-v1.edgekey.net",
-        "static-dm.ubisoft.com": "static-dm.ubisoft.com-v1.edgekey.net",
-        "stats-api.mlssoccer.com": "www.mlssoccer.com-v1.edgekey.net",
-        "teja8.kuikr.com": "teja10.kuikr.com-v1.edgekey.net",
-        "teja9.kuikr.com": "teja10.kuikr.com-v1.edgekey.net",
-        "ua.loksatta.com": "ua.loksatta.com-v1.edgekey.net",
-        "ade.clmbtech.com": "ade.clmbtech.com-v2.edgekey.net",
-        "cache.bmwusa.com": "cache.bmwusa.com-v2.edgekey.net",
-        "cache.vtrcdn.com": "www.viator.com-v2.edgekey.net",
-        "chatbot.api.nn-group.com": "chatbot.api.nn-group.com-v2.edgekey.net",
-        "compass-ssl.microsoft.com": "compass-ssl.microsoft.com-v2.edgekey.net",
         "martech.condenastdigital.com": "condenast.map.fastly.net",
         "media.allure.com": "condenast.map.fastly.net",
         "media.cntraveler.com": "condenast.map.fastly.net",
@@ -58606,9 +58553,6 @@
         "dd.nytimes.com": "sslgen-nyt.datadome.co",
         "images.sidearmsports.com": "dbukjj6eu5tsf.cloudfront.net",
         "feedback.esp.vmware.com": "de2pmm85odupd.cloudfront.net",
-        "afcs.dellcdn.com": "afcs.dellcdn.com.akadns.net",
-        "fcs.dellcdn.com": "fcs.dellcdn.com.akadns.net",
-        "uicore.dellcdn.com": "uicore.dellcdn.com.akadns.net",
         "matomo.gsma.com": "devservicesalb-471015105.eu-west-1.elb.amazonaws.com",
         "cdn.speedcheck.org": "dfx0d9twj2ai.cloudfront.net",
         "cdn-discountcode.express.co.uk": "discountcodeexpress.azureedge.net",
@@ -58633,16 +58577,7 @@
         "dtm.zales.com": "usadmm.dotomi.com",
         "next-cdn.codementor.io": "dsx863kqtdxrt.cloudfront.net",
         "safeinator.reamedia.com.au": "dtpw88eywzb7u.cloudfront.net",
-        "captcha.siriusxm.com": "dzm868l.x.incapdns.net",
         "cdn.whatismybrowser.com": "dzz1zjxa9ulpk.cloudfront.net",
-        "p.ebaystatic.com": "slot11847.ebay.com.edgekey.net",
-        "pages.ebay.com": "slot11847.ebay.com.edgekey.net",
-        "rover.ebay.co.uk": "slot9428.ebay.com.edgekey.net",
-        "rover.ebay.com.au": "slot9428.ebay.com.edgekey.net",
-        "rover.ebay.de": "slot9428.ebay.com.edgekey.net",
-        "rover.ebay.fr": "slot9428.ebay.com.edgekey.net",
-        "secureinclude.ebaystatic.com": "slot9428.ebay.com.edgekey.net",
-        "secureir.ebaystatic.com": "slot9428.ebay.com.edgekey.net",
         "chat.bupa.co.uk": "bupaltd.egain.cloud",
         "chat.directenergy.com": "directenergy.egain.cloud",
         "chat.qvc.com": "qvcchat.egain.cloud",
@@ -58965,9 +58900,6 @@
         "share.truckstop.com": "truckstop.extole.io",
         "share.wisdompanel.com": "wisdompanel.extole.io",
         "share.zenbusiness.com": "zenbusiness.extole.io",
-        "login.fidelity.com": "login.fidelity.com.febsec-fidelity.com.akadns.net",
-        "login.mystreetscape.com": "login.mystreetscape.com.febsec-fidelity.com.akadns.net",
-        "strike.fox.com": "strike.fox.com.edgesuite.net",
         "engage-fp.ajc.com": "fp-cdn.azureedge.net",
         "b.actualno.com": "webgroundadbg.hit.gemius.pl",
         "sa.casino.org": "sa.casino.org.re.getclicky.com",
@@ -59133,15 +59065,6 @@
         "www.gtm-server.monsoon.co.uk": "ghs.googlehosted.com",
         "www.sgtm.g2a.com": "ghs.googlehosted.com",
         "www.tm.roller.de": "ghs.googlehosted.com",
-        "api.medicare.gov": "iservprod.medicare.gov.edgekey.net",
-        "data.usajobs.gov": "www.usajobs.gov.edgekey.net",
-        "forecast.weather.gov": "sancert.weather.gov.edgekey.net",
-        "frontend.medicare.gov": "iservprod.medicare.gov.edgekey.net",
-        "media.fisheries.noaa.gov": "secure.fisheries.noaa.gov.edgekey.net",
-        "sliver.iowa.gov": "www.iowa.gov.edgekey.net",
-        "www.app-support.nh.gov": "3.nh.gov.edgekey.net",
-        "www.nrcs.usda.gov": "11492.nrcs.usda.gov.edgekey.net",
-        "www1.nyc.gov": "www.nyc.gov.edgekey.net",
         "ast.autobild.de": "ast.autobild.de.greylabeldelivery.com",
         "ast.computerbild.de": "ast.computerbild.de.greylabeldelivery.com",
         "ast.fitbook.de": "ast.fitbook.de.greylabeldelivery.com",
@@ -59252,24 +59175,6 @@
         "webqa2.fpl.com": "gdfowr9.impervadns.net",
         "widget3.zacks.com": "xuj8s9i.impervadns.net",
         "wwwapi.macu.com": "ff8vrbv.impervadns.net",
-        "analytics.htmedia.in": "v6analytics.htmedia.in.edgekey.net",
-        "im.indiatimes.in": "im.indiatimes.in.edgekey.net",
-        "image.timespoints.iimg.in": "image.timespoints.iimg.in.edgekey.net",
-        "s1.rdbuz.com": "st.redbus.in.edgekey.net",
-        "s2.rdbuz.com": "st.redbus.in.edgekey.net",
-        "s3.rdbuz.com": "st.redbus.in.edgekey.net",
-        "st.redbus.in": "st.redbus.in.edgekey.net",
-        "static.gst.gov.in": "static.gst.gov.in.edgekey.net",
-        "static.incometax.gov.in": "static.incometax.gov.in.edgekey.net",
-        "tilanalytics.timesinternet.in": "tilanalytics.timesinternet.in.edgekey.net",
-        "wp.dineout.co.in": "wp.dineout.co.in.edgekey.net",
-        "yesrobot.yesbank.in": "yesrobot.yesbank.in.edgekey.net",
-        "assets.bonad.io": "assets.bonad.io.edgekey.net",
-        "c.oracleinfinity.io": "c.oracleinfinity.io.edgekey.net",
-        "d.oracleinfinity.io": "d.oracleinfinity.io.edgekey.net",
-        "gxchat.content.disney.io": "gxchat.content.disney.io.edgekey.net",
-        "magellan-api.p7s1.io": "magellan-api.p7s1.io.edgekey.net",
-        "static-mh.content.disney.io": "static-mh.content.disney.io.edgekey.net",
         "data-0142dcfbcf.yacht.de": "yachtde-relay.iocnt.net",
         "data-01e876a345.tichyseinblick.de": "tichyein-relay.iocnt.net",
         "data-02011e6008.dasoertliche.de": "dasoertl-relay.iocnt.net",
@@ -59629,22 +59534,6 @@
         "data-fdbbf15b66.finanzen.net": "finaonl-relay.iocnt.net",
         "data-fe87994a5d.freenet.de": "freenet-relay.iocnt.net",
         "data-ff5b197ecc.traceparts.com": "tracepar-relay.iocnt.net",
-        "security.iq.com": "iq.com.edgesuite.net",
-        "assets.subito.it": "assets.subito.it.edgekey.net",
-        "atomatic.rai.it": "www.rai.it.edgekey.net",
-        "betting.sisal.it": "betting.sisal.it.edgekey.net",
-        "cache.sky.it": "cache.sky.it.edgekey.net",
-        "cdn.agenziaentrate.gov.it": "www.agenziaentrate.gov.it.edgekey.net",
-        "content.unicredit.it": "content.unicredit.it.edgekey.net",
-        "graphql.alpitour.it": "graphql.alpitour.it.edgekey.net",
-        "img.legaseriea.it": "www.legaseriea.it.edgekey.net",
-        "resources.alpitour.it": "resources.alpitour.it.edgekey.net",
-        "secure.social.yoox.it": "secure.social.yoox.it.edgekey.net",
-        "static.alpitour.it": "static.alpitour.it.edgekey.net",
-        "statics.quattroruote.it": "www.edidomus.it.edgekey.net",
-        "storage.edidomus.it": "www.edidomus.it.edgekey.net",
-        "tags.subito.it": "tags.subito.it.edgekey.net",
-        "videoplatform.sky.it": "videoplatform.sky.it.edgekey.net",
         "api.audacy.com": "j.sni.global.fastly.net",
         "api.foursquare.com": "j.sni.global.fastly.net",
         "api.hackster.io": "dualstack.j.sni.global.fastly.net",
@@ -59792,10 +59681,6 @@
         "cdn-codespromo.lefigaro.fr": "lefigaro.azureedge.net",
         "tagman.britishairways.com": "pfa.levexis.com",
         "box.animalleague.org": "customers.lightboxcdn.com",
-        "d.line-cdn.net": "cac-d.line-cdn.net.line-zero.akadns.net",
-        "d.line-scdn.net": "cac-d.line-scdn.net.line-zero.akadns.net",
-        "content.linkedin.com": "od.linkedin.edgesuite.net",
-        "snap.licdn.com": "od.linkedin.edgesuite.net",
         "lp-07.messaging.optus.com.au": "sy.v.liveperson.net",
         "lptag.messaging.optus.com.au": "lptag.liveperson.net",
         "aimg.fc2.com": "fctwo.hs.llnwd.net",
@@ -59926,14 +59811,9 @@
         "web.thousandeyes.com": "thousandeyes.mktoweb.com",
         "www2.logrocket.com": "logrocket.mktoweb.com",
         "www5.cadence.com": "cadence.mktoweb.com",
-        "auth.mtvnservices.com": "auth.mtvnservices.com.edgekey.net",
-        "btg.mtvnservices.com": "btg.mtvnservices.com.edgekey.net",
         "inline.healthline.com": "prod.myfidevs.io",
         "inline.medicalnewstoday.com": "prod.myfidevs.io",
         "inline.psychcentral.com": "prod.myfidevs.io",
-        "id.nbcuni.com": "id.nbcuni.com.edgekey.net",
-        "mps.nbcuni.com": "nbcuni.com.edgekey.net",
-        "pix.nbcuni.com": "nbcuni.com.edgekey.net",
         "activate.academy.com": "ovative.edge.nc0.co",
         "activate.latimes.com": "tronc.edge.nc0.co",
         "activate.sandiegouniontribune.com": "tronc.edge.nc0.co",
@@ -59988,44 +59868,6 @@
         "tms.nab.com.au": "nab.edge.nc0.co",
         "tms.virginatlantic.com": "vaa.edge.nc0.co",
         "tog.fivebelow.com": "ovative.edge.nc0.co",
-        "alps.cdn.nintendo.net": "star.cdn.nintendo.net.edgekey.net",
-        "assets.game.net": "assets.game.net.edgekey.net",
-        "assets.intuitcdn.net": "int-qbo.intuitcdn.net.edgekey.net",
-        "aut.pendleton-usa.com": "cert1.a2.atm.aqfer.net.edgekey.net",
-        "c.ekstatic.net": "c.ekstatic.net.edgekey.net",
-        "c.shld.net": "c.shld.net.edgekey.net",
-        "cdn0.agoda.net": "cdn.agoda.net.edgekey.net",
-        "cdn6.agoda.net": "cdn.agoda.net.edgekey.net",
-        "csp.secureserver.net": "csp.secureserver.net.edgekey.net",
-        "ctg-apps.intuitcdn.net": "ctg-apps.intuitcdn.net.edgekey.net",
-        "dl.gmx.net": "dl.gmx.net.edgekey.net",
-        "dynamic.faz.net": "www.faz.net.edgekey.net",
-        "ecn.dev.virtualearth.net": "ssl2.tiles.virtualearth.net.edgekey.net",
-        "events.api.secureserver.net": "wildcard-sni-only.api.secureserver.net.edgekey.net",
-        "gui.secureserver.net": "gui-ipv6.secureserver.net.edgekey.net",
-        "images.finanzen.net": "images.finanzen.net.edgekey.net",
-        "img.able.co.jp": "img.chintai.net.edgekey.net",
-        "img.vggcdn.net": "akamai.vggcdn.net.edgekey.net",
-        "lib.intuitcdn.net": "lib.intuitcdn.net.edgekey.net",
-        "lzd-img-global.slatic.net": "lzd-img-global.slatic.net.edgekey.net",
-        "media0.faz.net": "v2.mediax.faz.net.edgekey.net",
-        "media1.faz.net": "v2.mediax.faz.net.edgekey.net",
-        "munchkin.marketo.net": "wildcard.marketo.net.edgekey.net",
-        "mw1.wsj.net": "i.mktw.net.edgekey.net",
-        "pix6.agoda.net": "pix.agoda.net.edgekey.net",
-        "pix8.agoda.net": "pix.agoda.net.edgekey.net",
-        "plugin.intuitcdn.net": "int-qbo.intuitcdn.net.edgekey.net",
-        "px.owneriq.net": "wildcard.owneriq.net.edgekey.net",
-        "resizer.otstatic.com": "resizer.otstatic.net.edgekey.net",
-        "scripts.finanzen.net": "scripts.finanzen.net.edgekey.net",
-        "secure.widget.cloud.opta.net": "secure.widget.cloud.opta.net.edgekey.net",
-        "service.maxymiser.net": "service.maxymiser.net.edgekey.net",
-        "static.cimcontent.net": "static.cimcontent.net.edgekey.net",
-        "static1.mclcm.net": "static.mclcm.net.edgekey.net",
-        "styles.finanzen.net": "styles.finanzen.net.edgekey.net",
-        "support.content.office.net": "support.content.office.net.edgekey.net",
-        "webtoons-static.pstatic.net": "webtoons-static.pstatic.net.edgekey.net",
-        "ws.vggcdn.net": "akamai.vggcdn.net.edgekey.net",
         "ncg.tags.news.com.au": "au.tags.newscgp.com",
         "tags.barrons.com": "us.tags.newscgp.com",
         "tags.biblegateway.com": "hc.tags.newscgp.com",
@@ -60040,9 +59882,6 @@
         "tags.thesun.ie": "us.tags.newscgp.com",
         "tags.thetimes.co.uk": "us.tags.newscgp.com",
         "tags.wsj.com": "us.tags.newscgp.com",
-        "api.ec.nintendo.com": "api.ec.nintendo.com.edgekey.net",
-        "cdn.accounts.nintendo.com": "star.accounts.nintendo.com.edgekey.net",
-        "cdn.my.nintendo.com": "star.my.nintendo.com.edgekey.net",
         "www-cdn.newbienudes.com": "nnwwwlive.b-cdn.net",
         "i.ntd.com": "ntd.com.akamaized.net",
         "a.rohde-schwarz.com": "rohde-schwarz.com.ssl.sc.omtrdc.net",
@@ -60736,12 +60575,6 @@
         "xps.huk24.de": "hukcoburg.tt.omtrdc.net",
         "accounts.ewmagazine.nl": "alias.client-services.oneall.com",
         "accounts.fiets.nl": "alias.client-services.oneall.com",
-        "gapi.oneindia.com": "gapi.oneindia.com.edgekey.net",
-        "images.oneindia.com": "images.oneindia.com.edgekey.net",
-        "polls.oneindia.com": "polls.oneindia.com.edgekey.net",
-        "rss.oneindia.com": "rss.oneindia.com.edgekey.net",
-        "scripts.oneindia.com": "scripts.oneindia.com.edgekey.net",
-        "videos.oneindia.com": "videos.oneindia.com.edgekey.net",
         "cdn1.f-cdn.com": "h-freelancer1.online-metrix.net",
         "cfa.fidelity.com": "h-fidelity.online-metrix.net",
         "cfa.mystreetscape.com": "h-fidelity.online-metrix.net",
@@ -60789,25 +60622,6 @@
         "my.letudiant.fr": "5bc818bd8e.optimicdn.com",
         "static.cotemaison.fr": "c2fe219316.optimicdn.com",
         "tra.scds.pmdstatic.net": "402dd31d7a-2.optimicdn.com",
-        "assets.weforum.org": "www.weforum.org.edgekey.net",
-        "blog.dana-farber.org": "dana-farber.org.edgekey.net",
-        "bundles.npr.org": "bundles.npr.org.edgekey.net",
-        "cdnglobal.immowelt.org": "cdnglobal.immowelt.org.edgekey.net",
-        "design.mayoclinic.org": "design.mayoclinic.org.edgekey.net",
-        "flashvideo.rferl.org": "flashvideo.rferl.org.edgekey.net",
-        "foundry.churchofjesuschrist.org": "foundry.churchofjesuschrist.org.edgekey.net",
-        "gamedata.britishcouncil.org": "gamedata.britishcouncil.org.edgekey.net",
-        "gdb.rferl.org": "gdb.rferl.org.edgekey.net",
-        "images.teamusa.org": "images.teamusa.org.edgekey.net",
-        "media-static.immowelt.org": "media-static.immowelt.org.edgekey.net",
-        "media.npr.org": "www.npr.org.edgekey.net",
-        "my.tiaa.org": "my.tiaa.org.edgekey.net",
-        "mykp-service-bus.kp.org": "mykp-service-bus.kp.org.edgekey.net",
-        "navigation.immowelt.org": "navigation.immowelt.org.edgekey.net",
-        "photo-assets.usopen.org": "wildcard-ds.usopen.org.edgekey.net",
-        "secure-media.collegeboard.org": "secure-media.collegeboard.org.edgekey.net",
-        "static-assets.npr.org": "static-assets.npr.org.edgekey.net",
-        "sui.britishcouncil.org": "wildcard.britishcouncil.org.edgekey.net",
         "local.lmtribune.com": "local.ownlocal.com",
         "local.myrecordjournal.com": "local.ownlocal.com",
         "local.newtondailynews.com": "local.ownlocal.com",
@@ -60921,7 +60735,6 @@
         "affiliate.tigerfitness.com": "tiger.postaffiliatepro.com",
         "affiliates.organixx.com": "organixx.postaffiliatepro.com",
         "partner.prusa3d.com": "prusa3d.postaffiliatepro.com",
-        "comments.vocento.com": "api.ppll.edgekey.net",
         "api.scores.be.as.com": "prisa-us-eu.map.fastly.net",
         "as00.epimg.net": "prisa-us-eu.map.fastly.net",
         "as01.epimg.net": "prisa-us-eu.map.fastly.net",
@@ -60945,17 +60758,6 @@
         "feedback.goto.com": "logmeinvoc-primary.vanitydomains.qualtrics.com",
         "survey.qlik.com": "qliktech.vanity8.ca1.qualtrics.com",
         "ualistens.underarmour.com": "uafieldtesting.vanity6.az1.qualtrics.com",
-        "anz.rd.rakuten.co.jp": "t2.rakuten.edgekey.net",
-        "ashiato.rakuten.co.jp": "evsan.rakuten.edgekey.net",
-        "cart-api.step.rakuten.co.jp": "t1.rakuten.edgekey.net",
-        "cdn.rex.contents.rakuten.co.jp": "t2.rakuten.edgekey.net",
-        "error.rakuten.co.jp": "evsan.rakuten.edgekey.net",
-        "image.books.rakuten.co.jp": "t2.rakuten.edgekey.net",
-        "image.card.jp.rakuten-static.com": "t2.rakuten.edgekey.net",
-        "img.travel.rakuten.co.jp": "t2.rakuten.edgekey.net",
-        "jp.rakuten-static.com": "t2.rakuten.edgekey.net",
-        "mall.ashiato.rakuten.co.jp": "t1.rakuten.edgekey.net",
-        "rat.rakuten.com": "t2.rakuten.edgekey.net",
         "static.newsmaxfeednetwork.com": "adapty.revcontent.com",
         "trends.newsmaxwidget.com": "trends.revcontent.com",
         "cdn1-images.nutaku.com": "vip0x098.ssl.rncdn5.com",
@@ -60969,69 +60771,6 @@
         "asset.lemde.fr": "s2.shared.global.fastly.net",
         "assets-cdn.kahoot.it": "s2.shared.global.fastly.net",
         "s1.lemde.fr": "s2.shared.global.fastly.net",
-        "asset1.marksandspencer.com": "vsan.scene7.com.edgekey.net",
-        "assets.bareminerals.com": "san7.scene7.com.edgekey.net",
-        "assets.biglots.com": "san5-ion.scene7.com.edgekey.net",
-        "assets.cox.com": "vsan-ion.scene7.com.edgekey.net",
-        "assets.deloitte.com": "san5-ion.scene7.com.edgekey.net",
-        "assets.ext.hpe.com": "dsan-ion.scene7.com.edgekey.net",
-        "assets.hdsupplysolutions.com": "san-ion.secure3.scene7.com.edgekey.net",
-        "assets.langhamhotels.com": "san6-ion.scene7.com.edgekey.net",
-        "assets.lumen.com": "san-ion.secure3.scene7.com.edgekey.net",
-        "assets.spectrumenterprise.com": "san5-ion.scene7.com.edgekey.net",
-        "cdn-dynmedia-1.microsoft.com": "san-ion.secure4.scene7.com.edgekey.net",
-        "cms-assets.bajajfinserv.in": "san6-ion.scene7.com.edgekey.net",
-        "content.hunterdouglas.com": "san7-ion.scene7.com.edgekey.net",
-        "digital.ihg.com": "san-ion.noicp.scene7.com.edgekey.net",
-        "dynamicmedia.accenture.com": "san6-ion.scene7.com.edgekey.net",
-        "gw-assets.assaabloy.com": "vsan-ion.scene7.com.edgekey.net",
-        "images.acer.com": "vsan-ion.scene7.com.edgekey.net",
-        "images.altrarunning.com": "san5-ion.scene7.com.edgekey.net",
-        "images.ansys.com": "san-ion.secure3.scene7.com.edgekey.net",
-        "images.asics.com": "san-ion.secure4.scene7.com.edgekey.net",
-        "images.blackberry.com": "san6-ion.scene7.com.edgekey.net",
-        "images.blue-tomato.com": "dsan.scene7.com.edgekey.net",
-        "images.heb.com": "san.secure4.scene7.com.edgekey.net",
-        "images.hugoboss.com": "vsan.scene7.com.edgekey.net",
-        "images.jansport.com": "vsan.scene7.com.edgekey.net",
-        "images.keurig.com": "san6-ion.scene7.com.edgekey.net",
-        "images.kirklands.com": "san6-ion.scene7.com.edgekey.net",
-        "images.kwikset.com": "san-ion.secure4.scene7.com.edgekey.net",
-        "images.lee.com": "san5.scene7.com.edgekey.net",
-        "images.lennoxpros.com": "dsan.scene7.com.edgekey.net",
-        "images.lululemon.com": "san7-ion.scene7.com.edgekey.net",
-        "images.pfisterfaucets.com": "san-ion.secure4.scene7.com.edgekey.net",
-        "images.philips.com": "san-ion.noicp.scene7.com.edgekey.net",
-        "images.selfridges.com": "vsan.scene7.com.edgekey.net",
-        "images.shaneco.com": "dsan.scene7.com.edgekey.net",
-        "images.shophq.com": "san5-ion.scene7.com.edgekey.net",
-        "images.tervis.com": "san6.scene7.com.edgekey.net",
-        "images.thenorthface.com": "vsan.scene7.com.edgekey.net",
-        "images.timberland.com": "san5.scene7.com.edgekey.net",
-        "images.trex.com": "san7.scene7.com.edgekey.net",
-        "images.vans.com": "san.secure4.scene7.com.edgekey.net",
-        "images.wacoal-america.com": "san-ion.secure3.scene7.com.edgekey.net",
-        "images.wrangler.com": "san5.scene7.com.edgekey.net",
-        "imageseu.wrangler.com": "san-ion.secure4.scene7.com.edgekey.net",
-        "img.uline.com": "dsan-ion.scene7.com.edgekey.net",
-        "media-assets.stryker.com": "san7-ion.scene7.com.edgekey.net",
-        "media.castorama.fr": "san7.scene7.com.edgekey.net",
-        "media.chainreactioncycles.com": "vsan.scene7.com.edgekey.net",
-        "media.direct.playstation.com": "dsan-ion.scene7.com.edgekey.net",
-        "media.diy.com": "dsan-ion.scene7.com.edgekey.net",
-        "media.guitarcenter.com": "dsan.scene7.com.edgekey.net",
-        "media.kohlsimg.com": "san5-ion.scene7.com.edgekey.net",
-        "media.schaefer-shop.de": "san7.scene7.com.edgekey.net",
-        "media.screwfix.com": "san7.scene7.com.edgekey.net",
-        "media.screwfix.ie": "dsan-ion.scene7.com.edgekey.net",
-        "media.sunbeltrentals.com": "san7-ion.scene7.com.edgekey.net",
-        "resource.bakerdist.com": "san6.scene7.com.edgekey.net",
-        "resource.gemaire.com": "san5.scene7.com.edgekey.net",
-        "s7-images.armstrongceilings.com": "san6-ion.scene7.com.edgekey.net",
-        "s7.bluegreenvacations.com": "vsan.scene7.com.edgekey.net",
-        "tourismmedia.italia.it": "san-ion.secure3.scene7.com.edgekey.net",
-        "www.assets.lighting.philips.com": "san-ion.noicp.scene7.com.edgekey.net",
-        "www.assets.signify.com": "san-ion.noicp.scene7.com.edgekey.net",
         "cdn.slidesharecdn.com": "scribd.map.fastly.net",
         "imgv2-1-f.scribdassets.com": "scribd.map.fastly.net",
         "imgv2-2-f.scribdassets.com": "scribd.map.fastly.net",
@@ -61070,7 +60809,6 @@
         "services.chipotle.com": "serviceschipotlecom.trafficmanager.net",
         "ads.eltiempo.co": "ww484.smartadserver.com",
         "speedy.literotica.com": "speedy.b-cdn.net",
-        "a.espncdn.com": "a.espncdn.com.stls.edgesuite.net",
         "creative.live.missav.com": "white-label.stripchat.com",
         "go.celebjihad.live": "white-label.stripchat.com",
         "go.live.missav.com": "white-label.stripchat.com",
@@ -61094,9 +60832,6 @@
         "static.thriftbooks.com": "thriftbooks.map.fastly.net",
         "epsf.ticketmaster.ca": "ticketmaster4.map.fastly.net",
         "epsf.ticketmaster.com": "ticketmaster4.map.fastly.net",
-        "lf16-tiktok-common.tiktokcdn-us.com": "lf16-tiktok-common.tiktokcdn-us.com.edgesuite.net",
-        "lf16-tiktok-web.tiktokcdn-us.com": "lf16-tiktok-web.tiktokcdn-us.com.edgesuite.net",
-        "p16-sign.tiktokcdn-us.com": "p16-sign.tiktokcdn-us.com.edgesuite.net",
         "auth.americamagazine.org": "auth-americamagazine.tinypass.com",
         "auth.asia.nikkei.com": "auth-asia-nikkei.tinypass.com",
         "auth.bearingarms.com": "auth-bearingarms.tinypass.com",
@@ -61133,67 +60868,8 @@
         "id.yorkshireeveningpost.co.uk": "id-yorkshireeveningpost.tinypass.com",
         "id.yorkshirepost.co.uk": "id-yorkshirepost-co-uk.tinypass.com",
         "trackjs.elefant.ro": "forwarder.trackjs.com",
-        "da.e-distribuzione.it": "ttk8bbo.x.incapdns.net",
-        "cdn.cnn.com": "ion-ma.turner.com.edgekey.net",
-        "dynaimage.cdn.cnn.com": "ion-ma.turner.com.edgekey.net",
-        "highlander.tbs.com": "ion-ma.turner.com.edgekey.net",
-        "i.cartoonnetwork.com": "ion-ma.turner.com.edgekey.net",
-        "i.cdn.tbs.com": "ion-ma.turner.com.edgekey.net",
-        "i.cdn.tntdrama.com": "ion-ma.turner.com.edgekey.net",
-        "i.cdn.turner.com": "ion-ma.turner.com.edgekey.net",
-        "i2.cdn.turner.com": "ion-ma.turner.com.edgekey.net",
-        "lightning.bleacherreport.com": "ion-ma.turner.com.edgekey.net",
-        "lightning.cnn.com": "ion-ma.turner.com.edgekey.net",
-        "lightning.hbo.com": "ion.turner.com.edgekey.net",
-        "lightning.hbomax.com": "ion.turner.com.edgekey.net",
-        "lightning.tbs.com": "ion-ma.turner.com.edgekey.net",
-        "lightning.tcm.com": "ion-ma.turner.com.edgekey.net",
-        "lightning.tntdrama.com": "ion-ma.turner.com.edgekey.net",
-        "sdataprod.ncaa.com": "ion-ma.turner.com.edgekey.net",
-        "static.hbo.com": "ion.turner.com.edgekey.net",
-        "tcmws.tcm.com": "ion-ma.turner.com.edgekey.net",
-        "token.ngtv.io": "ipv4.www.turner.com.edgekey.net",
-        "tvem.cdn.turner.com": "ion-ma.turner.com.edgekey.net",
         "gql.twitch.tv": "twitch.map.fastly.net",
         "k.twitchcdn.net": "twitch.map.fastly.net",
-        "api2.papajohns.co.uk": "api2.papajohns.co.uk.edgekey.net",
-        "asset.sephora.co.uk": "asset.sephora.co.uk.edgekey.net",
-        "assets.aldi-digital.co.uk": "www.aldi.co.uk.edgekey.net",
-        "cdn.argos.co.uk": "cdn.argos.co.uk.edgekey.net",
-        "cdn.motors.co.uk": "cdn.motors.co.uk.edgekey.net",
-        "cdn0.hitched.co.uk": "www.hitched.co.uk.edgekey.net",
-        "cdn1.hitched.co.uk": "www.hitched.co.uk.edgekey.net",
-        "content.tui.co.uk": "tui_imageonly_content.tui.co.uk.edgekey.net",
-        "content.very.co.uk": "www.very.co.uk.edgekey.net",
-        "crta.dailymail.co.uk": "crta.dailymail.co.uk.edgekey.net",
-        "crta.metro.co.uk": "crta.metro.co.uk.edgekey.net",
-        "dl.gmx.co.uk": "dl.gmx.co.uk.edgekey.net",
-        "emp.bbc.com": "emp.bbci.co.uk.edgekey.net",
-        "emp.bbci.co.uk": "emp.bbci.co.uk.edgekey.net",
-        "feeds.bbci.co.uk": "feeds.bbci.co.uk.edgekey.net",
-        "fff.dailymail.co.uk": "fff.dailymail.co.uk.edgekey.net",
-        "ichef.bbc.co.uk": "ichef.bbc.co.uk.edgekey.net",
-        "ichef.bbci.co.uk": "ichef.bbci.co.uk.edgekey.net",
-        "idcta.api.bbc.co.uk": "idcta-cdn.api.bbc.co.uk.edgekey.net",
-        "images.victorianplumbing.co.uk": "images.victorianplumbing.co.uk.edgekey.net",
-        "m.files.bbci.co.uk": "m.files.bbci.co.uk.edgekey.net",
-        "mon.lovehoney.co.uk": "mon.lovehoney.co.uk.edgekey.net",
-        "mybbc.files.bbci.co.uk": "mybbc.files.bbci.co.uk.edgekey.net",
-        "nav.files.bbci.co.uk": "nav.files.bbci.co.uk.edgekey.net",
-        "polling.bbc.co.uk": "polling.bbc.co.uk.edgekey.net",
-        "rta2.inews.co.uk": "rta2.inews.co.uk.edgekey.net",
-        "rta2.metro.co.uk": "rta2.metro.co.uk.edgekey.net",
-        "secured.dailymail.co.uk": "dailymail.co.uk.edgekey.net",
-        "sponge.creditkarma.co.uk": "sponge.creditkarma.co.uk.edgekey.net",
-        "static.bbc.co.uk": "static.bbc.co.uk.edgekey.net",
-        "static.bbci.co.uk": "static.bbci.co.uk.edgekey.net",
-        "static.files.bbci.co.uk": "static.files.bbci.co.uk.edgekey.net",
-        "static.findajob.dwp.gov.uk": "findajob.dwp.gov.uk.edgekey.net",
-        "ted.dailymail.co.uk": "ted.dailymail.co.uk.edgekey.net",
-        "track.opentable.co.uk": "track.opentable.co.uk.edgekey.net",
-        "vehicle-search.lookers.co.uk": "vehicle-search.lookers.co.uk.edgekey.net",
-        "api.vidio.com": "api.vidio.com.edgesuite.net",
-        "personalization.vidio.com": "personalization.vidio.com.edgesuite.net",
         "cabeceras.vocento.com": "static.vocento.com.akamaized.net",
         "static.vocento.com": "static.vocento.com.akamaized.net",
         "apps.voxmedia.com": "prod.vox.map.fastly.net",
@@ -61217,38 +60893,8 @@
         "gurgle.extremetech.com": "gurgle.zdbb.net",
         "gurgle.offers.com": "gurgle.zdbb.net",
         "gurgle.spiceworks.com": "gurgle.zdbb.net",
-        "bbstatic.pcmag.com": "ziffdavis.com.edgekey.net",
-        "cdn.static.zdbb.net": "ziffdavis.com.edgekey.net",
-        "cdn.ziffstatic.com": "dual.ziffdavis.com.edgekey.net",
-        "static.pcmag.com": "ziffdavis.com.edgekey.net",
-        "static.techbargains.com": "ziffdavis.com.edgekey.net",
-        "zdstatic.everydayhealth.com": "ziffdavis.com.edgekey.net",
-        "zdstatic.medpagetoday.com": "ziffdavis.com.edgekey.net",
-        "zdstatic.offers.com": "ziffdavis.com.edgekey.net",
-        "zdstatic.speedtest.net": "dual.ziffdavis.com.edgekey.net",
-        "g.askmen.com": "geo.ziffdavisinternational.com.edgekey.net",
-        "g.mashable.com": "geo.ziffdavisinternational.com.edgekey.net",
-        "g.pcmag.com": "geo.ziffdavisinternational.com.edgekey.net",
-        "sm.askmen.com": "im.ziffdavisinternational.com.edgekey.net",
-        "sm.ign.com": "im.ziffdavisinternational.com.edgekey.net",
-        "sm.mashable.com": "im.ziffdavisinternational.com.edgekey.net",
-        "sm.pcmag.com": "im.ziffdavisinternational.com.edgekey.net",
-        "static.babycenter.com": "akamai-111035.edgekey.net",
         "acdn.adnxs.com": "prod.appnexus.map.fastly.net",
         "cdn.adnxs.com": "prod.appnexus.map.fastly.net",
-        "a05781.boq.com.au": "a05781.boq.com.au.edgekey.net",
-        "api-info-nsw.keno.com.au": "san.keno.com.au.edgekey.net",
-        "cdn.iview.abc.net.au": "cdn.iview.abc.net.au.edgekey.net",
-        "cms.tkmaxx.com.au": "cms.tkmaxx.com.au.edgekey.net",
-        "dcms.sportsbet.com.au": "sportsbet.com.au.edgekey.net",
-        "subscriptions.cairnspost.com.au": "pci.news.com.au.edgekey.net",
-        "subscriptions.townsvillebulletin.com.au": "pci.news.com.au.edgekey.net",
-        "subscriptions.weeklytimesnow.com.au": "pci.news.com.au.edgekey.net",
-        "toifeeds.indiatimes.com": "toifeeds.indiatimes.com-v1.edgekey.net",
-        "pages.ebay.ca": "slot11847.ebay.com.edgekey.net",
-        "pages.ebay.co.uk": "slot11847.ebay.com.edgekey.net",
-        "pages.ebay.com.au": "slot11847.ebay.com.edgekey.net",
-        "pages.ebay.ie": "slot11847.ebay.com.edgekey.net",
         "share.maccosmetics.com.au": "mac-cosmetics.extole.io",
         "analytics.camilla.com": "ghs.googlehosted.com",
         "api.instantscripts.com.au": "ghs.googlehosted.com",
@@ -61259,15 +60905,9 @@
         "pages.vinidex.com.au": "aliaxisholdingsaustralia.mktoweb.com",
         "you.cdu.edu.au": "charlesdarwinuniversity.mktoweb.com",
         "assets1.gio.com.au": "suncorp.edge.nc0.co",
-        "api.wsj.net": "api.wsj.net.edgekey.net",
         "auth.sheppnews.com.au": "auth-sheppnews.tinypass.com",
         "help.amber.com.au": "amberelectric.zendesk.com",
         "socialize.foodland.ca": "voilaloginseconnecter.azurefd.net",
-        "sp.atlanticsuperstore.ca": "sp.atlanticsuperstore.ca.edgekey.net",
-        "sp.maxi.ca": "sp.maxi.ca.edgekey.net",
-        "sp.wholesaleclub.ca": "sp.wholesaleclub.ca.edgekey.net",
-        "sp.yourindependentgrocer.ca": "sp.yourindependentgrocer.ca.edgekey.net",
-        "www.loyalty.pharmaprix.ca": "www.loyalty.pharmaprix.ca.edgekey.net",
         "refer.harryrosen.com": "harryrosen.extole.io",
         "refer.lasenza.ca": "lasenza.extole.io",
         "share.bose.ca": "bose.extole.io",
@@ -61276,12 +60916,6 @@
         "images.audacy2-prod.ext.audacy.com": "j.sni.global.fastly.net",
         "support.traxxas.com": "traxxas.ladesk.com",
         "go.fidelity.ca": "fidelityinvestmentscanada.mktoweb.com",
-        "cdn.chinarundreisen.com": "cdn.chinarundreisen.com-v1.edgekey.net",
-        "pages.ebay.at": "slot11847.ebay.com.edgekey.net",
-        "pages.ebay.ch": "slot11847.ebay.com.edgekey.net",
-        "pages.ebay.de": "slot11847.ebay.com.edgekey.net",
-        "pages.ebay.fr": "slot11847.ebay.com.edgekey.net",
-        "pages.ebay.it": "slot11847.ebay.com.edgekey.net",
         "ea.vente-unique.ch": "vente-unique-ch.eulerian.net",
         "agnes.hormontherapie-wechseljahre.de": "ghs.googlehosted.com",
         "gtm.electrolux.ch": "ghs.googlehosted.com",
@@ -61294,7 +60928,6 @@
         "cdn.seniorweb.ch": "seniorweb-13478.kxcdn.com",
         "resources.swissquote.com": "swissquotecom-10fe3.kxcdn.com",
         "pages.riverbed.com": "riverbedtechnologyinc1.mktoweb.com",
-        "dynamic-assets.hitachienergy.com": "san7-ion.scene7.com.edgekey.net",
         "agnes.haemorriden.net": "ghs.googlehosted.com",
         "agnes.herzberatung.de": "ghs.googlehosted.com",
         "eventfeed.teleclinic.com": "ghs.googlehosted.com",
@@ -61312,7 +60945,6 @@
         "t.prenoms.com": "d2aioe7l2jay46.cloudfront.net",
         "t.prionseneglise.fr": "d2aioe7l2jay46.cloudfront.net",
         "t.vosquestionsdeparents.fr": "d2aioe7l2jay46.cloudfront.net",
-        "pages.befr.ebay.be": "slot11847.ebay.com.edgekey.net",
         "7lbd4.armandthiery.fr": "armandthiery.fr.eulerian.net",
         "ar.i-run.fr": "i-run.eulerian.net",
         "bum7.bymycar.fr": "bymycar-fr.eulerian.net",
@@ -61321,23 +60953,15 @@
         "gtm.electrolux.fr": "ghs.googlehosted.com",
         "metrics.funbooker.com": "ghs.googlehosted.com",
         "cdn.frenchmac.com": "frenchmac-13d74.kxcdn.com",
-        "static4.mclcm.net": "static.mclcm.net.edgekey.net",
         "gtm.zanussi.co.uk": "ghs.googlehosted.com",
         "privacy-digital.pru.co.uk": "mandg.edge.nc0.co",
-        "accounts.sky.com": "accounts.sky.com.edgesuite.net",
         "id.birminghamworld.uk": "id-birminghamworld-uk.tinypass.com",
         "id.chad.co.uk": "id-chad-co-uk.tinypass.com",
         "id.derbyshiretimes.co.uk": "id-derbyshiretimes-co-uk.tinypass.com",
         "id.doncasterfreepress.co.uk": "id-doncasterfreepress-co-uk.tinypass.com",
         "id.fifetoday.co.uk": "id-fifetoday-co-uk.tinypass.com",
         "id.wigantoday.net": "id-wigantoday.tinypass.com",
-        "cdn.raccars.co.uk": "cdn.raccars.co.uk.edgekey.net",
-        "t.dailymail.co.uk": "t.dailymail.co.uk.edgekey.net",
-        "tickets.c2c-online.co.uk": "c2c-online.co.uk.edgekey.net",
-        "bbstatic.ign.com": "ziffdavis.com.edgekey.net",
         "rum.condenastdigital.com": "condenast.map.fastly.net",
-        "pages.benl.ebay.be": "slot11847.ebay.com.edgekey.net",
-        "pages.ebay.nl": "slot11847.ebay.com.edgekey.net",
         "exp-api.my-jewellery.com": "custom-api.exponea.com",
         "gtm.podobrace.nl": "ghs.googlehosted.com",
         "metrics.winkelstraat.nl": "ghs.googlehosted.com",
@@ -61356,7 +60980,6 @@
         "tag.lucaregnskap.no": "ghs.googlehosted.com",
         "webdata.azets.no": "ghs.googlehosted.com",
         "static0.tiendeo.no": "j.sni.global.fastly.net",
-        "info.citusdata.com": "citusdata.mktoweb.com",
-        "emp.bbc.co.uk": "emp.bbci.co.uk.edgekey.net"
+        "info.citusdata.com": "citusdata.mktoweb.com"
     }
 }
