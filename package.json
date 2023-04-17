@@ -1,0 +1,13 @@
+{
+  "name": "tracker-blocklists",
+  "version": "1.0.0",
+  "description": "Public repo for app tracker lists",
+  "scripts": {
+    "test-android-atp": "node tests/validate-android-tds.js"
+  },
+  "author": "DuckDuckGo",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "ajv": "^8.12.0"
+  }
+}
