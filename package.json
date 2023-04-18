@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Public repo for app tracker lists",
   "scripts": {
-    "test-android-atp": "node tests/validate-android-tds.js"
+    "test": "mocha ./tests/**/*.js"
   },
   "author": "DuckDuckGo",
-  "license": "Apache 2.0",
+  "license": "CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)",
   "devDependencies": {
-    "ajv": "^8.12.0"
+    "ajv": "^8.12.0",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
   }
 }

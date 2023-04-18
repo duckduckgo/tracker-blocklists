@@ -1,6 +1,8 @@
 const Ajv = require("ajv")
 const fs = require("fs")
 const ajv = new Ajv({ allErrors: true })
+const expect = require('chai').expect
+
 
 const schema = {
     type: "object",
@@ -53,17 +55,30 @@ const schema = {
     additionalProperties: false,
 }
 
-const validate = ajv.compile(schema)
+function formatErrors (errors) {
+    if (!Array.isArray(errors)) {
+        return ''
+    }
 
+    return errors.map(item => `${item.instancePath}: ${item.message}`).join(', ')
+}
+
+// test(list)
+const validate = ajv.compile(schema)
 const list = JSON.parse(fs.readFileSync("app/android-tds.json"))
 
-test(list)
 
-function test(data) {
-    const valid = validate(data)
-    if (valid) {
-        console.log("Valid!")
-    } else {
-        console.log("Invalid: " + ajv.errorsText(validate.errors))
-    }
-}
+// function test(data) {
+//     const valid = validate(data)
+//     if (valid) {
+//         console.log("Valid!")
+//     } else {
+//         console.log("Invalid: " + ajv.errorsText(validate.errors))
+//     }
+// }
+
+describe('validate android-tds', () => {
+    it('should have a valid schema', () => {
+        expect(validate(list)).to.be.equal(true, formatErrors(validate.errors))
+    })
+})
