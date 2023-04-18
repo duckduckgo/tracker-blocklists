@@ -13,6 +13,6 @@ jobs:
           node-version: 16.x
       - name: Install dependencies
         run: npm install
-      - uses: ./
       - name: Run tests
+        uses: ./
         run: npm run test
