@@ -63,19 +63,8 @@ function formatErrors (errors) {
     return errors.map(item => `${item.instancePath}: ${item.message}`).join(', ')
 }
 
-// test(list)
 const validate = ajv.compile(schema)
 const list = JSON.parse(fs.readFileSync("app/android-tds.json"))
-
-
-// function test(data) {
-//     const valid = validate(data)
-//     if (valid) {
-//         console.log("Valid!")
-//     } else {
-//         console.log("Invalid: " + ajv.errorsText(validate.errors))
-//     }
-// }
 
 describe('validate android-tds', () => {
     it('should have a valid schema', () => {
