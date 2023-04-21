@@ -8,7 +8,7 @@ const schema = {
     type: "object",
     properties: {
         readme: {type: "string"},
-        version: {type: "integer"},
+        version: {type: "number"},
         trackers: {
             type: "object",
             patternProperties: {
