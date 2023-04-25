@@ -1,6 +1,6 @@
 # DuckDuckGo's App Tracker Blocklist
 
-The app tracker blocklist is used by [DuckDuckGo App Tracking Protection](https://spreadprivacy.com/introducing-app-tracking-protection/), currently available in beta on Android only.
+The app tracker blocklist is used by [DuckDuckGo App Tracking Protection](https://spreadprivacy.com/app-tracking-protection-open-beta/), currently available in beta on Android only.
 We build this list by interacting with popular Android apps and identifying common third-party requests that are sharing personal data, unique identifiers, or other information that could be used for fingerprinting.
 In the future, we plan to make the data and the tools used for data collection public.
 Questions or issues with tracker blocking in DuckDuckGo apps and extensions should be reported in the [Privacy Configuration](https://github.com/duckduckgo/privacy-configuration).
@@ -8,7 +8,7 @@ Questions or issues with tracker blocking in DuckDuckGo apps and extensions shou
 ## Questions
 
 - **Where are the blocklists?**
-  - [android-tds.json](android-tds.json) is the blocklist used by [DuckDuckGo App Tracking Protection](https://spreadprivacy.com/introducing-app-tracking-protection/) beta on Android.
+  - [android-tds.json](android-tds.json) is the blocklist used by [DuckDuckGo App Tracking Protection](https://spreadprivacy.com/app-tracking-protection-open-beta/) beta on Android.
 - **Where can I find the code that generates the blocklists?** The code to generate blocklists is not yet open source but coming soon.
 - **Are there any exceptions that should be applied to the blocklist?** 
 We exclude certain apps from protection if we find that they do not work with VPNs or rely on tracking domains to function. 

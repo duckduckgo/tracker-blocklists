@@ -18,7 +18,7 @@
                             "required": ["name", "displayName"],
                             "additionalProperties": false
                         },
-                        "default": { "type": "string" }
+                        "default": { "enum": ["block", "ignore"] }
                     },
                     "required": ["owner", "default"],
                     "additionalProperties": false
