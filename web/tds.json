@@ -13058,14 +13058,7 @@
                 "Content Delivery",
                 "Embedded Content"
             ],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "imasdk\\.googleapis\\.com\\/js\\/sdkloader\\/loader\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0
-                }
-            ]
+            "default": "ignore"
         },
         "imedia.cz": {
             "domain": "imedia.cz",
@@ -17957,370 +17950,7 @@
             "fingerprinting": 3,
             "cookies": 0.00106,
             "categories": [],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "nc0\\.co\\/TWDC-DTCI\\/prod\\/Bootstrap\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.000211
-                },
-                {
-                    "rule": "nc0\\.co\\/TWDC-DTCI\\/embed_privacy_prod\\/Bootstrap\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000613
-                },
-                {
-                    "rule": "nc0\\.co\\/TWDC-DTCI\\/prod\\/code\\/db0bfe926a903f7e7b0304794eaf45eb\\.js",
-                    "fingerprinting": 3,
-                    "cookies": 0.0000545
-                },
-                {
-                    "rule": "nc0\\.co\\/TWDC-DTCI\\/prod\\/code\\/f27a7bf866cf667982999973d8baa8c4\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000545
-                },
-                {
-                    "rule": "nc0\\.co\\/TWDC-DTCI\\/prod\\/code\\/9f299da1d7abad66047d0d41877b5d70\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/synchrony\\/vista_prod\\/code\\/3f2c185589eb6e85a3cb1d3c3ac6c494\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000272
-                },
-                {
-                    "rule": "nc0\\.co\\/synchronyretail\\/dservicespaprod\\/code\\/13182180751cf6f78d1bc3cc3eed7c5c\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000408
-                },
-                {
-                    "rule": "nc0\\.co\\/synchronyretail\\/dservicespaprod\\/code\\/064b02e95c349c5315ab71a9b36cb370\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000408
-                },
-                {
-                    "rule": "nc0\\.co\\/tiaa-cref\\/V2Prod-Tiaa\\/code\\/8ecf00fcbd86c4bd175290c0d772eeac\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/tiaa-cref\\/V2Prod-Cobrowse\\/code\\/ba65182b84c3a396035bc7cdb612b2bc\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/synchronybank\\/igniteprod\\/code\\/d4bfc94efa91615c152ce78c1e895811\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.00000681
-                },
-                {
-                    "rule": "nc0\\.co\\/synchronybank\\/igniteprod\\/code\\/75e0a0babbaa220cd36206a36aad9b7b\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.00000681
-                },
-                {
-                    "rule": "nc0\\.co\\/nzz\\/prod-blv\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/nzz\\/prod-blv\\/code\\/a7d3a6412815983484c2990c9fa4702e\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/capitalone\\/prod\\/Bootstrap\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.00000681
-                },
-                {
-                    "rule": "nc0\\.co\\/capitalone\\/prod\\/code\\/264d909e5d0c92b7de189abc70bb2c3d\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/TWDC-DTCI\\/prod\\/code\\/21006b5457d065807998540e890443f3\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000681
-                },
-                {
-                    "rule": "nc0\\.co\\/TWDC-DTCI\\/prod\\/code\\/b2ad0d773876a1e7740d6387a2ac3d03\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000204
-                },
-                {
-                    "rule": "nc0\\.co\\/TWDC-DTCI\\/prod\\/code\\/06c97394ab4ec8531a09ca66aa9f7598\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/vaa\\/airtfx\\/code\\/3032a910b94f3554e89d3964a7af9418\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/vaa\\/prod\\/code\\/d6a92c533e2d493ce93895e41f3758fd\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000204
-                },
-                {
-                    "rule": "nc0\\.co\\/symantec\\/aemprod\\/Bootstrap\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000204
-                },
-                {
-                    "rule": "nc0\\.co\\/symantec\\/aemprod\\/code\\/3c00a5c3b957bffd480fb7975c3cd908\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/nzz\\/prod-nzzmag\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/nzz\\/prod-nzzmag\\/code\\/de3fc2a9f4ac27c9544c4c122b770eb6\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/capitalone\\/prod\\/code\\/351fd2915b6fbd21e8ad0cd9b9a368ef\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/capitalone\\/prod\\/code\\/0e45da380b5fda466c305ea476e78da7\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/capitalone\\/prod\\/code\\/e87d74229cbf4c9579ea00d3370becb9\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.00000681
-                },
-                {
-                    "rule": "nc0\\.co\\/suncorp\\/aami-bw-prod\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/suncorp\\/aami-bw-prod\\/code\\/4c251a66b452b4a4fae2d4acbe0cec82\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/amica\\/amicawebprod\\/Bootstrap\\.js",
-                    "fingerprinting": 3,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/amica\\/amicawebprod\\/code\\/7bb1a849df0b1532bb0f943e36bcc8b7\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/bhfoto\\/apertureprod\\/Bootstrap\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/capitalone\\/prod\\/code\\/3871f28a631243b58fabce2f967f0af3\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/synchronycarecredit\\/carecreditprod\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/delta\\/dl_bastian\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/delta\\/dl_bastian\\/code\\/5345bbdeda958a4aef787ce8e92f61e2\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0
-                },
-                {
-                    "rule": "nc0\\.co\\/delta\\/dl_bastian\\/code\\/511c1a71a72b86671d133934a291ff2a\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0
-                },
-                {
-                    "rule": "nc0\\.co\\/delta\\/dl_bastian\\/code\\/e2e88a0bbb8170acd235436c072db7d6\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/delta\\/dl_bastian\\/code\\/a16b911d452e8b9304519161cfa4ce15\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0
-                },
-                {
-                    "rule": "nc0\\.co\\/TWDC-DTCI\\/prod\\/code\\/edd999abd0407835ade35a951aee2c89\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/toyotanational\\/l-com-p\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/toyotanational\\/l-com-p\\/code\\/f4841f2af460dfff7ce165f1e9be5e50\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/toyotanational\\/l-com-p\\/code\\/9c478645d478e942c139ca023c445e99\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/nzz\\/prod-nlz\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/nzz\\/prod-nlz\\/code\\/9c56c4aaa103c660ad5f36f6525f2272\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/nab\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/nab\\/prod\\/code\\/55b204d7df9ab2cae8616cbc2ab95c42\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/nzz\\/prod-nzz\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/nzz\\/prod-nzz\\/code\\/dd1b54fedee77216408a5aaca2975320\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/postoffice\\/prod\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/postoffice\\/prod\\/code\\/8d503c9694680575aed3fb9eb1bd96cc\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/suncorp\\/shn-bw-prod\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/suncorp\\/shn-bw-prod\\/code\\/8f98a0a85304881e1b6b51eec42f38ab\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/statefarm\\/prod\\/code\\/0acbcaed4508db70baebe4fec4597580\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/nzz\\/prod-sgt\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/nzz\\/prod-sgt\\/code\\/5da27809e4e0a91860af134852e19a64\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/toyotanational\\/t-com-p\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/toyotanational\\/t-com-p\\/code\\/bd09ac8c732c4522b6954036c4182821\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/toyotanational\\/t-com-p\\/code\\/885e007b0a1bae0c69d35ce55c25d71a\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/vaa\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/vaa\\/vhols\\/Bootstrap\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.0000136
-                },
-                {
-                    "rule": "nc0\\.co\\/delta\\/dl_bastian\\/code\\/6c9d3e465e9939f1c569dd9d9e53cd1e\\.js",
-                    "fingerprinting": 1,
-                    "cookies": 0.000201
-                },
-                {
-                    "rule": "nc0\\.co\\/TWDC-DTCI\\/prod\\/code\\/0372b1e5446062aaf689e5b7ccdf9de9\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.000201
-                },
-                {
-                    "rule": "nc0\\.co\\/TWDC-DTCI\\/prod\\/code\\/93a11db536eec374094d51b8f3303fa3\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0.000302
-                },
-                {
-                    "rule": "nc0\\.co\\/privacy\\/v1\\/b\\/r\\.rnc",
-                    "fingerprinting": 0,
-                    "cookies": 0,
-                    "comment": "pixel"
-                },
-                {
-                    "rule": "nc0\\.co\\/privacy\\/v1\\/c\\/r\\.rnc",
-                    "fingerprinting": 0,
-                    "cookies": 0,
-                    "comment": "pixel"
-                },
-                {
-                    "rule": "nc0\\.co\\/pc\\/dell\\/sst",
-                    "fingerprinting": 0,
-                    "cookies": 0.0000408,
-                    "comment": "pixel"
-                },
-                {
-                    "rule": "nc0\\.co\\/pc\\/symantec\\/sst",
-                    "fingerprinting": 0,
-                    "cookies": 0.0000272,
-                    "comment": "pixel"
-                },
-                {
-                    "rule": "nc0\\.co\\/error\\/e\\.gif",
-                    "fingerprinting": 0,
-                    "cookies": 0,
-                    "comment": "pixel"
-                },
-                {
-                    "rule": "nc0\\.co\\/pc\\/toyotanational\\/sst",
-                    "fingerprinting": 0,
-                    "cookies": 0.0000204,
-                    "comment": "pixel"
-                }
-            ]
+            "default": "ignore"
         },
         "neodatagroup.com": {
             "domain": "neodatagroup.com",
@@ -20685,17 +20315,17 @@
             ],
             "default": "block"
         },
-        "pinimg.com": {
-            "domain": "pinimg.com",
+        "pinterest.com": {
+            "domain": "pinterest.com",
             "owner": {
                 "name": "Pinterest, Inc.",
                 "displayName": "Pinterest",
                 "privacyPolicy": "https://policy.pinterest.com/en/privacy-policy",
                 "url": "http://pinterest.com"
             },
-            "prevalence": 0.0448,
-            "fingerprinting": 2,
-            "cookies": 0.0404,
+            "prevalence": 0.0593,
+            "fingerprinting": 1,
+            "cookies": 0.0258,
             "categories": [
                 "Social - Share",
                 "Content Delivery",
@@ -28456,11 +28086,6 @@
                     "cookies": 0.0000136
                 },
                 {
-                    "rule": "uservoice\\.com\\/auth-component\\/uv-auth\\/p-3e73ccf5\\.js",
-                    "fingerprinting": 2,
-                    "cookies": 0
-                },
-                {
                     "rule": "uservoice\\.com\\/XzQsWhTqmnE8dYDOJ0HjJQ\\.js",
                     "fingerprinting": 1,
                     "cookies": 0.0000136
@@ -30884,27 +30509,6 @@
                 }
             ]
         },
-        "google.ca": {
-            "domain": "google.ca",
-            "owner": {
-                "name": "Google LLC",
-                "displayName": "Google",
-                "privacyPolicy": "https://policies.google.com/privacy?hl=en&gl=us",
-                "url": "http://google.com"
-            },
-            "prevalence": 0.534,
-            "fingerprinting": 1,
-            "cookies": 0,
-            "categories": [],
-            "default": "block",
-            "rules": [
-                {
-                    "rule": "google\\.ca\\/cse",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                }
-            ]
-        },
         "gov.bc.ca": {
             "domain": "gov.bc.ca",
             "owner": {
@@ -30976,27 +30580,6 @@
                 }
             ]
         },
-        "google.fr": {
-            "domain": "google.fr",
-            "owner": {
-                "name": "Google LLC",
-                "displayName": "Google",
-                "privacyPolicy": "https://policies.google.com/privacy?hl=en&gl=us",
-                "url": "http://google.com"
-            },
-            "prevalence": 0.237,
-            "fingerprinting": 1,
-            "cookies": 0.000402,
-            "categories": [],
-            "default": "block",
-            "rules": [
-                {
-                    "rule": "google\\.fr\\/cse",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                }
-            ]
-        },
         "veoxa.com": {
             "domain": "veoxa.com",
             "owner": {
@@ -31013,27 +30596,6 @@
                     "rule": "veoxa\\.com\\/store\\/js",
                     "fingerprinting": 1,
                     "cookies": 0.000302
-                }
-            ]
-        },
-        "google.nl": {
-            "domain": "google.nl",
-            "owner": {
-                "name": "Google LLC",
-                "displayName": "Google",
-                "privacyPolicy": "https://policies.google.com/privacy?hl=en&gl=us",
-                "url": "http://google.com"
-            },
-            "prevalence": 0.3,
-            "fingerprinting": 1,
-            "cookies": 0.0001,
-            "categories": [],
-            "default": "block",
-            "rules": [
-                {
-                    "rule": "google\\.nl\\/cse",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
                 }
             ]
         },
@@ -35021,21 +34583,7 @@
                 "Content Delivery",
                 "Embedded Content"
             ],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "fonts\\.googleapis\\.com\\/css2",
-                    "fingerprinting": 0,
-                    "cookies": 0,
-                    "comment": "pixel"
-                },
-                {
-                    "rule": "fonts\\.googleapis\\.com\\/icon",
-                    "fingerprinting": 0,
-                    "cookies": 0,
-                    "comment": "pixel"
-                }
-            ]
+            "default": "ignore"
         },
         "hotjar.io": {
             "domain": "hotjar.io",
@@ -35253,21 +34801,7 @@
                 "Content Delivery",
                 "Embedded Content"
             ],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "maps\\.googleapis\\.com\\/maps\\/gen_204",
-                    "fingerprinting": 0,
-                    "cookies": 0,
-                    "comment": "pixel"
-                },
-                {
-                    "rule": "maps\\.googleapis\\.com\\/maps\\/api\\/js",
-                    "fingerprinting": 2,
-                    "cookies": 0,
-                    "comment": "pixel"
-                }
-            ]
+            "default": "ignore"
         },
         "msecnd.net": {
             "domain": "msecnd.net",
@@ -35433,25 +34967,6 @@
                     "comment": "pixel"
                 }
             ]
-        },
-        "pinterest.com": {
-            "domain": "pinterest.com",
-            "owner": {
-                "name": "Pinterest, Inc.",
-                "displayName": "Pinterest",
-                "privacyPolicy": "https://policy.pinterest.com/en/privacy-policy",
-                "url": "http://pinterest.com"
-            },
-            "prevalence": 0.0593,
-            "fingerprinting": 1,
-            "cookies": 0.0258,
-            "categories": [
-                "Social - Share",
-                "Content Delivery",
-                "Embedded Content",
-                "Social Network"
-            ],
-            "default": "ignore"
         },
         "polyfill.io": {
             "domain": "polyfill.io",
@@ -35717,6 +35232,12 @@
             "default": "ignore",
             "rules": [
                 {
+                    "rule": "wp\\.com\\/g\\.gif",
+                    "fingerprinting": 0,
+                    "cookies": 0,
+                    "comment": "pixel"
+                },
+                {
                     "rule": "wp\\.com\\/t\\.gif",
                     "fingerprinting": 0,
                     "cookies": 0,
@@ -35745,15 +35266,7 @@
                 "Content Delivery",
                 "Embedded Content"
             ],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "www\\.googleapis\\.com\\/generate_204",
-                    "fingerprinting": 0,
-                    "cookies": 0,
-                    "comment": "pixel"
-                }
-            ]
+            "default": "ignore"
         },
         "yadro.ru": {
             "domain": "yadro.ru",
