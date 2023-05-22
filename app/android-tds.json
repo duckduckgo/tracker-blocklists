@@ -1,6 +1,6 @@
 {
     "readme": "https://github.com/duckduckgo/tracker-blocklists",
-    "version": 1683211683197,
+    "version": 1684193574672,
     "trackers": {
         "15.taboola.com": {
             "owner": {
@@ -226,13 +226,6 @@
             },
             "default": "ignore"
         },
-        "analytics.localytics.com": {
-            "owner": {
-                "name": "Upland Software Inc.",
-                "displayName": "Upland Software"
-            },
-            "default": "ignore"
-        },
         "analytics.rayjump.com": {
             "owner": {
                 "name": "Talent Game Box",
@@ -279,13 +272,6 @@
             "owner": {
                 "name": "Amplitude",
                 "displayName": "Amplitude"
-            },
-            "default": "block"
-        },
-        "api.appsflyer.com": {
-            "owner": {
-                "name": "AppsFlyer",
-                "displayName": "AppsFlyer"
             },
             "default": "block"
         },
@@ -632,13 +618,6 @@
             },
             "default": "block"
         },
-        "ch-wf.taboola.com": {
-            "owner": {
-                "name": "Taboola, Inc.",
-                "displayName": "Taboola"
-            },
-            "default": "block"
-        },
         "choices.truste.com": {
             "owner": {
                 "name": "TrustArc Inc.",
@@ -916,13 +895,6 @@
             "owner": {
                 "name": "AppsFlyer",
                 "displayName": "AppsFlyer"
-            },
-            "default": "block"
-        },
-        "events.mapbox.com": {
-            "owner": {
-                "name": "Mapbox Inc.",
-                "displayName": "Mapbox"
             },
             "default": "block"
         },
@@ -1233,13 +1205,6 @@
                 "displayName": "The Trade Desk"
             },
             "default": "block"
-        },
-        "internal.unity3d.com": {
-            "owner": {
-                "name": "Unity Technologies ApS",
-                "displayName": "Unity"
-            },
-            "default": "ignore"
         },
         "ipds.adrta.com": {
             "owner": {
@@ -2017,13 +1982,6 @@
                 "displayName": "Google"
             },
             "default": "ignore"
-        },
-        "sync-t1.taboola.com": {
-            "owner": {
-                "name": "Taboola, Inc.",
-                "displayName": "Taboola"
-            },
-            "default": "block"
         },
         "sync-tm.everesttech.net": {
             "owner": {
@@ -5253,27 +5211,6 @@
                 "device_make",
                 "os_version",
                 "country",
-                "platform"
-            ]
-        },
-        "Upland Software Inc.": {
-            "score": 930,
-            "signals": [
-                "postal_code",
-                "city",
-                "AAID",
-                "unique_identifier",
-                "state",
-                "os_build_version",
-                "app_version",
-                "device_connectivity",
-                "device_model",
-                "app_name",
-                "device_make",
-                "os_version",
-                "country",
-                "timezone",
-                "device_orientation",
                 "platform"
             ]
         },
