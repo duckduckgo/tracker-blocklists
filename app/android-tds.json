@@ -14,7 +14,7 @@
                 "name": "AppLovin Corporation",
                 "displayName": "AppLovin"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "a.tribalfusion.com": {
             "owner": {
@@ -35,7 +35,7 @@
                 "name": "Amazon Technologies, Inc.",
                 "displayName": "Amazon"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "aax-us-east.amazon-adsystem.com": {
             "owner": {
@@ -91,7 +91,7 @@
                 "name": "Digital Turbine",
                 "displayName": "AdColony"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "adexp.liftoff.io": {
             "owner": {
@@ -231,7 +231,7 @@
                 "name": "Talent Game Box",
                 "displayName": "Talent Game Box"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "analytics.tiktok.com": {
             "owner": {
@@ -259,7 +259,7 @@
                 "name": "Digital Turbine",
                 "displayName": "AdColony"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "ap.lijit.com": {
             "owner": {
@@ -287,21 +287,21 @@
                 "name": "Branch Metrics, Inc.",
                 "displayName": "Branch Metrics"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "api.gameanalytics.com": {
             "owner": {
                 "name": "GameAnalytics ApS",
                 "displayName": "GameAnalytics"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "api.iterable.com": {
             "owner": {
                 "name": "Iterable, Inc.",
                 "displayName": "Iterable"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "api.kochava.com": {
             "owner": {
@@ -322,7 +322,7 @@
                 "name": "Mixpanel, Inc.",
                 "displayName": "Mixpanel"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "api.onesignal.com": {
             "owner": {
@@ -343,7 +343,7 @@
                 "name": "RevenueCat",
                 "displayName": "RevenueCat"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "api.rlcdn.com": {
             "owner": {
@@ -420,7 +420,7 @@
                 "name": "AppsFlyer",
                 "displayName": "AppsFlyer"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "appmetrica.yandex.net": {
             "owner": {
@@ -504,7 +504,7 @@
                 "name": "Sharethrough, Inc.",
                 "displayName": "Sharethrough"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "bttrack.com": {
             "owner": {
@@ -525,7 +525,7 @@
                 "name": "Microsoft Corporation",
                 "displayName": "Microsoft"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "c.riskified.com": {
             "owner": {
