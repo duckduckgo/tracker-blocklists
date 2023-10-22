@@ -546,21 +546,21 @@
                 "name": "AppLovin Corporation",
                 "displayName": "AppLovin"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "cdn-f.adsmoloco.com": {
             "owner": {
                 "name": "Moloco Inc.",
                 "displayName": "Moloco"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "cdn-lb.vungle.com": {
             "owner": {
                 "name": "Vungle Inc",
                 "displayName": "Vungle"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "cdn.doubleverify.com": {
             "owner": {
@@ -623,21 +623,21 @@
                 "name": "TrustArc Inc.",
                 "displayName": "TrustArc"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "click-haproxy.supersonicads.com": {
             "owner": {
                 "name": "ironSource Ltd",
                 "displayName": "ironSource"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "cloud.unity3d.com": {
             "owner": {
                 "name": "Unity Technologies ApS",
                 "displayName": "Unity"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "cm.everesttech.net": {
             "owner": {
@@ -665,7 +665,7 @@
                 "name": "Talent Game Box",
                 "displayName": "Talent Game Box"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "connect.facebook.net": {
             "owner": {
@@ -679,7 +679,7 @@
                 "name": "Tapjoy, Inc.",
                 "displayName": "Tapjoy"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "consumer.krxd.net": {
             "owner": {
@@ -826,7 +826,7 @@
                 "name": "AppsFlyer",
                 "displayName": "AppsFlyer"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "dlx.addthis.com": {
             "owner": {
@@ -1057,7 +1057,7 @@
                 "name": "ironSource Ltd",
                 "displayName": "ironSource"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "iad-01.braze.com": {
             "owner": {
@@ -1169,7 +1169,7 @@
                 "name": "Liftoff Mobile, Inc.",
                 "displayName": "Liftoff"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "impression.appsflyer.com": {
             "owner": {
@@ -1225,7 +1225,7 @@
                 "name": "ironSource Ltd",
                 "displayName": "ironSource"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "js-sec.indexww.com": {
             "owner": {
@@ -1295,7 +1295,7 @@
                 "name": "ironSource Ltd",
                 "displayName": "ironSource"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "logx.optimizely.com": {
             "owner": {
