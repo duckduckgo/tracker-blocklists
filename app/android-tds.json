@@ -343,7 +343,7 @@
                 "name": "RevenueCat",
                 "displayName": "RevenueCat"
             },
-            "default": "block"
+            "default": "ignore"
         },
         "api.rlcdn.com": {
             "owner": {
