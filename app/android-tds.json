@@ -1330,7 +1330,7 @@
                 "name": "DeepIntent Inc",
                 "displayName": "DeepIntent"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "match.sharethrough.com": {
             "owner": {
@@ -1386,7 +1386,7 @@
                 "name": "AppLovin Corporation",
                 "displayName": "AppLovin"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "mwzeom.zeotap.com": {
             "owner": {
@@ -1407,14 +1407,14 @@
                 "name": "ironSource Ltd",
                 "displayName": "ironSource"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "notify.bugsnag.com": {
             "owner": {
                 "name": "Bugsnag Inc.",
                 "displayName": "Bugsnag"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "ny1-bid.adsrvr.org": {
             "owner": {
@@ -1435,14 +1435,14 @@
                 "name": "ironSource Ltd",
                 "displayName": "ironSource"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "outcome-ssp.supersonicads.com": {
             "owner": {
                 "name": "ironSource Ltd",
                 "displayName": "ironSource"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "p.adsymptotic.com": {
             "owner": {
@@ -1533,7 +1533,7 @@
                 "name": "OnAudience Ltd.",
                 "displayName": "OnAudience"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "pixel.parsely.com": {
             "owner": {
@@ -1568,7 +1568,7 @@
                 "name": "Tapjoy, Inc.",
                 "displayName": "Tapjoy"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "platform.ssacdn.com": {
             "owner": {
@@ -1596,7 +1596,7 @@
                 "name": "ironSource Ltd",
                 "displayName": "ironSource"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "pm.w55c.net": {
             "owner": {
@@ -1631,14 +1631,14 @@
                 "name": "AppLovin Corporation",
                 "displayName": "AppLovin"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "prod-ms.applovin.com": {
             "owner": {
                 "name": "AppLovin Corporation",
                 "displayName": "AppLovin"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "prod.bidr.io": {
             "owner": {
@@ -1687,7 +1687,7 @@
                 "name": "Index Exchange, Inc.",
                 "displayName": "Index Exchange"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "register.appsflyer.com": {
             "owner": {
@@ -1701,7 +1701,7 @@
                 "name": "Tapjoy, Inc.",
                 "displayName": "Tapjoy"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "rt.applovin.com": {
             "owner": {
