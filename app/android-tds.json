@@ -1708,7 +1708,7 @@
                 "name": "AppLovin Corporation",
                 "displayName": "AppLovin"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "rtb-csync.smartadserver.com": {
             "owner": {
@@ -1743,7 +1743,7 @@
                 "name": "ironSource Ltd",
                 "displayName": "ironSource"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "s.adsximg.com": {
             "owner": {
@@ -1785,7 +1785,7 @@
                 "name": "Adjust GmbH",
                 "displayName": "Adjust"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "s3.amazonaws.com": {
             "owner": {
@@ -1827,7 +1827,7 @@
                 "name": "Digital Turbine",
                 "displayName": "AdColony"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "search.spotxchange.com": {
             "owner": {
@@ -1876,7 +1876,7 @@
                 "name": "Flashtalking Inc",
                 "displayName": "Flashtalking"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "servicebus.windows.net": {
             "owner": {
@@ -1904,14 +1904,14 @@
                 "name": "PubMatic, Inc.",
                 "displayName": "PubMatic"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "sonic-us.supersonicads.com": {
             "owner": {
                 "name": "ironSource Ltd",
                 "displayName": "ironSource"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "spl.zeotap.com": {
             "owner": {
@@ -2093,7 +2093,7 @@
                 "name": "Magnite, Inc.",
                 "displayName": "Magnite"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "tpc.googlesyndication.com": {
             "owner": {
@@ -2121,7 +2121,7 @@
                 "name": "ironSource Ltd",
                 "displayName": "ironSource"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "trc-events.taboola.com": {
             "owner": {
@@ -2156,7 +2156,7 @@
                 "name": "Dotmetrics",
                 "displayName": "Dotmetrics"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "um.simpli.fi": {
             "owner": {
@@ -2261,21 +2261,21 @@
                 "name": "ironSource Ltd",
                 "displayName": "ironSource"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "ws.tapjoyads.com": {
             "owner": {
                 "name": "Tapjoy, Inc.",
                 "displayName": "Tapjoy"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "wv.inner-active.mobi": {
             "owner": {
                 "name": "Digital Turbine",
                 "displayName": "AdColony"
             },
-            "default": "ignore"
+            "default": "block"
         },
         "www.facebook.com": {
             "owner": {
