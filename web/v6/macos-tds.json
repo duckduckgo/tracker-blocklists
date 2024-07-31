@@ -1335,19 +1335,69 @@
                 "Tag Manager",
                 "Third-Party Analytics Marketing"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "assets\\.adobedtm\\.com",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "adobedtm\\.com/v6/ds\\.min\\.js",
+                    "exceptions": {
+                        "domains": [
+                            "aarp.org",
+                            "ally.com",
+                            "auspost.com.au",
+                            "bjs.com",
+                            "bose.com",
+                            "bose.com.au",
+                            "creditonebank.com",
+                            "fedex.com",
+                            "fnbo.com",
+                            "guitarcenter.com",
+                            "harley-davidson.com",
+                            "hilton.com",
+                            "jcpenney.com",
+                            "jewelosco.com",
+                            "kohls.com",
+                            "lenovo.com",
+                            "lowes.com",
+                            "nvidia.com",
+                            "safeway.com",
+                            "shutterfly.com",
+                            "truist.com",
+                            "uhc.com",
+                            "verizon.com",
+                            "vineyardvines.com",
+                            "xfinity.com"
+                        ]
+                    }
                 },
                 {
-                    "rule": "adobedtm\\.com/.*/launch",
+                    "rule": "adobedtm\\.com/recommendations/events/v1/recommendationsEvents\\.min\\.js",
                     "exceptions": {
-                        "types": [
-                            "script",
-                            "xmlhttprequest"
+                        "domains": [
+                            "aarp.org",
+                            "ally.com",
+                            "auspost.com.au",
+                            "bjs.com",
+                            "bose.com",
+                            "bose.com.au",
+                            "creditonebank.com",
+                            "fedex.com",
+                            "fnbo.com",
+                            "guitarcenter.com",
+                            "harley-davidson.com",
+                            "hilton.com",
+                            "jcpenney.com",
+                            "jewelosco.com",
+                            "kohls.com",
+                            "lenovo.com",
+                            "lowes.com",
+                            "nvidia.com",
+                            "safeway.com",
+                            "shutterfly.com",
+                            "truist.com",
+                            "uhc.com",
+                            "verizon.com",
+                            "vineyardvines.com",
+                            "xfinity.com"
                         ]
                     }
                 }
@@ -2449,26 +2499,6 @@
             "default": "ignore",
             "rules": [
                 {
-                    "rule": "payments\\.amazon\\.com",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "apay-us\\.amazon\\.com",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "payments-uk\\.amazon\\.com",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "payments-de\\.amazon\\.com",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
                     "rule": "amazon\\.com\\/kp\\/card",
                     "fingerprinting": 3,
                     "cookies": 0.0000204
@@ -2477,12 +2507,6 @@
                     "rule": "amazon\\.com\\/kp\\/embed",
                     "fingerprinting": 3,
                     "cookies": 0.0000136
-                },
-                {
-                    "rule": "amazon\\.com\\/cs\\/uedata",
-                    "fingerprinting": 0,
-                    "cookies": 0.0000476,
-                    "comment": "pixel"
                 },
                 {
                     "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.csm\\.nexusclient\\.prod",
@@ -10953,17 +10977,19 @@
             "fingerprinting": 2,
             "cookies": 0.00273,
             "categories": [],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "cdn\\.getshogun\\.com",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "getshogun\\.com/collector\\.js"
                 },
                 {
-                    "rule": "lib\\.getshogun\\.com",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "getshogun\\.com/pageview"
+                },
+                {
+                    "rule": "getshogun\\.com/api/instagram/posts"
+                },
+                {
+                    "rule": "getshogun\\.com/api/products"
                 }
             ]
         },
@@ -11374,12 +11400,31 @@
                 "Ad Motivated Tracking",
                 "Advertising"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "googleadservices\\.com/pagead/conversion_async\\.js",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "googleadservices\\.com/gampad/cookie\\.js"
+                },
+                {
+                    "rule": "googleadservices\\.com/pagead/conversion\\.js"
+                },
+                {
+                    "rule": "googleadservices\\.com/gampad/google_service\\.js"
+                },
+                {
+                    "rule": "googleadservices\\.com/gampad/google_ads\\.js"
+                },
+                {
+                    "rule": "googleadservices\\.com/favicon\\.ico"
+                },
+                {
+                    "rule": "googleadservices\\.com/ga/phone"
+                },
+                {
+                    "rule": "googleadservices\\.com/ccm/conversion/845940546/"
+                },
+                {
+                    "rule": "googleadservices\\.com/pagead/conversion/"
                 }
             ]
         },
@@ -11546,7 +11591,7 @@
                 "Tag Manager",
                 "Third-Party Analytics Marketing"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
                     "rule": "googletagmanager\\.com/gtm\\.js",
@@ -11661,9 +11706,37 @@
                     }
                 },
                 {
-                    "rule": "googletagmanager\\.com/gtm\\.js",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "googletagmanager\\.com/gtag/js"
+                },
+                {
+                    "rule": "googletagmanager\\.com/amp\\.json"
+                },
+                {
+                    "rule": "googletagmanager\\.com/a"
+                },
+                {
+                    "rule": "googletagmanager\\.com/gtag/destination"
+                },
+                {
+                    "rule": "googletagmanager\\.com/ns\\.html"
+                },
+                {
+                    "rule": "googletagmanager\\.com/td"
+                },
+                {
+                    "rule": "googletagmanager\\.com/dclk/ns/v1\\.js"
+                },
+                {
+                    "rule": "googletagmanager\\.com/gtag\\.js"
+                },
+                {
+                    "rule": "googletagmanager\\.com/gtag/amp"
+                },
+                {
+                    "rule": "googletagmanager\\.com/gtm/js"
+                },
+                {
+                    "rule": "googletagmanager\\.com/ns\\.twig"
                 }
             ]
         },
@@ -12601,10 +12674,10 @@
                 "Embedded Content",
                 "Third-Party Analytics Marketing"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "forms\\.hubspot\\.com",
+                    "rule": "hubspot\\.com/livechat-public/v1/message/public",
                     "exceptions": {
                         "types": [
                             "xmlhttprequest"
@@ -12612,32 +12685,192 @@
                     }
                 },
                 {
-                    "rule": "app\\.hubspot\\.com/.*/api",
+                    "rule": "hubspot\\.com/__ptq\\.gif",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/__pto\\.gif",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/api/cartographer/v1/rhumb",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/web-interactives-embed\\.js",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/web-interactives/public/v1/embed/combinedConfigs",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/api/1/store/",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/feedback-web-fetcher",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/__ptbe\\.gif",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/viral-links/v1/tracking",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/api/usage-logging/v1/log/hublytics-multi/no-auth",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/api/metrics/v1/frontend/send",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/web-interactives-container\\.js",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/web-interactives/public/v1/track/view",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/img/trackers/blank001\\.gif",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/odometer/odometer\\.js",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/forms/current\\.js",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/hs-fs/hub/327485/file-2054199286-css/font-awesome\\.css",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/analytics/",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/hubfs/",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/cta/",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/ctas/",
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/lead-flows-config/v1/config/json",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "types": [
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "hubspot\\.com/content-tools-menu/api/v1/tools-menu/has-permission",
+                    "fingerprinting": 0,
+                    "cookies": 0.000327,
                     "exceptions": {
                         "types": [
                             "script"
                         ]
                     }
-                },
-                {
-                    "rule": "hubspot\\.com/meetings",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "app\\.hubspot\\.com/conversations-visitor/.*/threads/utk/",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "app\\.hubspot\\.com/network-check/is-the-internet-up\\.txt",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "app\\.hubspot\\.com/api/livechat-public/",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
                 }
             ]
         },
@@ -15301,12 +15534,58 @@
                 "Ad Motivated Tracking",
                 "Advertising"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "automate-frontend\\.linksynergy\\.com/minified_logic\\.js",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "linksynergy\\.com/rcs"
+                },
+                {
+                    "rule": "linksynergy\\.com/jsp"
+                },
+                {
+                    "rule": "linksynergy\\.com/cs"
+                },
+                {
+                    "rule": "linksynergy\\.com/act\\.php"
+                },
+                {
+                    "rule": "linksynergy\\.com/t"
+                },
+                {
+                    "rule": "linksynergy\\.com/consent/v1/p"
+                },
+                {
+                    "rule": "linksynergy\\.com/imp"
+                },
+                {
+                    "rule": "linksynergy\\.com/consent/v3/p"
+                },
+                {
+                    "rule": "linksynergy\\.com/phoenix/phoenix-2\\.26\\.min\\.js"
+                },
+                {
+                    "rule": "linksynergy\\.com/privacy/ad_choices\\.png"
+                },
+                {
+                    "rule": "linksynergy\\.com/fs-bin/show"
+                },
+                {
+                    "rule": "linksynergy\\.com/cc"
+                },
+                {
+                    "rule": "linksynergy\\.com/js/"
+                },
+                {
+                    "rule": "linksynergy\\.com/wakeup/"
+                },
+                {
+                    "rule": "linksynergy\\.com/advertisers/owllab9118/"
+                },
+                {
+                    "rule": "linksynergy\\.com/pix/[0-9]+"
+                },
+                {
+                    "rule": "linksynergy\\.com/[0-9]+\\.ct\\.js"
                 }
             ]
         },
@@ -15325,15 +15604,34 @@
                 "Embedded Content",
                 "Third-Party Analytics Marketing"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "list-manage\\.com/subscribe/",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "list-manage\\.com/4gnjwD/7v0/I_w/ZGKg9DT1/1Xf3SmVJfY/ByIdCwE/eV5-Bg/03X1Q",
+                    "fingerprinting": 3,
+                    "cookies": 0.000201,
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "stylesheet"
+                        ]
+                    }
                 },
                 {
-                    "rule": "list-manage\\.com",
+                    "rule": "list-manage\\.com/generate-js/",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000204,
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "stylesheet"
+                        ]
+                    }
+                },
+                {
+                    "rule": "list-manage\\.com/ZzdmSHQizQ/ig7fpB/IhcQ/f3G7m2Dz9b/fiIGKFw/My/ktTSk9UDY",
+                    "fingerprinting": 3,
+                    "cookies": 0.0000136,
                     "exceptions": {
                         "types": [
                             "image",
@@ -15398,12 +15696,73 @@
                 "Audience Measurement",
                 "Third-Party Analytics Marketing"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "cdn\\.listrakbi\\.com/scripts/script\\.js",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "listrakbi\\.com/api/ActivityEvents/PageBrowse"
+                },
+                {
+                    "rule": "listrakbi\\.com/css/animate\\.min\\.css"
+                },
+                {
+                    "rule": "listrakbi\\.com/v1/Product/ImageUrls"
+                },
+                {
+                    "rule": "listrakbi\\.com/ModalImpression\\.ashx"
+                },
+                {
+                    "rule": "listrakbi\\.com/t/EX\\.ashx"
+                },
+                {
+                    "rule": "listrakbi\\.com/api/ActivityEvents/ProductBrowse"
+                },
+                {
+                    "rule": "listrakbi\\.com/v1/Product"
+                },
+                {
+                    "rule": "listrakbi\\.com/json/07c34100-1080-4c55-9097-05c7f4a2b19b"
+                },
+                {
+                    "rule": "listrakbi\\.com/json/f5f04466-f923-491d-9354-679d54e32def"
+                },
+                {
+                    "rule": "listrakbi\\.com/json/eb9d26f3-d7e9-4df8-9800-a79cfaf345be"
+                },
+                {
+                    "rule": "listrakbi\\.com/SadvKLqKgI5T/cart/update"
+                },
+                {
+                    "rule": "listrakbi\\.com/json/a6c8a6f0-379f-4e0e-8f1a-db4e3efa6123"
+                },
+                {
+                    "rule": "listrakbi\\.com/json/86d9476c-c670-4b5d-a33c-bca65c91576f"
+                },
+                {
+                    "rule": "listrakbi\\.com/json/043b15b6-cb62-4e61-9d8a-89856bdbf496"
+                },
+                {
+                    "rule": "listrakbi\\.com/json/9902c090-0d30-4673-b94b-3851cb8d6035"
+                },
+                {
+                    "rule": "listrakbi\\.com/RmR1Kqh2AYPr/cart/update"
+                },
+                {
+                    "rule": "listrakbi\\.com/jcCo1vsOu8U6/cart/update"
+                },
+                {
+                    "rule": "listrakbi\\.com/w2ixhT7WChl3/session/setPersonalizedStatus"
+                },
+                {
+                    "rule": "listrakbi\\.com/qFnzaK3F3vM4/session/setPersonalizedStatus"
+                },
+                {
+                    "rule": "listrakbi\\.com/activity/"
+                },
+                {
+                    "rule": "listrakbi\\.com/.*/session/getIds"
+                },
+                {
+                    "rule": "listrakbi\\.com/[a-zA-Z0-9]+\\.js"
                 }
             ]
         },
@@ -15609,11 +15968,6 @@
             ],
             "default": "ignore",
             "rules": [
-                {
-                    "rule": "fctwo\\.hs\\.llnwd\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
                 {
                     "rule": "llnwd\\.net\\/styles\\/RSX\\/bell\\.js",
                     "fingerprinting": 3,
@@ -16037,22 +16391,8 @@
                 "Embedded Content",
                 "Social - Share"
             ],
-            "default": "block",
-            "rules": [
-                {
-                    "rule": "money\\.mail\\.ru",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "mail\\.ru",
-                    "exceptions": {
-                        "domains": [
-                            "yandex.ru"
-                        ]
-                    }
-                }
-            ]
+            "default": "ignore",
+            "rules": []
         },
         "mailchimp.com": {
             "domain": "mailchimp.com",
@@ -17716,32 +18056,28 @@
             "fingerprinting": 2,
             "cookies": 0.00189,
             "categories": [],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "support-beacon\\.nakanohito\\.jp/widget/view",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "nakanohito\\.jp/b3/bi\\.js"
                 },
                 {
-                    "rule": "support-beacon\\.nakanohito\\.jp/widget/talk",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "nakanohito\\.jp/b3/"
                 },
                 {
-                    "rule": "support-widget\\.nakanohito\\.jp/chatbot\\.js",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "nakanohito\\.jp/uhj2/uh\\.js"
                 },
                 {
-                    "rule": "cm-widget\\.nakanohito\\.jp/cm/comment",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "nakanohito\\.jp/cm/inner\\.css"
                 },
                 {
-                    "rule": "cm-beacon\\.nakanohito\\.jp/cm/comment",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "nakanohito\\.jp/ua/uwa\\.js"
+                },
+                {
+                    "rule": "nakanohito\\.jp/ua/"
+                },
+                {
+                    "rule": "nakanohito\\.jp/chatbot_pc\\.css"
                 }
             ]
         },
@@ -17922,21 +18258,6 @@
             "categories": [],
             "default": "ignore",
             "rules": [
-                {
-                    "rule": "csp\\.secureserver\\.net\\.edgekey\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "wildcard-sni-only\\.api\\.secureserver\\.net\\.edgekey\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "gui-ipv6\\.secureserver\\.net\\.edgekey\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
                 {
                     "rule": "net\\.edgekey\\.net\\/js\\/assets\\/browser-bundle\\/7118-3f88ef82be16\\.js",
                     "fingerprinting": 3,
@@ -18655,25 +18976,12 @@
                 "Audience Measurement",
                 "Third-Party Analytics Marketing"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "tt\\.omtrdc\\.net/cdn/target\\.js",
-                    "exceptions": {
-                        "domains": [
-                            "canadiantire.ca",
-                            "delltechnologiesworld.com",
-                            "go.com"
-                        ]
-                    }
-                },
-                {
-                    "rule": "snow\\.com\\.ssl\\.d2\\.sc\\.omtrdc\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "omtrdc\\.net/b/ss",
+                    "rule": "omtrdc\\.net/b/ss/ibmtestmasters1/1/JS-2\\.23\\.0-LDQM/s85422832335905",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
                     "exceptions": {
                         "domains": [
                             "canadiantire.ca",
@@ -18682,10 +18990,211 @@
                     }
                 },
                 {
-                    "rule": "omtrdc\\.net",
+                    "rule": "omtrdc\\.net/b/ss/ibmtestmasters1/1/JS-2\\.23\\.0-LDQM/s83623637962335",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
                     "exceptions": {
                         "domains": [
-                            "canadiantire.ca"
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/bnscmst/1/JS-2\\.12\\.0/s6129481970358",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/bnscmst/1/JS-2\\.12\\.0/s66194680297495",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/interikeaaboutikea/1/JS-2\\.23\\.0-LCXS/s15608923336014",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/interikeaaboutikea/1/JS-2\\.23\\.0-LCXS/s11658288843898",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/anactivenet,anactivecomprod/1/JS-2\\.20\\.0/s3181205944880",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/acsde-prod/1/H\\.25\\.1/s67756145218639",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/westpac-prd/1/H\\.27\\.5/s69739083247049",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/sxmr\\.prod/1/JS-2\\.9\\.0/s05130048168995",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/nhlglobal15,nhlcom15/1/JS-2\\.9\\.0/s51377876533534",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/michaels-canada/1/JS-2\\.10\\.0/s52474694773933",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/michaels-canada/1/JS-2\\.10\\.0/s56192439388197",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/peoplexpprod/1/JS-2\\.8\\.2-D7QN/s44584274673375",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/peoplexpprod/1/JS-2\\.8\\.2-D7QN/s41543120497149",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/locgovprod/1/H\\.27\\.5/s07225474618741",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/locgovprod/1/H\\.27\\.5/s09830926089388",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/citicrssywprod/1/JS-1\\.4\\.3/s3565121488112",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/aaamaClubAlliance/1/JS-2\\.20\\.0/s95895919209469",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
+                        ]
+                    }
+                },
+                {
+                    "rule": "omtrdc\\.net/b/ss/aaamaClubAlliance/1/JS-2\\.20\\.0/s96080203079269",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "domains": [
+                            "canadiantire.ca",
+                            "mercuryinsurance.com"
                         ]
                     }
                 }
@@ -18897,19 +19406,7 @@
             "fingerprinting": 1,
             "cookies": 0.00000681,
             "categories": [],
-            "default": "ignore",
-            "rules": [
-                {
-                    "rule": "player\\.ooyala\\.com",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "ooyala\\.com\\/core\\/a48c819bd98e456692f8d7db51f9d69b",
-                    "fingerprinting": 2,
-                    "cookies": 0.00000681
-                }
-            ]
+            "default": "ignore"
         },
         "opecloud.com": {
             "domain": "opecloud.com",
@@ -19778,22 +20275,40 @@
                 "Analytics",
                 "Embedded Content"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "go\\.pardot\\.com/.*/2tmb",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "pardot\\.com/pd\\.js"
                 },
                 {
-                    "rule": "go\\.pardot\\.com/css/form\\.css",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "pardot\\.com/analytics"
                 },
                 {
-                    "rule": "go\\.pardot\\.com/js/v2/affirm\\.js",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "pardot\\.com/js/piUtils\\.js"
+                },
+                {
+                    "rule": "pardot\\.com/dcjs/82202/1182/dc\\.js"
+                },
+                {
+                    "rule": "pardot\\.com/pi\\.js"
+                },
+                {
+                    "rule": "pardot\\.com/dcjs/82202/1474/dc\\.js"
+                },
+                {
+                    "rule": "pardot\\.com/pdt\\.js"
+                },
+                {
+                    "rule": "pardot\\.com/551052/109491/pd_mod\\.js"
+                },
+                {
+                    "rule": "pardot\\.com/887233/1632555795QSFtQtuZ/LedvanceIcon\\.png"
+                },
+                {
+                    "rule": "pardot\\.com/65342/1614970963wKvFVtYq/parent_window\\.js"
+                },
+                {
+                    "rule": "pardot\\.com/l/"
                 }
             ]
         },
@@ -19814,12 +20329,37 @@
                 "Audience Measurement",
                 "Third-Party Analytics Marketing"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "cdn\\.parsely\\.com/keys/",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "parsely\\.com/plogger/"
+                },
+                {
+                    "rule": "parsely\\.com/videoplugins/brightcove/videojs-parsely-loader-v1-latest\\.min\\.js"
+                },
+                {
+                    "rule": "parsely\\.com/videoplugins/brightcove/videojs-parsely-v1-latest\\.min\\.js"
+                },
+                {
+                    "rule": "parsely\\.com/v2/profile"
+                },
+                {
+                    "rule": "parsely\\.com/px/"
+                },
+                {
+                    "rule": "parsely\\.com/v2/related"
+                },
+                {
+                    "rule": "parsely\\.com/v2/analytics/posts"
+                },
+                {
+                    "rule": "parsely\\.com/v2/similar"
+                },
+                {
+                    "rule": "parsely\\.com/keys/adweek\\.com/p\\.js"
+                },
+                {
+                    "rule": "parsely\\.com/v2/search"
                 }
             ]
         },
@@ -21239,12 +21779,67 @@
                 "Session Replay",
                 "Third-Party Analytics Marketing"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "sjc1\\.qualtrics\\.com",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "qualtrics\\.com/SIE/"
+                },
+                {
+                    "rule": "qualtrics\\.com/WRSiteInterceptEngine/Targeting\\.php"
+                },
+                {
+                    "rule": "qualtrics\\.com/WRSiteInterceptEngine/Asset\\.php"
+                },
+                {
+                    "rule": "qualtrics\\.com/WRSiteInterceptEngine/"
+                },
+                {
+                    "rule": "qualtrics\\.com/WRQualtricsShared/Graphics/siteintercept/wr-dialog-close-btn-black\\.png"
+                },
+                {
+                    "rule": "qualtrics\\.com/WRQualtricsShared/Graphics/siteintercept/wr-dialog-close-btn-white\\.png"
+                },
+                {
+                    "rule": "qualtrics\\.com/WRQualtricsShared/Graphics/siteintercept/building_preview\\.gif"
+                },
+                {
+                    "rule": "qualtrics\\.com/WRQualtricsShared/Graphics/siteintercept/remove_screen_capture\\.png"
+                },
+                {
+                    "rule": "qualtrics\\.com/static/prototype-ui-modules/SharedGraphics/siteintercept/svg-close-btn-black-7\\.svg"
+                },
+                {
+                    "rule": "qualtrics\\.com/static/prototype-ui-modules/SharedGraphics/siteintercept/svg-close-btn-black-5\\.svg"
+                },
+                {
+                    "rule": "qualtrics\\.com/CP/Graphic\\.php"
+                },
+                {
+                    "rule": "qualtrics\\.com/WRQualtricsControlPanel/Graphic\\.php"
+                },
+                {
+                    "rule": "qualtrics\\.com/static/prototype-ui-modules/SharedGraphics/siteintercept/svg-close-btn-black-4\\.svg"
+                },
+                {
+                    "rule": "qualtrics\\.com/WRQualtricsShared/Graphics/siteintercept/popup_shadow_transparent\\.png"
+                },
+                {
+                    "rule": "qualtrics\\.com/WRQualtricsShared/Graphics/siteintercept/feedback-blue-right\\.png"
+                },
+                {
+                    "rule": "qualtrics\\.com/ControlPanel/Graphic\\.php"
+                },
+                {
+                    "rule": "qualtrics\\.com/SE/"
+                },
+                {
+                    "rule": "qualtrics\\.com/dxjsmodule/"
+                },
+                {
+                    "rule": "qualtrics\\.com/jfe/"
+                },
+                {
+                    "rule": "qualtrics\\.com/static/q-siteintercept/"
                 }
             ]
         },
@@ -21722,12 +22317,61 @@
                 "Social Network",
                 "Third-Party Analytics Marketing"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "oauth\\.reddit\\.com",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "reddit\\.com/button_info\\.json"
+                },
+                {
+                    "rule": "reddit\\.com/widgets\\.js"
+                },
+                {
+                    "rule": "reddit\\.com/snoo\\.gif"
+                },
+                {
+                    "rule": "reddit\\.com/static/button/button1\\.html"
+                },
+                {
+                    "rule": "reddit\\.com/policy"
+                },
+                {
+                    "rule": "reddit\\.com/static/spreddit1\\.gif"
+                },
+                {
+                    "rule": "reddit\\.com/hot/\\.json"
+                },
+                {
+                    "rule": "reddit\\.com/rp\\.gif",
+                    "fingerprinting": 0,
+                    "cookies": 0,
+                    "exceptions": {
+                        "types": [
+                            "script",
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "reddit\\.com/r/geogebra/",
+                    "fingerprinting": 0,
+                    "cookies": 0.000201,
+                    "exceptions": {
+                        "types": [
+                            "script",
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "reddit\\.com/r/MortalCumbat/",
+                    "fingerprinting": 0,
+                    "cookies": 0,
+                    "exceptions": {
+                        "types": [
+                            "script",
+                            "xmlhttprequest"
+                        ]
+                    }
                 },
                 {
                     "rule": "reddit\\.com/r",
@@ -21740,6 +22384,28 @@
                 },
                 {
                     "rule": "reddit\\.com/comments",
+                    "exceptions": {
+                        "types": [
+                            "script",
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "reddit\\.com/api/info\\.json",
+                    "fingerprinting": 0,
+                    "cookies": 0.000558,
+                    "exceptions": {
+                        "types": [
+                            "script",
+                            "xmlhttprequest"
+                        ]
+                    }
+                },
+                {
+                    "rule": "reddit\\.com/api/v1/access_token",
+                    "fingerprinting": 0,
+                    "cookies": 0,
                     "exceptions": {
                         "types": [
                             "script",
@@ -21764,6 +22430,9 @@
                             "xmlhttprequest"
                         ]
                     }
+                },
+                {
+                    "rule": "reddit\\.com/"
                 }
             ]
         },
@@ -26186,17 +26855,58 @@
             "fingerprinting": 1,
             "cookies": 0.0436,
             "categories": [],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "www\\.tiktok\\.com/embed",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "tiktok\\.com/i18n/pixel/events\\.js"
                 },
                 {
-                    "rule": "www\\.tiktok\\.com/api/recommend/embed_videos/",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "tiktok\\.com/i18n/pixel/static/identify_d1af3\\.js"
+                },
+                {
+                    "rule": "tiktok\\.com/api/v2/pixel"
+                },
+                {
+                    "rule": "tiktok\\.com/i18n/pixel/sdk\\.js"
+                },
+                {
+                    "rule": "tiktok\\.com/api/v2/performance_interaction"
+                },
+                {
+                    "rule": "tiktok\\.com/i18n/pixel/config\\.js"
+                },
+                {
+                    "rule": "tiktok\\.com/i18n/pixel/disable_cookie"
+                },
+                {
+                    "rule": "tiktok\\.com/i18n/pixel/static/identify_821f6\\.js"
+                },
+                {
+                    "rule": "tiktok\\.com/v1/user/webid"
+                },
+                {
+                    "rule": "tiktok\\.com/service/2/abtest_config/"
+                },
+                {
+                    "rule": "tiktok\\.com/web/resource"
+                },
+                {
+                    "rule": "tiktok\\.com/v1/list"
+                },
+                {
+                    "rule": "tiktok\\.com/web/report"
+                },
+                {
+                    "rule": "tiktok\\.com/oembed"
+                },
+                {
+                    "rule": "tiktok\\.com/i18n/pixel/enable_cookie"
+                },
+                {
+                    "rule": "tiktok\\.com/i18n/pixel/static/identify_a7248\\.js"
+                },
+                {
+                    "rule": "tiktok\\.com/i18n/pixel/static/main\\..*\\.js"
                 }
             ]
         },
@@ -26238,7 +26948,7 @@
                 "Tag Manager",
                 "Third-Party Analytics Marketing"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
                     "rule": "tags\\.tiqcdn\\.com/utag/.*/utag\\.js",
@@ -26440,9 +27150,49 @@
                     }
                 },
                 {
-                    "rule": "tiqcdn\\.com/utag/.*/utag\\.js",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
+                    "rule": "tiqcdn\\.com/utag/tiqapp/utag\\.v\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/utag/tiqapp/utag\\.currency\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/location/location\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/dle/epson/northamerica/%7C\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/libs/tealiumjs/latest/tealium_collect\\.min\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/shared/tms/t\\.tealium_collect\\.1_0_3\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/dle/ibm/web/d_medallia_survey_configurations\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/dle/usaa/nw/ent-pubhome-app\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/dle/bofa/ml/prod-_-benefits%20online%20%7C%20login\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/dle/bofa/main/prod-_-live%20chat\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/utag/gmcr/keurighybris/prod/utag\\.modalExt_857\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/.*/prod/utag\\.tagsOptOut\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/.*/prod/mobile\\.html"
+                },
+                {
+                    "rule": "tiqcdn\\.com/.*/utag\\.[0-9]+\\.js"
+                },
+                {
+                    "rule": "tiqcdn\\.com/.*/utag\\.sync\\.js"
                 }
             ]
         },
@@ -27421,46 +28171,6 @@
             "categories": [],
             "default": "ignore",
             "rules": [
-                {
-                    "rule": "emp\\.bbci\\.co\\.uk\\.edgekey\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "feeds\\.bbci\\.co\\.uk\\.edgekey\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "ichef\\.bbci\\.co\\.uk\\.edgekey\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "m\\.files\\.bbci\\.co\\.uk\\.edgekey\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "mybbc\\.files\\.bbci\\.co\\.uk\\.edgekey\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "nav\\.files\\.bbci\\.co\\.uk\\.edgekey\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "static\\.bbci\\.co\\.uk\\.edgekey\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "static\\.files\\.bbci\\.co\\.uk\\.edgekey\\.net",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
                 {
                     "rule": "uk\\.edgekey\\.net\\/assets\\/2b3b09cdd04020bf68e8694bae58ac44\\/dist\\/scripts\\/main\\.js",
                     "fingerprinting": 3,
@@ -29549,15 +30259,10 @@
                 "SSO",
                 "Session Replay"
             ],
-            "default": "block",
+            "default": "ignore",
             "rules": [
                 {
-                    "rule": "frontend\\.vh\\.yandex\\.ru/player",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "api-maps\\.yandex\\.ru",
+                    "rule": "yandex\\.ru/show",
                     "exceptions": {
                         "types": [
                             "image",
@@ -29566,50 +30271,284 @@
                     }
                 },
                 {
-                    "rule": "static-maps\\.yandex\\.ru",
+                    "rule": "yandex\\.ru/an/newscount",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/captchapgrd",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/captcha",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/gpp\\.xml",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/cycounter",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/push",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/widget-loader",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/portal/searchframe/desktop",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/suggest/suggest-ya\\.cgi",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/v1/exps/",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/ping",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/jserr/1",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/adfox/",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/an/tracking/",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/count/",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/informer/",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/meta/",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/pixel/",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/setud/",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/sync_cookie.*"
+                },
+                {
+                    "rule": "yandex\\.ru/tracking/",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/vh-canvas-converted/",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/webvisor/",
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/widgets?/"
+                },
+                {
+                    "rule": "yandex\\.ru/2\\.0-stable/",
+                    "fingerprinting": 1,
+                    "cookies": 0.0000136,
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/2\\.1/",
+                    "fingerprinting": 2,
+                    "cookies": 0.000102,
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/2\\.1\\.79/build/release/images/cursor/grab\\.cur",
+                    "fingerprinting": 0,
+                    "cookies": 0.000109,
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/2\\.1\\.79/build/release/images/cursor/grabbing\\.cur",
+                    "fingerprinting": 0,
+                    "cookies": 0.000109,
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/2\\.1\\.79/build/release/images/cursor/help\\.cur",
+                    "fingerprinting": 0,
+                    "cookies": 0.000109,
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/2\\.1\\.79/build/release/images/cursor/zoom_in\\.cur",
+                    "fingerprinting": 0,
+                    "cookies": 0.000109,
+                    "exceptions": {
+                        "types": [
+                            "image",
+                            "script"
+                        ]
+                    }
+                },
+                {
+                    "rule": "yandex\\.ru/1\\.x/",
+                    "fingerprinting": 0,
+                    "cookies": 0.0000408,
                     "exceptions": {
                         "types": [
                             "image"
                         ]
                     }
-                },
-                {
-                    "rule": "geocode-maps\\.yandex\\.ru",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "money\\.yandex\\.ru",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "pay\\.yandex\\.ru",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "img-fotki\\.yandex\\.ru",
-                    "exceptions": {
-                        "types": [
-                            "image"
-                        ]
-                    }
-                },
-                {
-                    "rule": "yandex\\.ru/system/video-ads-sdk/adsdk\\.js",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "yandex\\.ru/vod/vh-special-converted/vod-content",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
-                {
-                    "rule": "yandex\\.ru/log",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
                 }
             ]
         },
@@ -31433,11 +32372,6 @@
             ],
             "default": "ignore",
             "rules": [
-                {
-                    "rule": "s1\\.wp\\.com",
-                    "action": "ignore",
-                    "comment": "Allow to load, but all other protections apply, including cookie protection"
-                },
                 {
                     "rule": "wp\\.com\\/g\\.gif",
                     "fingerprinting": 0,
@@ -64661,15 +65595,9 @@
         "broken.third-party.site": "Test Site for Tracker Blocking"
     },
     "cnames": {
+        "guce.intheknow.com": "consent.yahoo.com",
         "aax-eu.amazon.se": "aax-eu-retail-direct.amazon-adsystem.com",
-        "cams.camsrips.com": "cname.whitelabel.chaturbate.com",
-        "cams.rectube.me": "cname.whitelabel.chaturbate.com",
-        "cams.urlgalleries.net": "cname.whitelabel.chaturbate.com",
-        "chat.3kcams.com": "cname.whitelabel.chaturbate.com",
-        "live.cumchat.cam": "cname.whitelabel.chaturbate.com",
-        "live.fapcam.tv": "cname.whitelabel.chaturbate.com",
-        "live.share-nude.com": "cname.whitelabel.chaturbate.com",
-        "live.whassup.fr": "cname.whitelabel.chaturbate.com",
+        "ads.eltiempo.co": "ww484.smartadserver.com",
         "dtm.academy.com": "usadmm.dotomi.com",
         "dtm.ameliaisland.com": "usadmm.dotomi.com",
         "dtm.ashleyfurniture.com": "c81239.csd.dotomi.com",
@@ -64687,8 +65615,33 @@
         "dtm.victoriassecret.com": "c2482.csd.dotomi.com",
         "dtm.visitomaha.com": "c80258.csd.dotomi.com",
         "dtm.zales.com": "usadmm.dotomi.com",
-        "b.actualno.com": "webgroundadbg.hit.gemius.pl",
+        "mc.yandex.tm": "mc.yandex.ru",
+        "static.newsmaxfeednetwork.com": "adapty.revcontent.com",
+        "trends.newsmaxwidget.com": "trends.revcontent.com",
+        "fpa-cdn.adweek.com": "fpa-cdn-adweek-com.parsely.com",
+        "help.amber.com.au": "amberelectric.zendesk.com",
+        "evaluation.canadapost-postescanada.ca": "canadapostdigital.vanity7.ca1.qualtrics.com",
+        "feedback.goto.com": "logmeinvoc-primary.vanitydomains.qualtrics.com",
+        "profiles.ope.scmp.com": "profiles-scmp.tagger.opecloud.com",
+        "tagger.ope.scmp.com": "tagger-scmp.opecloud.com",
+        "cdn.snsimg.carview.co.jp": "e.edge12.g.yimg.jp",
+        "permutive.architecturaldigest.in": "sl6xupiz5jkb.customer.permutive.app",
+        "permutive.businessinsider.com": "atcvt1h5rg5p.customer.permutive.app",
+        "permutive.cntraveller.in": "zfvfsk4dkjal.customer.permutive.app",
+        "permutive.glamour.mx": "z9mubt4shfbr.customer.permutive.app",
+        "permutive.gq.com.mx": "posizohooekr.customer.permutive.app",
+        "permutive.gqindia.com": "tytljf7jnmiw.customer.permutive.app",
+        "permutive.gqjapan.jp": "sxpntkernob2.customer.permutive.app",
+        "permutive.insider.com": "r7nff50myx9v.customer.permutive.app",
+        "permutive.mawdoo3.com": "jxwghe5kuw0c.customer.permutive.app",
+        "permutive.vogue.co.jp": "ydzdjbatm0dv.customer.permutive.app",
+        "permutive.vogue.in": "rvvnicjx82ly.customer.permutive.app",
+        "permutive.vogue.mx": "evkwdfp0k46k.customer.permutive.app",
+        "permutive.wired.jp": "y1323mhiosaf.customer.permutive.app",
+        "az729104.cdn.laget.se": "az729104.vo.msecnd.net",
+        "images.hattons.co.uk": "az592500.vo.msecnd.net",
         "collect.rbcroyalbank.com": "rbcroyalbank.fp.collect.igodigital.com",
+        "b.actualno.com": "webgroundadbg.hit.gemius.pl",
         "data-0142dcfbcf.yacht.de": "yachtde-relay.iocnt.net",
         "data-01e876a345.tichyseinblick.de": "tichyein-relay.iocnt.net",
         "data-02011e6008.dasoertliche.de": "dasoertl-relay.iocnt.net",
@@ -65058,37 +66011,18 @@
         "data-fdbbf15b66.finanzen.net": "finaonl-relay.iocnt.net",
         "data-fe87994a5d.freenet.de": "freenet-relay.iocnt.net",
         "data-ff5b197ecc.traceparts.com": "tracepar-relay.iocnt.net",
+        "cams.camsrips.com": "cname.whitelabel.chaturbate.com",
+        "cams.rectube.me": "cname.whitelabel.chaturbate.com",
+        "cams.urlgalleries.net": "cname.whitelabel.chaturbate.com",
+        "chat.3kcams.com": "cname.whitelabel.chaturbate.com",
+        "live.cumchat.cam": "cname.whitelabel.chaturbate.com",
+        "live.fapcam.tv": "cname.whitelabel.chaturbate.com",
+        "live.share-nude.com": "cname.whitelabel.chaturbate.com",
+        "live.whassup.fr": "cname.whitelabel.chaturbate.com",
         "lp-03.chat.online.citi.com": "va.v.liveperson.net",
         "lp-07.customermessaging.bupa.com.au": "sy.v.liveperson.net",
         "lp-07.messaging.optus.com.au": "sy.v.liveperson.net",
         "lptag.messaging.optus.com.au": "lptag.liveperson.net",
-        "az729104.cdn.laget.se": "az729104.vo.msecnd.net",
-        "images.hattons.co.uk": "az592500.vo.msecnd.net",
-        "profiles.ope.scmp.com": "profiles-scmp.tagger.opecloud.com",
-        "tagger.ope.scmp.com": "tagger-scmp.opecloud.com",
-        "fpa-cdn.adweek.com": "fpa-cdn-adweek-com.parsely.com",
-        "permutive.architecturaldigest.in": "sl6xupiz5jkb.customer.permutive.app",
-        "permutive.businessinsider.com": "atcvt1h5rg5p.customer.permutive.app",
-        "permutive.cntraveller.in": "zfvfsk4dkjal.customer.permutive.app",
-        "permutive.glamour.mx": "z9mubt4shfbr.customer.permutive.app",
-        "permutive.gq.com.mx": "posizohooekr.customer.permutive.app",
-        "permutive.gqindia.com": "tytljf7jnmiw.customer.permutive.app",
-        "permutive.gqjapan.jp": "sxpntkernob2.customer.permutive.app",
-        "permutive.insider.com": "r7nff50myx9v.customer.permutive.app",
-        "permutive.mawdoo3.com": "jxwghe5kuw0c.customer.permutive.app",
-        "permutive.vogue.co.jp": "ydzdjbatm0dv.customer.permutive.app",
-        "permutive.vogue.in": "rvvnicjx82ly.customer.permutive.app",
-        "permutive.vogue.mx": "evkwdfp0k46k.customer.permutive.app",
-        "permutive.wired.jp": "y1323mhiosaf.customer.permutive.app",
-        "evaluation.canadapost-postescanada.ca": "canadapostdigital.vanity7.ca1.qualtrics.com",
-        "feedback.goto.com": "logmeinvoc-primary.vanitydomains.qualtrics.com",
-        "static.newsmaxfeednetwork.com": "adapty.revcontent.com",
-        "trends.newsmaxwidget.com": "trends.revcontent.com",
-        "ads.eltiempo.co": "ww484.smartadserver.com",
-        "guce.intheknow.com": "consent.yahoo.com",
-        "mc.yandex.tm": "mc.yandex.ru",
-        "cdn.snsimg.carview.co.jp": "e.edge12.g.yimg.jp",
-        "lptag.customermessaging.bupa.com.au": "lptag.liveperson.net",
-        "help.amber.com.au": "amberelectric.zendesk.com"
+        "lptag.customermessaging.bupa.com.au": "lptag.liveperson.net"
     }
 }
