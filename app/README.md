@@ -1,15 +1,13 @@
 # DuckDuckGo's App Tracker Blocklist
 
-The app tracker blocklist is used by [DuckDuckGo App Tracking Protection](https://spreadprivacy.com/app-tracking-protection-open-beta/), currently available in beta on Android only.
-We build this list by interacting with popular Android apps and identifying common third-party requests that are sharing personal data, unique identifiers, or other information that could be used for fingerprinting.
-In the future, we plan to make the data and the tools used for data collection public.
+The app tracker blocklist is used by [DuckDuckGo App Tracking Protection](https://duckduckgo.com/duckduckgo-help-pages/p-app-tracking-protection/what-is-app-tracking-protection/), currently available in the [DuckDuckGo Android browser](https://duckduckgo.com/duckduckgo-help-pages/mobile/android/).
+We build this list by identifying common third-party requests from mobile apps that are sharing personal data, unique identifiers, or other information that could be used for fingerprinting.
 Questions or issues with tracker blocking in DuckDuckGo apps and extensions should be reported in the [Privacy Configuration](https://github.com/duckduckgo/privacy-configuration).
 
 ## Questions
 
 - **Where are the blocklists?**
-  - [android-tds.json](android-tds.json) is the blocklist used by [DuckDuckGo App Tracking Protection](https://spreadprivacy.com/app-tracking-protection-open-beta/) beta on Android.
-- **Where can I find the code that generates the blocklists?** The code to generate blocklists is not yet open source but coming soon.
+  - [android-tds.json](android-tds.json) is the blocklist used by [DuckDuckGo App Tracking Protection](https://duckduckgo.com/duckduckgo-help-pages/p-app-tracking-protection/what-is-app-tracking-protection/) on Android.
 - **Are there any exceptions that should be applied to the blocklist?** 
 We exclude certain apps from protection if we find that they do not work with VPNs or rely on tracking domains to function. 
 Our full list of excluded apps can be found in the `unprotectedApps` object [here](https://github.com/duckduckgo/privacy-configuration/tree/main/features/app-tracker-protection.json). 
