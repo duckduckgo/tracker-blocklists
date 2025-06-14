@@ -3245,9 +3245,8 @@
             ]
         },
         "Bugsnag Inc.": {
-            "score": 2201,
+            "score": 2126,
             "signals": [
-                "city",
                 "unique_identifier",
                 "device_free_storage",
                 "device_free_memory",
