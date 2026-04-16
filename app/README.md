@@ -1,6 +1,6 @@
 # DuckDuckGo's App Tracker Blocklist
 
-The app tracker blocklist is used by [DuckDuckGo App Tracking Protection](https://spreadprivacy.com/app-tracking-protection-open-beta/), currently available in on Android only.
+The app tracker blocklist is used by [DuckDuckGo App Tracking Protection](https://spreadprivacy.com/app-tracking-protection-open-beta/), on Android.
 We build this list by interacting with popular Android apps and identifying common third-party requests that are sharing personal data, unique identifiers, or other information that could be used for fingerprinting.
 In the future, we plan to make the data and the tools used for data collection public.
 Questions or issues with tracker blocking in DuckDuckGo apps and extensions should be reported in the [Privacy Configuration](https://github.com/duckduckgo/privacy-configuration).
