@@ -1,6 +1,6 @@
 # Using DuckDuckGo's App Tracker Blocklist
 
-The following description explains, at the high-level, how the app blocklist is used by [DuckDuckGo App Tracking Protection](https://spreadprivacy.com/introducing-app-tracking-protection/) beta on Android.
+The following description explains, at the high-level, how the app blocklist is used by [DuckDuckGo App Tracking Protection](https://spreadprivacy.com/introducing-app-tracking-protection/) on Android.
 
 1. Intercept network requests from all apps by utilizing VPN APIs. 
 We exclude certain apps from interception, such as those that do not work with VPNs or apps that rely on tracking domains to function.
