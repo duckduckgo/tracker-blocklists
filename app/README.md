@@ -1,3 +1,4 @@
+antondimman184@gmail.com
 # DuckDuckGo's App Tracker Blocklist
 
 The app tracker blocklist is used by [DuckDuckGo App Tracking Protection](https://spreadprivacy.com/app-tracking-protection-open-beta/), currently available in beta on Android only.
