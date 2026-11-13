@@ -13,5 +13,15 @@ jobs:
           node-version-file: .nvmrc
       - name: Install dependencies
         run: npm install
+      - name: Check npm cooldown (temporary)
+        run: |
+          npm --version
+          npm config get min-release-age
+          # Published 2026-11-11, so inside the 7-day window until 2026-11-18
+          if npm pack --dry-run caniuse-lite@1.0.30001826 > recent.log 2>&1; then cat recent.log; echo "Cooldown not applied"; exit 1; fi
+          cat recent.log
+          grep -q ETARGET recent.log
+          # Published 2026-11-05, so outside the window
+          npm pack --dry-run caniuse-lite@1.0.30001822
       - name: Run tests
         run: npm run test
